@@ -1,3 +1,7 @@
+# LANS (lans.mx)
+
+This project was developed in Mexico City for LANS 'laboratorios de referencia'. 
+
 # LANSlanding
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
