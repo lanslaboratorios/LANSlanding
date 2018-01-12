@@ -1,4 +1,7 @@
 <!-- Input de Buscador -->
+<div class="navbar-fixed">
+
+
 <nav id="buscadorMenu">
   <div class="nav-wrapper">
       <form>
@@ -13,46 +16,57 @@
 
 <!-- Menu de Navegacion Principal -->
 <nav id="opcionesMenu">
-  <div class="container">
+    <div class="nav-wrapper">
 
       <div class="row">
-          <div class="col s12">
-            <div class="nav-wrapper">
-              <a href="#!" class="brand-logo center">LANS</a>
 
-              <!-- Escritorio Menu -->
-              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-              <!--Menu Izquierda-->
-              <ul class="left hide-on-med-and-down">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicio</a></li>
-                <li><a href="#">Calidad</a></li>
-              </ul>
-              <!-- Menu Derecha -->
-              <ul class="right hide-on-med-and-down">
-                <li><a href="#">Socios</a></li>
-                <li><a href="#">Sistema Laboratorio</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li id="lupaMenu" (click)="apareceBuscador()"><a href="#"><label class="label-icon" for="search"><i class="material-icons">search</i></label></a></li>
-              </ul>
+        <!-- Boton hamburguesa -->
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
-              <!-- Menu Derecha FIN -->
-              <!-- Escritorio Menu FIN-->
+          <!-- Menu opciones izquierda -->
+          <div class="col m5">
 
-              <!-- Menu Mobil -->
-              <ul class="side-nav" id="mobile-demo">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicio</a></li>
-                <li><a href="#">Calidad</a></li>
-                <li><a href="#">Socios</a></li>
-                <li><a href="#">Sistema Laboratorio</a></li>
-                <li><a href="#">Contacto</a></li>
-              </ul>
-              <!-- Menu Mobil FIN -->
-            </div><!-- wrapper -->
-          </div> <!-- col 12 -->
-      </div><!-- row opciones -->
-  </div> <!-- container -->
+            <!--Menu Izquierda-->
+            <ul class="left hide-on-med-and-down menuOpcIzq">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Servicio</a></li>
+              <li><a href="#">Calidad</a></li>
+            </ul>
+          </div><!--col m5 opciones izquierda -->
+
+          <!-- Menu logo centro -->
+          <div class="col s12 m2">
+            <!-- <a href="#!" class="brand-logo ">LANS</a>
+            <img src="../../assets/logo_lans_fondoBlanco.jpg" alt="">-->
+            <div class="logoMenu"></div>
+          </div><!-- col m2 logo -->
+
+          <!-- Menu opciones derecha -->
+          <div class="col m5">
+            <!-- Menu Derecha -->
+            <ul class="right hide-on-med-and-down menuOpcDer">
+              <li><a href="#">Socios</a></li>
+              <li><a href="#">Sistema Laboratorio</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li id="lupaMenu" (click)="apareceBuscador()"><a href="#"><label class="label-icon" for="search"><i class="material-icons">search</i></label></a></li>
+            </ul>
+          </div><!--col m5 opciones derecha -->
+
+      </div><!-- row -->
+
+    </div><!-- nav-wrapper -->
 </nav>
+<!-- Menu Mobil -->
+<ul class="side-nav" id="mobile-demo">
+  <li><a href="#">Inicio</a></li>
+  <li><a href="#">Nosotros</a></li>
+  <li><a href="#">Servicio</a></li>
+  <li><a href="#">Calidad</a></li>
+  <li><a href="#">Socios</a></li>
+  <li><a href="#">Sistema Laboratorio</a></li>
+  <li><a href="#">Contacto</a></li>
+</ul>
+<!-- Menu Mobil FIN -->
+
+</div>

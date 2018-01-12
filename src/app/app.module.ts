@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuNavegacionComponent } from './menu-navegacion/menu-navegacion.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuNavegacionComponent
+    MenuNavegacionComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

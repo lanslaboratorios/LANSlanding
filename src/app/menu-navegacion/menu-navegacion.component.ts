@@ -12,17 +12,24 @@ declare var $: any;
 
 export class MenuNavegacionComponent implements OnInit {
 
+
   constructor() {
 
   }
 
+
+
   ngOnInit() {
     $(".button-collapse").sideNav();
     $("#buscadorMenu").hide();
+    $("#opcionesMenu").show();
   }
+
+
 
   apareceBuscador():void{
     $("#buscadorMenu").slideToggle();
+    $("#opcionesMenu").slideToggle();
   }
 
 
