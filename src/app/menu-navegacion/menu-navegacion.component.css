@@ -1,3 +1,7 @@
+#logo{
+  height: 7vh;
+}
+
 #lupaMenu i{
   color: gray !important;
 }
@@ -29,4 +33,13 @@
 
 .menuOpcDer{
   padding-right: 1vw;
+}
+
+@media screen and (max-width: 601px) {
+  #logo{
+      float: none;
+  }
+  .logoMenu{
+    height: 55px;
+  }
 }
