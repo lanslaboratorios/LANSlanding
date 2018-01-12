@@ -1,7 +1,27 @@
+#circuloPaciente1{
+  background-image: url("../../assets/sliderAssets/pacienteFrame1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 80vh;
+}
+
+.contenedorCirculo{
+  padding-top: 20vh;
+}
+
 .parallax-container {
   height: 93vh;
 }
 
 .sliderContenedor{
   height:93vh !important;
+}
+
+.textoSlider{
+  height: 83vh;
+  padding-top: 30vh;
+  font-size: 32px;
+  background-color: rgba(20,30,100,0.4);
+  border-radius: 100px;
 }

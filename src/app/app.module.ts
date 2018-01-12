@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuNavegacionComponent } from './menu-navegacion/menu-navegacion.component';
 import { SliderComponent } from './slider/slider.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { LansFooterComponent } from './lans-footer/lans-footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuNavegacionComponent,
-    SliderComponent
+    SliderComponent,
+    NosotrosComponent,
+    LansFooterComponent
   ],
   imports: [
     BrowserModule,

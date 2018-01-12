@@ -1,0 +1,34 @@
+#capitularE{
+  color: #0075c9;
+  font-size: 40px;
+  line-height: 10px;
+}
+
+.medicoCirculo{
+  background-image: url("../../assets/nosotros/medico_circulo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 400px;
+}
+
+.nosotrosContenedor{
+  padding: 30vh 0px;
+}
+
+.tituloNosotros{
+  color: #0075c9;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px 5vw 12vh 5vw;
+}
+
+.isoNosotros{
+  background-image: url("../../assets/nosotros/calidad_iso_50anos.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 200px;
+}
