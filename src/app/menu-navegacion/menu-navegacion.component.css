@@ -20,11 +20,11 @@
 
 .logoMenu{
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position:center;
   background-image: url("../../assets/logo_lans_fondoBlanco.jpg");
   background-size: contain;
   width: 100%;
-  height: 60px;
+  height: 7vh;
 }
 
 .menuOpcIzq{

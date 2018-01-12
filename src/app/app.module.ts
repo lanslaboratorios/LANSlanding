@@ -7,6 +7,7 @@ import { MenuNavegacionComponent } from './menu-navegacion/menu-navegacion.compo
 import { SliderComponent } from './slider/slider.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { LansFooterComponent } from './lans-footer/lans-footer.component';
+import { RazonesComponent } from './razones/razones.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LansFooterComponent } from './lans-footer/lans-footer.component';
     MenuNavegacionComponent,
     SliderComponent,
     NosotrosComponent,
-    LansFooterComponent
+    LansFooterComponent,
+    RazonesComponent
   ],
   imports: [
     BrowserModule,
