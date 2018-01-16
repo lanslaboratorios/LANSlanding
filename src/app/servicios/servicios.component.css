@@ -1,0 +1,36 @@
+.hovered {
+    background: #0075c9 !important;
+    color: #fff;
+    float: left;
+    margin: 5px;
+    padding: 7px 13px;
+    border-radius: 30px;
+}
+
+.selected {
+    background: #0075c9 !important;
+    color: #fff!important;
+    float: left !important;
+    margin: 5px !important;
+    padding: 7px 13px !important;
+    border-radius: 30px !important;
+}
+
+.btn_area{
+    background: #e6e6e6;
+    color: #778692;
+    float: left;
+    margin: 5px;
+    padding: 7px 13px;
+    border-radius: 30px;
+}
+
+.titulo{
+font-weight: 700;
+font-family: "Ubuntu", sans-serif;
+color: #002f87;
+font-size: 2rem;
+line-height: 1.2;
+margin:0 0 .5rem;
+
+}

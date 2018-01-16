@@ -8,6 +8,7 @@ import { SliderComponent } from './slider/slider.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { LansFooterComponent } from './lans-footer/lans-footer.component';
 import { RazonesComponent } from './razones/razones.component';
+import { ServiciosComponent } from './servicios/servicios.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RazonesComponent } from './razones/razones.component';
     SliderComponent,
     NosotrosComponent,
     LansFooterComponent,
-    RazonesComponent
+    RazonesComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,
