@@ -1,4 +1,31 @@
+.centrar{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
+.masCont {
+	background: #fff;
+	padding: 0;
+	width: 30px;
+	margin: auto;
+	border-radius: 30px;
+	height: 30px;
+	font-size: 0.7rem;
+	color: #002f87;
+	-webkit-box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.4);
+	box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.masHover {
+	background: #0075c9;
+	color: #fff;
+}
 
 .titulo{
     font-weight: 700;
