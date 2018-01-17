@@ -13,12 +13,18 @@
     <ul>
       <li *ngFor="let area of areas"
        class="btn_area"
-       [class.hovered]="IsHover == true" (mouseenter)="hover(true)" (mouseleave)="hover(false)" 
+       [class.hovered]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)" 
        [class.selected]="area === selectedArea" (click)="selected(area)">{{area}}</li>
     </ul>
   </div>
   <!-- Seccion de contenido -->
   <div class="row">
-
+    <!-- Div con el background dinámico por área -->
+    <div class="area" [ngStyle]="{'background-image': 'url(' + Card.img + ')'}">
+      <div class="col s6 offset-s6">
+        <h1  class="cardTitle">{{Card.area}}</h1>
+        <p>{{Card.contenido}}</p>
+      </div>   
+    </div>
   </div>
 </div>
