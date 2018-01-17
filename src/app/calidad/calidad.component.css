@@ -1,0 +1,15 @@
+
+
+.titulo{
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    color: #002f87;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin:0 0 .5rem;
+    
+}
+
+.separador{
+        padding-top: 10vh;
+}

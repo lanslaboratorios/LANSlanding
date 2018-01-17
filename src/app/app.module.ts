@@ -9,6 +9,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { LansFooterComponent } from './lans-footer/lans-footer.component';
 import { RazonesComponent } from './razones/razones.component';
 import { ServiciosComponent } from './servicios/servicios.component';
+import { CalidadComponent } from './calidad/calidad.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ServiciosComponent } from './servicios/servicios.component';
     NosotrosComponent,
     LansFooterComponent,
     RazonesComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    CalidadComponent
   ],
   imports: [
     BrowserModule,
