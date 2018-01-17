@@ -24,6 +24,7 @@
       <div class="col s6 offset-s6">
         <h1  class="cardTitle">{{Card.area}}</h1>
         <p>{{Card.contenido}}</p>
+        <button  class="verMas" [class.hoVerMas]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)">VER MAS</button>
       </div>   
     </div>
   </div>
