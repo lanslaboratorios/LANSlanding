@@ -1,0 +1,15 @@
+.centrar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#trans{
+    background-image: url("../assets/bg_azul.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    margin-bottom: -10vh;
+}
