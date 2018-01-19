@@ -11,6 +11,7 @@ import { RazonesComponent } from './razones/razones.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { CalidadComponent } from './calidad/calidad.component';
 import { SociosComponent } from './socios/socios.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SociosComponent } from './socios/socios.component';
     RazonesComponent,
     ServiciosComponent,
     CalidadComponent,
-    SociosComponent
+    SociosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
