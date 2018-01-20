@@ -1,7 +1,8 @@
-<div class="container separador"> <!-- Contenedor contacto -->
+<div class="bg"> <!-- Contenedor BG -->
+<div class="container separador" > <!-- Contenedor contacto -->
   <div class="row"> <!-- Título y texto -->
-    <div class="col s7 offset-s5" style="width: auto !important;"><h1 class="titulo">CONTACTO</h1></div>
-    <div class="col s10 offset-s1" >
+    <div class="col s11 offset-s1" >
+        <h1 class="titulo">CONTACTO</h1>
       <h2 class="titulo" style="color:#0075c9; text-align:center;">
         ¿CÓMO PODEMOS AYUDARLE?
      </h2>
@@ -9,14 +10,81 @@
        Contáctenos llenando el siguiente formato o a través de los teléfonos:
      </p>
     </div>
-  <div class="row">   <!-- direccion teléfono y mail -->
-    <div class="col m5 s12 offset-m1">
-      <p class="contacto">
-          <i class="small material-icons ">location_on</i> Calzada Acueducto #402-b, Col. Huipulco, Delegación Tlalpan, 14370 Cuidad de México, México
-      </p>
+  <div class="row ">   <!-- direccion teléfono y mail -->
+    <div class="col m5 s12 offset-m1 separador">
+        <div class="col m2 s1 offset-m1 centrar contacto">
+          <i class="small material-icons icon">location_on</i>
+        </div>
+        <div class="col m9 s9">
+          <p class="contacto">Calzada Acueducto #402-b, Col. Huipulco, Delegación Tlalpan, 14370 Cuidad de México, México
+          </p>
+        </div>
+      </div>
+      <div class="col m5 s12 offset-m1 separador">
+        <div class="row">
+          <div class="col m2 centrar contacto">
+              <i class="small material-icons icon ">local_phone</i>
+          </div>
+          <div class="col m10">
+              <p class="contacto">
+                  (55) 6286 0280
+              </p>
+              <p class="contacto">
+                (55) 5594 6452  
+              </p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col m2  centrar contacto">
+                <i class="small material-icons  ">mail</i>
+              </div>
+              <div class="col m9">
+                <p class="contacto">
+                    contacto@lans.mx
+                </p>
+              </div>
+
+        </div>
+      </div>
+  </div>
+  <div class="row separador"> <!-- Mapa y Form -->
+    <div class="col m5 s12 offset-m1"> <!-- Mapa -->
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zm">
+          <agm-marker [latitude]="lat" [longitude]="lng" ></agm-marker>
+      </agm-map>
     </div>
-    <div class="col m6 s12">
-      sdsd
+    <div class="col m6 s12"> <!-- Formulario -->
+      <form class="col s12">
+          <div class="input-field col s12 contacto">
+             <i class="material-icons prefix">store</i>
+             <input id="lab" type="text" class="validate">
+             <label for="lab">Laboratorio</label>
+          </div> 
+          <div class="input-field col s12 contacto">
+             <i class="material-icons prefix">account_circle</i>
+             <input id="name" type="text" class="validate">
+             <label for="name">Nombre</label>
+          </div>
+          <div class="input-field col s12 contacto">
+             <i class="material-icons prefix">phone</i>
+             <input id="tel" type="tel" class="validate">
+             <label for="tel">Teléfono</label>
+          </div>
+          <div class="input-field col s12 contacto">
+              <i class="material-icons prefix">mail</i>
+              <input id="email" type="email" class="validate">
+              <label for="email">Email </label>
+           </div>
+           <div class="input-field col s12 contacto">
+              <i class="material-icons prefix">comments</i>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Comentarios</label>
+            </div> 
+            <div class="col s12 centrar">
+              <input type="submit"  class="verMas" [class.hoVerMas]="isHover" (mouseenter)="activo(true)" (mouseleave)="activo(false)" value="Enviar">
+            </div>       
+      </form>
     </div>
   </div>
+</div>
 </div>

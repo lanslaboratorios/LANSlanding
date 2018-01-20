@@ -1,9 +1,18 @@
+agm-map {
+    width: 100%;
+    height: 400px;
+  }
+
 #textitulo{
     font-family: "Roboto Condensed", sans-serif;
     color: #4d4d4d;
     font-size: 17px;
     text-align: center;
 }
+
+.bg{
+    background-color:#edf5fc
+} 
 
 .centrar{
     text-align: center;
@@ -19,6 +28,16 @@
     margin:0 0 .5rem;
 
 }
+.hoVerMas{
+    background: #0075c9 !important;
+    -webkit-box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.4);
+}
+
+.icon{
+    vertical-align: middle;
+    margin-top: 50%;
+}
 
 .titulo{
     font-weight: 700;
@@ -27,9 +46,23 @@
     font-size: 2rem;
     line-height: 1.2;
     margin:0 0 .5rem;
+    text-align: center;
     
 }
 
 .separador{
     padding-top: 10vh;
+}
+.verMas{
+    border: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background: #002f87;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 30px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
