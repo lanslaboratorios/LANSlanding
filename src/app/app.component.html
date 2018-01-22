@@ -31,8 +31,9 @@
 </div>
 
 <!-- Sistema -->
-<sistema></sistema>
 
+<sistema-small *ngIf="small"></sistema-small>
+<sistema *ngIf="!small"></sistema>
 <!-- Contacto -->
 <contacto></contacto>
 <!-- Footer LANS-->

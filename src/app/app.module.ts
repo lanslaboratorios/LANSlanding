@@ -14,6 +14,7 @@ import { CalidadComponent } from './calidad/calidad.component';
 import { SociosComponent } from './socios/socios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { SistemaComponent } from './sistema/sistema.component';
+import { SistemaSmallComponent } from './sistema-small/sistema-small.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SistemaComponent } from './sistema/sistema.component';
     CalidadComponent,
     SociosComponent,
     ContactoComponent,
-    SistemaComponent
+    SistemaComponent,
+    SistemaSmallComponent
   ],
   imports: [
     BrowserModule,
