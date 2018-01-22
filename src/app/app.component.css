@@ -5,6 +5,10 @@
     justify-content: center;
 }
 
+.img{
+    padding-top:7px; 
+}
+
 #trans{
     background-image: url("../assets/bg_azul.jpg");
     background-position: bottom;
@@ -12,4 +16,13 @@
     background-size: contain;
     width: 100%;
     margin-bottom: -10vh;
+}
+
+#transtop{
+    background-image: url("../assets/bg_azul-arriba.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    
 }

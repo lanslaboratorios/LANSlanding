@@ -4,10 +4,21 @@
    
 }
 
+#capitular{
+    color: #fff;
+    font-size: 40px;
+    line-height: 10px;
+  }
+
 #next{
     margin-top:-30px;
     margin-right: 1%;
 }
+
+#scar{
+    padding-bottom: 10vh;
+  }
+
 
 .bg {
     background-color: #0075c9;
@@ -74,8 +85,3 @@
 .separador{
     margin-top: 10vh;
 }
-#capitular{
-    color: #fff;
-    font-size: 40px;
-    line-height: 10px;
-  }
