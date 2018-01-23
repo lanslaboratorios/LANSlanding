@@ -23,9 +23,9 @@
     </div>  <!-- fin texto -->
     <h1 class="titulo separador">Al convencerse de ser parte de la #comunidadLans, nosotros respondemos con los siguientes beneficios:</h1>
     <div class="row separador">  <!-- Imagenes -->
-      <div class="col s12 m4 " *ngFor="let beneficio of beneficios">
-        <div class="col s12 m12 centrar"><img [src]="beneficio.imagen" alt=""></div>
-        <div class="col s12 m12"><p class="textoImg">{{beneficio.texto}}</p></div>
+      <div class="col s12 m4 " *ngFor="let beneficio of beneficios" (mouseenter)="activo(beneficio,true)" (mouseleave)="activo(beneficio,false)">
+        <div class="col s12 m12 centrar" id="imageCont"><img id="img" [class.arriba]="(beneficio === hoveredArea && isHover)" [src]="beneficio.imagen" alt=""></div>
+        <div class="col s12 m12"><p class="textoImg" [class.hovered]="(beneficio === hoveredArea && isHover)"  >{{beneficio.texto}}</p></div>
       </div>
     </div>  <!-- fin imagenes -->
     <h1 class="titulo separador">Estamos seguros que con este nuevo concepto de servicio, lograremos estrechar el vínculo que nos une y con ello, alcanzaremos la plena satisfacción de los pacientes.</h1>
