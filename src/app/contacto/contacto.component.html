@@ -54,7 +54,7 @@
       </agm-map>
     </div>
     <div class="col m6 s12"> <!-- Formulario -->
-      <form class="col s12">
+      <form class="col s12" id="formCont">
           <div class="input-field col s12 contacto">
              <i class="material-icons prefix">store</i>
              <input id="lab" type="text" class="validate">
@@ -77,8 +77,8 @@
            </div>
            <div class="input-field col s12 contacto">
               <i class="material-icons prefix">comments</i>
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Comentarios</label>
+              <textarea id="comments" class="materialize-textarea"></textarea>
+              <label for="comments">Comentarios</label>
             </div> 
             <div class="col s12 centrar">
               <input type="submit"  class="verMas" [class.hoVerMas]="isHover" (mouseenter)="activo(true)" (mouseleave)="activo(false)" value="Enviar">
