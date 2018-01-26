@@ -1,5 +1,96 @@
-.tarjetaRazones{
-  height:35vh;
-  background-color: red;
-  border-radius: 20px;
+button{
+  border:5px;
+}
+
+.bannerStyle h1 {
+  background-color: #ccc;
+  min-height: 300px;
+  text-align: center;
+  line-height: 300px;
+}
+
+
+.leftCont {
+  position: absolute;
+  top: 50%;
+  left:.75rem;
+  margin-top: -15px;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  font-size: 0.7rem;
+  color: #002f87;
+  padding:0;
+  -webkit-box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.pqlans__item {
+  background: #fff url("../../assets/razones/porque_lans_uno.jpg") no-repeat -5% 50%;
+  background-size: contain;
+  max-width: 800px;
+  min-height: 230px;
+	margin: 2rem auto;
+	border-radius: 20px;
+	-webkit-box-shadow: 1rem 1rem 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 1rem 1rem 15px rgba(0, 0, 0, 0.2);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.pqlans__item .pqlans__titulo {
+  color: #002f87;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.rightCont {
+  position: absolute;
+  top: 50%;
+  right: .75rem;
+  margin-top: -15px;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  font-size: 0.7rem;
+  color: #002f87;
+  padding:0;
+  -webkit-box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px){
+
+  .pqlans__item {
+    background: #fff;
+    background-size: contain;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 20px;
+    -webkit-box-shadow: 1rem 1rem 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 1rem 1rem 15px rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
 }

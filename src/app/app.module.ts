@@ -15,6 +15,8 @@ import { SociosComponent } from './socios/socios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { SistemaComponent } from './sistema/sistema.component';
 import { SistemaSmallComponent } from './sistema-small/sistema-small.component';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { SistemaSmallComponent } from './sistema-small/sistema-small.component';
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBXrbsJBEde5VN5hMepzwvp_SLE288VhPo'
-    })
+    }),
+    NgxCarouselModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
