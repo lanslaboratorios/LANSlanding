@@ -80,7 +80,7 @@ button{
   .pqlans__item {
     background: #fff;
     background-size: contain;
-    max-width: 800px;
+    max-width: 80vw;
     margin: 2rem auto;
     border-radius: 20px;
     -webkit-box-shadow: 1rem 1rem 15px rgba(0, 0, 0, 0.2);
