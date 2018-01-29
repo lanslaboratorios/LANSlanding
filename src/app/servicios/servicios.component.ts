@@ -21,7 +21,21 @@ export class ServiciosComponent implements OnInit {
     this.areas=['Endocrinología y Metabolismo', 'Biología Molecular', 'Química Clínica General',
                 'Oncología','Parasitología','Patología','Toxicología y Monitoreo de Fármacos',
                 'Neonatología','Hematología','Uroanálisis','Bacteriología','Inmunología e Inmunoquímica'];
-    this.Card={'img':'../../assets/servicios/lans_biologia_molecular.png','area':'Biología Molecular','contenido':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et tristique dolor, eget commodo velit. Donec eget aliquet nisi. Proin eu metus et enim semper elementum auctor at augue. Curabitur id egestas mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit.'};
+    this.Card={
+    'Endocrinología y Metabolismo':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
+    'Biología Molecular':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
+    'Química Clínica General':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
+    'Oncología':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
+    'Parasitología':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
+    'Patología':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
+    'Toxicología y Monitoreo de Fármacos':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
+    'Neonatología':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
+    'Hematología':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
+    'Uroanálisis':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
+    'Bacteriología':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
+    'Inmunología e Inmunoquímica':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'}
+                };
+    this.selectedArea=this.areas[0];
   }
 
   //Funcion para colorear selecciónado
@@ -37,6 +51,16 @@ export class ServiciosComponent implements OnInit {
     this.isHover=flag;
     if(!this.isHover){
       this.hoveredArea="";
+    }
+  }
+  
+  sortBy(x:number):void{
+    switch (x){
+      case 0: this.areas.sort();
+              break;
+      case 1: console.log('Ordenar por precio');
+              break;
+      default: return;
     }
   }
 
