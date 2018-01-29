@@ -2,15 +2,39 @@
   <!-- Titulo y Texto -->
   <div class="row">
       
-      <div class="col m2 offset-m2 s12 titulo centrar" >SERVICIOS</div>
-      <div class="col  m6 s12 titulo centrar" style="color:#0075c9;">En LANS Laboratorios usted tiene a su alcance una 
+      <div class="col m3 offset-m1 s12 titulo centrar" >SERVICIOS </div>
+      <div class="col  m7 s12 titulo centrar" style="color:#0075c9;">En LANS Laboratorios usted tiene a su alcance una 
         amplia gama de pruebas y perfiles, cubriendo las siguientes áreas de
          especialidad</div>
 
   </div>
+
+  <!-- Sort -->
+  <div class="centrar">
+    <!-- Dropdown Trigger -->
+  <a class='dropdown-button btn' id="dropdown" href='#' data-activates='dropdown0'>Ordenar</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown0' class='dropdown-content'>
+    <li (click)="sortBy(0)"><a href="#!">Alfabético</a></li>
+    <li (click)="sortBy(1)"><a href="#!">Precio</a></li>
+  </ul>
+  </div>
+
   <!-- Seccion de botones -->
-  <div class="row">
-    <ul>
+  <!-- small -->
+  <div class=" hide-on-med-and-up centrar">
+  <!-- Dropdown Trigger -->
+  <a class='dropdown-button btn' id="dropdown" href='#' data-activates='dropdown1'>Especialidades</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li *ngFor="let area of areas" (click)="selected(area)"><a href="#!">{{area}}</a></li>
+  </ul>
+  </div>
+  <!-- mediano y largo -->
+  <div class="row hide-on-small-only">
+    <ul >
       <li *ngFor="let area of areas"
        class="btn_area"
        [class.hovered]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)" 
@@ -20,12 +44,24 @@
   <!-- Seccion de contenido -->
   <div class="row">
     <!-- Div con el background dinámico por área -->
-    <div class="area" [ngStyle]="{'background-image': 'url(' + Card.img + ')'}">
-      <div class="col s6 offset-s6">
-        <h1  class="cardTitle">{{Card.area}}</h1>
-        <p>{{Card.contenido}}</p>
-        <button  class="verMas" [class.hoVerMas]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)">VER MAS</button>
+    <div class="area col s12" [ngStyle]="{'background-image': 'url(' + Card[selectedArea].img + ')'}">
+      <div class="row">
+      <div class="col m5 offset-m6 s6 offset-s6">
+        <h1  class="cardTitle">{{selectedArea}}</h1>
+        <p>{{Card[selectedArea].contenido}}</p>
+        <a  class="verMas waves-effect waves-light btn modal-trigger" href="#modal1" [class.hoVerMas]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)">VER MAS</a>
+      </div>
       </div>   
     </div>
+    <!-- Modal Dinámico -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>{{selectedArea}}</h4>
+      <p>{{Card[selectedArea].contenido}}</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+  </div>
   </div>
 </div>

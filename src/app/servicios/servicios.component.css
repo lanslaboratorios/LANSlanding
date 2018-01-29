@@ -5,6 +5,17 @@ p{
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
+    word-wrap: break-word;
+}
+
+#dropdown{
+    width: 50vw;
+    background-color: #0075c9;
+    margin-bottom: 5vh;
+}
+
+li>a {
+    color: #0075c9
 }
 
 .area{
@@ -21,8 +32,9 @@ height: 400px;
     color: #778692;
     float: left;
     margin: 5px;
-    padding: 7px 13px;
+    padding: 7px 10px;
     border-radius: 30px;
+    font-size: 14.5px;
 }
 
 .cardTitle{
@@ -72,7 +84,6 @@ color: #002f87;
 font-size: 2rem;
 line-height: 1.2;
 margin:0 0 .5rem;
-
 }
 
 .verMas{

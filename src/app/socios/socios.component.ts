@@ -34,11 +34,4 @@ export class SociosComponent implements OnInit {
     }
   }
 
-  anterior():void{
-    $('#scar').carousel('next',1);
-  }
-  siguiente():void{
-    $('#scar').carousel('prev',1);
-  }
-
 }
