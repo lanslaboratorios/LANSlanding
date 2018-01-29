@@ -5,10 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
+
 export class AppComponent implements OnInit{
   title = 'app';
 
   small=false;
+
+
 
   ngOnInit() {
     if( document.documentElement.clientWidth < 650){
@@ -16,6 +21,10 @@ export class AppComponent implements OnInit{
     }else{
       this.small=false;
     }
+
+
   }
+
+
 
 }
