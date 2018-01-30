@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 declare var $:any;
 
 @Component({
@@ -8,38 +8,36 @@ declare var $:any;
 })
 export class NosotrosComponent implements OnInit {
 
-  constructor() {
+  constructor( ) {
 
    }
 
+   @HostListener('window:scroll', ['$event']) onScrollEvent($event){
+    var speed = 150;
+    var s = $(document).scrollTop();
+    console.log(s);
+
+    
+    if(s > 500){
+      console.log("MAYOR");
+      $('#titulo').fadeIn(speed);
+    }
+
+    if(s > 700){
+      $('#parImg').fadeIn(speed);
+    }
+
+    if(s > 800){
+      $('#logos').fadeIn(speed);
+    }    
+  } 
+
   ngOnInit() {
 
-  var speed = 1500;
 
   $('#titulo').hide();
   $('#parImg').hide();
   $('#logos').hide();
-
-    // evento scrollListener
-    $(document).scroll(function(){
-      var s = $(document).scrollTop();
-      console.log(s);
-
-      if(s > 500){
-        console.log("MAYOR");
-        $('#titulo').fadeIn(speed);
-      }
-
-      if(s > 700){
-        $('#parImg').fadeIn(speed);
-      }
-
-      if(s > 800){
-        $('#logos').fadeIn(speed);
-      }
-
-
-    })
 
   }
 

@@ -1,5 +1,5 @@
 //import { Component, OnInit } from '@angular/core';
-import { Component, Input, OnInit, AfterViewChecked } from '@angular/core';
+import { Component, Input, OnInit, AfterViewChecked, HostListener } from '@angular/core';
 declare var $: any;
 
 @Component({
@@ -12,17 +12,23 @@ declare var $: any;
 
 export class MenuNavegacionComponent implements OnInit {
 
+  s:number=0;
 
   constructor() {
 
   }
 
+  @HostListener('window:scroll', ['$event']) onScrollEvent($event){
+    var speed = 150;
+    this.s = $(document).scrollTop();    
+  } 
 
 
   ngOnInit() {
     $(".button-collapse").sideNav();
     $("#buscadorMenu").hide();
     $("#opcionesMenu").show();
+   
   }
 
 

@@ -15,7 +15,7 @@
 </nav>
 
 <!-- Menu de Navegacion Principal -->
-<nav id="opcionesMenu">
+<nav [class.opcionesMenu]="s<100" [class.opcionesMenu2]="s>=100">
     <div class="nav-wrapper">
 
       <div class="row">
@@ -39,7 +39,7 @@
           <div class="col s12 m2 " id="logo">
             <!-- <a href="#!" class="brand-logo ">LANS</a>
             <img src="../../assets/logo_lans_fondoBlanco.jpg" alt="">-->
-            <div class="logoMenu"></div>
+            <div [class.logoMenu]="s<100" [class.logoMenu2]="s>100"></div>
           </div><!-- col m2 logo -->
 
           <!-- Menu opciones derecha -->
@@ -49,7 +49,7 @@
               <li><a href="#">Socios</a></li>
               <li><a href="#">Sistema Laboratorio</a></li>
               <li><a href="#">Contacto</a></li>
-              <li id="lupaMenu" (click)="apareceBuscador()"><a href="#"><label class="label-icon" for="search"><i class="material-icons">search</i></label></a></li>
+              <li [class.lupaMenu]="s<100" [class.lupaMenu2]="s>=100" (click)="apareceBuscador()"><a href="#"><label class="label-icon" for="search"><i class="material-icons">search</i></label></a></li>
             </ul>
           </div><!--col m5 opciones derecha -->
 

@@ -35,6 +35,7 @@ export class ServiciosComponent implements OnInit {
     'Bacteriología':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'},
     'Inmunología e Inmunoquímica':{'img':'../../assets/servicios/lans_biologia_molecular.png','contenido':'ansclknsclnacknaslkcnakcnlkancs'}
                 };
+    this.areas.sort();
     this.selectedArea=this.areas[0];
   }
 
