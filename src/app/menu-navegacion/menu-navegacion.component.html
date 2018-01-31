@@ -39,14 +39,14 @@
           <!-- Menu logo centro -->
           <div class="col s12 m2 centrar">
            <a href="#!" >
-             <img [class.resize]="s>100" src="../../assets/logo_lans_fondoBlanco.jpg" alt="">
+             <img id="log" [class.resize]="s>100" src="../../assets/logo_lans_fondoBlanco.jpg" alt="">
           </a>
             
             <div [class.logoMenu]="s<100" [class.logoMenu2]="s>100"></div>
           </div><!-- col m2 logo -->
 
           <!-- Menu opciones derecha -->
-          <div class="col m5 der">
+          <div class="col m5 der hide-on-med-and-down">
             <!-- Menu Derecha -->
             <div class="row" [class.menuOpcDer]="s<100" *ngIf="s<100">
                 <!-- Botones -->
@@ -74,12 +74,12 @@
 </div>
 <!-- Menu Mobil -->
 <ul class="side-nav" id="mobile-demo">
-    <div><a href="#">Inicio</a></div>
-    <div><a href="#">Nosotros</a></div>
-    <div><a href="#">Servicio</a></div>
-    <div><a href="#">Calidad</a></div>
-    <div><a href="#">Socios</a></div>
-    <div><a href="#">Sistema Laboratorio</a></div>
-    <div><a href="#">Contacto</a></div>
+    <div class="centrar separador"><a href="#">Inicio</a></div>
+    <div class="centrar separador"><a href="#">Nosotros</a></div>
+    <div class="centrar separador"><a href="#">Servicio</a></div>
+    <div class="centrar separador"><a href="#">Calidad</a></div>
+    <div class="centrar separador"><a href="#">Socios</a></div>
+    <div class="centrar separador"><a href="#">Sistema Laboratorio</a></div>
+    <div class="centrar separador"><a href="#">Contacto</a></div>
   </ul>
   <!-- Menu Mobil FIN -->

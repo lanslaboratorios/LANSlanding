@@ -103,3 +103,18 @@
   padding-top: 10px;
   height: 45px;
 }
+
+.overlay{
+  z-index: unset !important;
+}
+
+.separador{
+  padding: 13px 0 13px;
+}
+
+@media only screen and (max-width:992px){
+  #log{
+    max-height: 64px !important;
+    margin-left: -75px;
+  }
+} 

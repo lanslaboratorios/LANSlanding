@@ -25,7 +25,14 @@ export class MenuNavegacionComponent implements OnInit {
 
 
   ngOnInit() {
-    $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav({'onOpen':function(){
+      $("#sidenav-overlay").css("z-index","unset");
+      $("#log").css("display","none");
+    },
+    'onClose':function(){
+      $("#log").css("display","inline-flex");
+    }
+    });
     $("#buscadorMenu").hide();
     $("#opcionesMenu").show();
    
