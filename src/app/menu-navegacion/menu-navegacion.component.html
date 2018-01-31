@@ -24,33 +24,47 @@
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
           <!-- Menu opciones izquierda -->
-          <div class="col m5">
+          <div class="col m5 izq">
 
             <!--Menu Izquierda-->
-            <ul class="left hide-on-med-and-down menuOpcIzq">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Servicio</a></li>
-              <li><a href="#">Calidad</a></li>
-            </ul>
+            <div class="row" [class.menuOpcIzq]="s<100" *ngIf="s<100"></div>
+            <div class="row hide-on-med-and-down linea">
+              <div class="col m3"><a href="#">Inicio</a></div>
+              <div class="col m3"><a href="#">Nosotros</a></div>
+              <div class="col m3"><a href="#">Servicio</a></div>
+              <div class="col m3"><a href="#">Calidad</a></div>
+            </div>
           </div><!--col m5 opciones izquierda -->
 
           <!-- Menu logo centro -->
-          <div class="col s12 m2 " id="logo">
-            <!-- <a href="#!" class="brand-logo ">LANS</a>
-            <img src="../../assets/logo_lans_fondoBlanco.jpg" alt="">-->
+          <div class="col s12 m2 centrar">
+           <a href="#!" >
+             <img [class.resize]="s>100" src="../../assets/logo_lans_fondoBlanco.jpg" alt="">
+          </a>
+            
             <div [class.logoMenu]="s<100" [class.logoMenu2]="s>100"></div>
           </div><!-- col m2 logo -->
 
           <!-- Menu opciones derecha -->
-          <div class="col m5">
+          <div class="col m5 der">
             <!-- Menu Derecha -->
-            <ul class="right hide-on-med-and-down menuOpcDer">
-              <li><a href="#">Socios</a></li>
-              <li><a href="#">Sistema Laboratorio</a></li>
-              <li><a href="#">Contacto</a></li>
-              <li [class.lupaMenu]="s<100" [class.lupaMenu2]="s>=100" (click)="apareceBuscador()"><a href="#"><label class="label-icon" for="search"><i class="material-icons">search</i></label></a></li>
-            </ul>
+            <div class="row" [class.menuOpcDer]="s<100" *ngIf="s<100">
+                <!-- Botones -->
+                <div class="col m6 btnCont">
+                    <a href="#" class="botones">
+                       <img src="../../assets/ic_captura_ordenes.svg" class="ic-svg">CAPTURA DE ÓRDENES</a>
+                </div>
+                <div class="col m6 btnCont">
+                    <a href="#" class="botones">
+                       <img src="../../assets/ic_consulta_resultado.svg" class="ic-svg">CONSULTA DE RESULTADOS</a>
+                </div>
+              </div>
+            <div class="row hide-on-med-and-down linea">
+              <div class="col m3"><a href="#">Socios</a></div>
+              <div class="col m5"><a href="#">Sistema Laboratorio</a></div>
+              <div class="col m3"><a href="#">Contacto</a></div>
+              <div class="col m1" [class.lupaMenu]="s<100" [class.lupaMenu2]="s>=100" (click)="apareceBuscador()"><a href="#"><label class="label-icon" for="search"><i class="material-icons">search</i></label></a></div>
+              </div>
           </div><!--col m5 opciones derecha -->
 
       </div><!-- row -->
@@ -60,12 +74,12 @@
 </div>
 <!-- Menu Mobil -->
 <ul class="side-nav" id="mobile-demo">
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Nosotros</a></li>
-    <li><a href="#">Servicio</a></li>
-    <li><a href="#">Calidad</a></li>
-    <li><a href="#">Socios</a></li>
-    <li><a href="#">Sistema Laboratorio</a></li>
-    <li><a href="#">Contacto</a></li>
+    <div><a href="#">Inicio</a></div>
+    <div><a href="#">Nosotros</a></div>
+    <div><a href="#">Servicio</a></div>
+    <div><a href="#">Calidad</a></div>
+    <div><a href="#">Socios</a></div>
+    <div><a href="#">Sistema Laboratorio</a></div>
+    <div><a href="#">Contacto</a></div>
   </ul>
   <!-- Menu Mobil FIN -->
