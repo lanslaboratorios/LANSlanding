@@ -12,17 +12,21 @@
 }
 
 .parallax-container {
-  height: 93vh;
+  height: 100vh;
+}
+
+.separadorInterno{
+  padding-top: 130px;
 }
 
 .sliderContenedor{
-  height:93vh !important;
+  height:100vh !important;
 }
 
 .textoSlider{
-  height: 83vh;
-  padding-top: 30vh;
+  padding: 180px 0px;
+  -webkit-text-shadow: 3px 3px 4px rgba(0,0,0,0.9);
+  text-shadow: 3px 3px 4px rgba(0,0,0,0.9);
   font-size: 32px;
-  background-color: rgba(20,30,100,0.4);
-  border-radius: 100px;
+  border-radius: 35px;
 }

@@ -20,10 +20,18 @@
     line-height: inherit;
 }
 
+.botones:hover{
+  background-image: linear-gradient(#0075c9, #0075c9);
+  -webkit-box-shadow: 0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0.3rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transition: all .3s ease;
+}
+
 .btnCont{
   padding-right: 0;
   padding-left:0;
 }
+
 
 .centrar{
   text-align: center;
@@ -37,8 +45,10 @@
 .izq{
   padding-left: 5vw;
 }
+
 .ic-svg{
   width: 24px;
+  vertical-align: middle;
 }
 
 .linea{
@@ -47,7 +57,9 @@
 }
 
 .lupaMenu i{
-  width: 10px;
+  position: fixed;
+  top:0;
+  left: 0;
   color: white !important;
   font-size: 20px;
   transition: all .3s ease;
@@ -74,7 +86,7 @@
 }
 
 .lupaMenu2 i{
-  width: 10px;
+  padding-left:17px; 
   color: gray !important;
   font-size: 20px;
   transition: all .3s ease;
@@ -83,10 +95,11 @@
 .opcionesMenu2{
   background-color: white; 
   transition: all .3s ease;
+  line-height: inherit;
 }
 
 .opcionesMenu2 a{
-  color: gray;
+  color: rgb(37, 103, 179);
   transition: all .3s ease;
 }
 
@@ -112,9 +125,72 @@
   padding: 13px 0 13px;
 }
 
+.navsep{
+  padding-top:20px; 
+}
+
+.navsep>a:hover{
+  font-weight: 600;
+  font-size: 1.05em;
+  -webkit-text-shadow: 3px 3px 4px rgba(0,0,0,0.9);
+  text-shadow: 3px 3px 4px rgba(0,0,0,0.9);
+  transition: all .3s ease;
+  
+}
+
+.miniNav>a:hover{
+-webkit-text-shadow: 3px 2px 6px rgba(0,0,0,.3);
+text-shadow: 3px 2px 6px rgba(0,0,0,.3);
+}
+
+#captura{
+  position: fixed;
+  right: 0;
+  margin-right:7px; 
+  top:15vh;
+}
+
+#resultados{
+  position: fixed;
+  right: 0;
+  margin-right:7px;
+  top:25vh;
+}
+
+#captura + p{
+  display: none;
+  position: fixed;
+  right: 0;
+  margin-right:65px; 
+  top:14.5vh;
+}
+
+#resultados + p{
+  display: none;
+  position: fixed;
+  right: 0;
+  margin-right:65px; 
+  top:24.5vh;
+}
+
+.tooltip{
+  color:#00add8;
+  font-weight: 300;
+  padding: 5px;
+  background-color: #00add810;
+  border-radius: 35px;
+}
+
 @media only screen and (max-width:992px){
   #log{
     max-height: 64px !important;
     margin-left: -75px;
+  }
+} 
+
+@media only screen and (max-width:600px){
+  #log{
+    max-height: 56px !important;
+  
   }
 } 
