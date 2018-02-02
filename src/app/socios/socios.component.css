@@ -21,6 +21,7 @@
     transition: all .2s ease-in-out;
 }
 
+
 .arriba{
     transform: translateY(-132.5px);
     transition: all .2s ease-in-out;
@@ -38,7 +39,7 @@
 
 .bg {
     background-color: #0075c9;
-    padding: 0px;
+    padding-bottom: 1px;
 }
 
 .centrar{
@@ -110,6 +111,22 @@
     text-align: center;
     }
 
+    #trans{
+        background-image: url("../../assets/bg_azul.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: -1px;
+    }
+    
+    #transtop{
+        background-image: url("../../assets/bg_azul-arriba.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: -1px;
+    }
+
 .separador{
-    margin-top: 10vh;
+    padding-top: 10vh;
 }

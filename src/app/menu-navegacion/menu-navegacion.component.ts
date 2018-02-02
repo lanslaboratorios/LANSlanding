@@ -20,18 +20,18 @@ export class MenuNavegacionComponent implements OnInit {
   }
 
   @HostListener('window:scroll', ['$event']) onScrollEvent($event){
-    var speed = 150;
+    var speed = 450;
     this.s = $(document).scrollTop();
     if(this.s<533){
-      $(".tooltip").css("background-color","#f4f9fa85")
+      $(".tooltip").css("background-color","#000000ce").css("color","white");
     }else{
-      $(".tooltip").css("background-color","#00add810")
+      $(".tooltip").css("background-color","#00d8c6c0").css("color","#0075c9");
     }
   } 
 
 
   ngOnInit() {
-    
+    this.s = $(document).scrollTop();
     if( document.documentElement.clientWidth < 992){
       this.small=true;
     }else{
@@ -56,6 +56,11 @@ export class MenuNavegacionComponent implements OnInit {
   apareceBuscador():void{
     $("#buscadorMenu").slideToggle();
     $("#opcionesMenu").slideToggle();
+  }
+
+  scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
   }
 
   show(id:string):void{

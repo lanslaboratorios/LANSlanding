@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,7 +40,8 @@ import 'hammerjs';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBXrbsJBEde5VN5hMepzwvp_SLE288VhPo'
     }),
-    NgxCarouselModule
+    NgxCarouselModule,
+    ScrollToModule.forRoot()
 
   ],
   providers: [],

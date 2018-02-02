@@ -29,10 +29,10 @@
             <!--Menu Izquierda-->
             <div class="row" [class.menuOpcIzq]="s<100" *ngIf="s<100"></div>
             <div class="row hide-on-med-and-down" [class.linea]="s<100">
-              <div class="col m3 navsep" [class.miniNav]="s>100"><a  href="#">Inicio</a></div>
-              <div class="col m3 navsep" [class.miniNav]="s>100"><a  href="#">Nosotros</a></div>
-              <div class="col m3 navsep" [class.miniNav]="s>100"><a  href="#">Servicio</a></div>
-              <div class="col m3 navsep" [class.miniNav]="s>100"><a  href="#">Calidad</a></div>
+              <div class="col m3 navsep" [class.miniNav]="s>100"><a href="#">Inicio</a></div>
+              <div class="col m3 navsep" [class.miniNav]="s>100"><a (click)="scrollToAnchor('anclaNosotros')" href="#">Nosotros</a></div>
+              <div class="col m3 navsep" [class.miniNav]="s>100"><a (click)="scrollToAnchor('anclaServicios')" href="#">Servicio</a></div>
+              <div class="col m3 navsep" [class.miniNav]="s>100"><a (click)="scrollToAnchor('anclaCalidad')" href="#">Calidad</a></div>
             </div>
           </div><!--col m5 opciones izquierda -->
 
