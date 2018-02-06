@@ -17,13 +17,13 @@ export class NosotrosComponent implements OnInit {
     var s = $(document).scrollTop();
     console.log(s);
 
-    
+
     if(s > 500){
       console.log("MAYOR");
       $('#titulo').fadeIn(speed);
     }
 
-    if(s > 700){
+    if(s > 600){
       $('#parImg').fadeIn(speed);
     }
 
@@ -34,10 +34,6 @@ export class NosotrosComponent implements OnInit {
 
   ngOnInit() {
 
-
-  $('#titulo').hide();
-  $('#parImg').hide();
-  $('#logos').hide();
 
   }
 

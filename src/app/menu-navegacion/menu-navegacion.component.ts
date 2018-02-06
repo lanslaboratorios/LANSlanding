@@ -58,11 +58,6 @@ export class MenuNavegacionComponent implements OnInit {
     $("#opcionesMenu").slideToggle();
   }
 
-  scrollToAnchor(aid){
-    var aTag = $("a[name='"+ aid +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-  }
-
   show(id:string):void{
     $(`#${id}+p`).fadeIn(500,"swing")
   }

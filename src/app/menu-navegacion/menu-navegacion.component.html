@@ -30,15 +30,18 @@
             <div class="row" [class.menuOpcIzq]="s<100" *ngIf="s<100"></div>
             <div class="row hide-on-med-and-down" [class.linea]="s<100">
               <div class="col m3 navsep" [class.miniNav]="s>100"><a href="#">Inicio</a></div>
-              <div class="col m3 navsep" [class.miniNav]="s>100"><a (click)="scrollToAnchor('anclaNosotros')" href="#">Nosotros</a></div>
-              <div class="col m3 navsep" [class.miniNav]="s>100"><a (click)="scrollToAnchor('anclaServicios')" href="#">Servicio</a></div>
-              <div class="col m3 navsep" [class.miniNav]="s>100"><a (click)="scrollToAnchor('anclaCalidad')" href="#">Calidad</a></div>
+              <div class="col m3 navsep" [class.miniNav]="s>100">
+                <a [ngx-scroll-to]="'anclaNosotros'" href="#!">Nosotros</a></div>
+              <div class="col m3 navsep" [class.miniNav]="s>100">
+                <a [ngx-scroll-to]="'anclaServicios'" href="#!">Servicio</a></div>
+              <div class="col m3 navsep" [class.miniNav]="s>100">
+                <a [ngx-scroll-to]="'anclaCalidad'" href="#!">Calidad</a></div>
             </div>
           </div><!--col m5 opciones izquierda -->
 
           <!-- Menu logo centro -->
           <div class="col s2 m2 centrar">
-           <a href="#!" >
+           <a href="#" >
              <img id="log" [class.resize]="s>100" src="../../assets/logo_lans_fondoBlanco.jpg" alt="">
           </a>
             
@@ -60,9 +63,12 @@
                 </div>
               </div>
             <div class="row hide-on-med-and-down" [class.linea]="s<100">
-              <div class="col m3 navsep" [class.miniNav]="s>100"><a  href="#">Socios</a></div>
-              <div class="col m6 navsep" [class.miniNav]="s>100"><a  href="#">Sistema Laboratorio</a></div>
-              <div class="col m2 navsep" [class.miniNav]="s>100"><a  href="#">Contacto</a></div>
+              <div class="col m3 navsep" [class.miniNav]="s>100">
+                <a [ngx-scroll-to]="'anclaSocios'" href="#!">Socios</a></div>
+              <div class="col m6 navsep" [class.miniNav]="s>100">
+                <a [ngx-scroll-to]="'anclaSistema'" href="#!">Sistema Laboratorio</a></div>
+              <div class="col m2 navsep" [class.miniNav]="s>100">
+                <a [ngx-scroll-to]="'anclaContacto'" href="#!">Contacto</a></div>
               <!-- <div class="col m1" [class.lupaMenu]="s<100" [class.lupaMenu2]="s>=100" (click)="apareceBuscador()"><a href="#"><label class="label-icon" for="search"><i class="material-icons">search</i></label></a></div> -->
               </div>
           </div><!--col m5 opciones derecha -->
@@ -75,12 +81,12 @@
 <!-- Menu Mobil -->
 <ul class="side-nav" id="mobile-demo">
     <div class="centrar separador"><a href="#">Inicio</a></div>
-    <div class="centrar separador"><a href="#">Nosotros</a></div>
-    <div class="centrar separador"><a href="#">Servicio</a></div>
-    <div class="centrar separador"><a href="#">Calidad</a></div>
-    <div class="centrar separador"><a href="#">Socios</a></div>
-    <div class="centrar separador"><a href="#">Sistema Laboratorio</a></div>
-    <div class="centrar separador"><a href="#">Contacto</a></div>
+    <div class="centrar separador"><a href="#anclaNosotros">Nosotros</a></div>
+    <div class="centrar separador"><a href="#anclaServicios">Servicio</a></div>
+    <div class="centrar separador"><a href="#anclaCalidad">Calidad</a></div>
+    <div class="centrar separador"><a href="#anclaSocios">Socios</a></div>
+    <div class="centrar separador"><a href="#anclaSistema">Sistema Laboratorio</a></div>
+    <div class="centrar separador"><a href="#anclaContacto">Contacto</a></div>
   </ul>
   <!-- Menu Mobil FIN -->
 
