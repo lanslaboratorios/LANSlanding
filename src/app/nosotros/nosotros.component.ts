@@ -16,6 +16,7 @@ export class NosotrosComponent implements OnInit {
    @HostListener('window:scroll', ['$event']) onScrollEvent($event){
     var speed = 400;
     var s = $(document).scrollTop();
+    console.log(s);
     
     console.log(this.invisible);
 
@@ -27,7 +28,6 @@ export class NosotrosComponent implements OnInit {
     }
 
     if(s > 189){
-      console.log("MAYOR");
       $('#titulo').fadeIn(speed);
     }
 

@@ -1,3 +1,11 @@
+.activo{
+  font-weight: 600;
+  font-size: 1.05em;
+  transition: all .3s ease;
+  -webkit-text-shadow: 3px 2px 6px rgba(0,0,0,.3);
+  text-shadow: 3px 2px 6px rgba(0,0,0,.3);
+}
+
 .botones{
   -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
