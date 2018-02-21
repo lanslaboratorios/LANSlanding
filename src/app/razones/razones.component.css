@@ -35,7 +35,8 @@ button{
   background: #fff url("../../assets/razones/porque_lans_uno.jpg") no-repeat -5% 50%;
   background-size: contain;
   max-width: 800px;
-  min-height: 230px;
+  min-height: 350px;
+  max-height: 355px;
 	margin: 2rem auto;
 	border-radius: 20px;
 	-webkit-box-shadow: 1rem 1rem 15px rgba(0, 0, 0, 0.2);

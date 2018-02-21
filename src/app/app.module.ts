@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { DataShareService } from './data-share.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -44,7 +45,7 @@ import 'hammerjs';
     ScrollToModule.forRoot()
 
   ],
-  providers: [],
+  providers: [DataShareService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

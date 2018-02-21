@@ -49,12 +49,12 @@
       <div class="col m5 offset-m6 s6 offset-s6">
         <h1  class="cardTitle">{{selectedArea}}</h1>
         <p>{{Card[selectedArea].contenido}}</p>
-        <a  class="verMas  btn modal-trigger" href="#modal1" [class.hoVerMas]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)">VER MAS</a>
+        <a  class="verMas  btn modal-trigger" href="#modals" [class.hoVerMas]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)">VER MAS</a>
       </div>
       </div>   
     </div>
     <!-- Modal Dinámico -->
-  <div id="modal1" class="modal">
+  <div id="modals" class="modal">
     <div class="modal-content">
       <h4>{{selectedArea}}</h4>
       <p>{{Card[selectedArea].contenido}}</p>

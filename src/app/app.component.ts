@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 
 
 
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'app';
 
   small=false;
 
-
+  constructor( ) {}
 
   ngOnInit() {
     if( document.documentElement.clientWidth < 650){
@@ -21,10 +22,5 @@ export class AppComponent implements OnInit{
     }else{
       this.small=false;
     }
-
-
   }
-
-
-
 }

@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxCarousel, NgxCarouselStore } from 'ngx-carousel';
-declare var $:any;
+declare var $: any;
 
 @Component({
-  selector: 'razones',
+  selector: 'app-razones',
   templateUrl: './razones.component.html',
   styleUrls: ['./razones.component.css']
 })
 export class RazonesComponent implements OnInit {
-  carouselBanner:any;
+  carouselBanner: any;
 
   constructor() { }
 
-  ngOnInit(){
- 
+  ngOnInit() {
     this.carouselBanner = {
       grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
       slide: 1,
@@ -52,13 +51,10 @@ export class RazonesComponent implements OnInit {
       load: 2,
       loop: true,
       touch: true
-    }
+    };
   }
- 
+
   /* It will be triggered on every slide*/
   onmoveFn(data: NgxCarouselStore) {
-    console.log(data);
   }
-    
-
 }
