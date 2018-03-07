@@ -15,6 +15,7 @@ selectedArea: any;
 hoveredArea: any;
 isHover: Boolean;
 Card: any;
+area: any;
 
   constructor( private dataShare: DataShareService) { }
 
