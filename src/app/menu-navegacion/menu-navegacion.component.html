@@ -33,7 +33,7 @@
               <div class="col m3 navsep" [class.miniNav]="s>100">
                 <a [ngx-scroll-to]="'anclaNosotros'" href="#!" [class.activo]="s>=posiciones['nosotros'] && s<posiciones['servicios']">Nosotros</a></div>
               <div class="col m3 navsep" [class.miniNav]="s>100">
-                <a [ngx-scroll-to]="'anclaServicios'" href="#!" [class.activo]="s>=posiciones['servicios'] && s<posiciones['calidad']">Servicio</a></div>
+                <a [ngx-scroll-to]="'anclaServicios'" href="#!" [class.activo]="s>=posiciones['servicios'] && s<posiciones['calidad']">Especialidades</a></div>
               <div class="col m3 navsep" [class.miniNav]="s>100">
                 <a [ngx-scroll-to]="'anclaCalidad'" href="#!" [class.activo]="s>=posiciones['calidad'] && s<posiciones['socios']">Calidad</a></div>
             </div>
@@ -54,11 +54,11 @@
             <div class="row" [class.menuOpcDer]="s<100" *ngIf="s<100">
                 <!-- Botones -->
                 <div class="col m6 btnCont">
-                    <a href="#" class="botones">
+                    <a href="http://acceso.lans.mx:2024/" class="botones">
                        <img src="../../assets/ic_captura_ordenes.svg" class="ic-svg">CAPTURA DE ÓRDENES</a>
                 </div>
                 <div class="col m6 btnCont">
-                    <a href="#" class="botones">
+                    <a href="http://acceso.lans.mx:2026/" class="botones">
                        <img src="../../assets/ic_consulta_resultado.svg" class="ic-svg">CONSULTA DE RESULTADOS</a>
                 </div>
               </div>
@@ -82,7 +82,7 @@
 <ul class="side-nav" id="mobile-demo">
     <div class="centrar separador"><a href="#">Inicio</a></div>
     <div class="centrar separador"><a href="#anclaNosotros">Nosotros</a></div>
-    <div class="centrar separador"><a href="#anclaServicios">Servicio</a></div>
+    <div class="centrar separador"><a href="#anclaServicios">Especialidades</a></div>
     <div class="centrar separador"><a href="#anclaCalidad">Calidad</a></div>
     <div class="centrar separador"><a href="#anclaSocios">Socios</a></div>
     <div class="centrar separador"><a href="#anclaSistema">Sistema Laboratorio</a></div>
@@ -93,14 +93,14 @@
 <!-- Fixed Buttons -->
 <div *ngIf="s>100 && !small">
 <div>
-    <a (mouseenter)="show('captura')" (mouseleave)="hide('captura')" href="#" id="captura" class="botones">
+    <a (mouseenter)="show('captura')" (mouseleave)="hide('captura')" href="http://acceso.lans.mx:2024/" id="captura" class="botones">
        <img src="../../assets/ic_captura_ordenes.svg" class="ic-svg">
     </a>
     <p class="tooltip">Captura de Órdenes</p>
     
 </div>
 <div >
-    <a (mouseenter)="show('resultados')" (mouseleave)="hide('resultados')" href="#" id="resultados" class="botones">
+    <a (mouseenter)="show('resultados')" (mouseleave)="hide('resultados')" href="http://acceso.lans.mx:2026/" id="resultados" class="botones">
        <img src="../../assets/ic_consulta_resultado.svg" class="ic-svg">
     </a>
     <p class="tooltip" >Consulta de Resultados</p>

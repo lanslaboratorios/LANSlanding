@@ -16,8 +16,8 @@ export class RazonesComponent implements OnInit {
     this.carouselBanner = {
       grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
       slide: 1,
-      speed: 400,
-      interval: 4000,
+      speed: 1000,
+      interval: 6000,
       point: {
         visible: true,
         pointStyles: `

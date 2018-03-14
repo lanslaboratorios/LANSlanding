@@ -17,6 +17,21 @@
   padding: 20vh 0px 10vh 0px;
 }
 
+.circuloVisMis_fondo{
+  background-color: white;
+  width: 200px;
+  height: 200px;
+ border-radius: 150px;
+}
+
+.circuloVisMis_img{  
+  background-color: blue;
+  height: 300px;
+  width:  300px;
+  border-radius:  160px;
+
+}
+
 .tituloNosotros{
   color: #0075c9;
   font-weight: bold;

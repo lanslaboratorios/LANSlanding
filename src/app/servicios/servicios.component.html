@@ -1,25 +1,13 @@
-<div class="container separador" > <!--  MasterContainer -->
+<div class="container separador" id="anclaServicios"> <!--  MasterContainer -->
+  <h4  class="center titulo" style="color:#0075c9;"> Áreas de especialidad</h4>
   <!-- Titulo y Texto -->
-  <div class="row separador" id="anclaServicios">
-      
-      <div class="col m3 offset-m1 s12 titulo centrar" >SERVICIOS </div>
-      <div class="col  m7 s12 titulo centrar" style="color:#0075c9;">En LANS Laboratorios usted tiene a su alcance una 
+  <div class="row separador" >
+      <div class="col  m12 s12 texto" >En LANS Laboratorios usted tiene a su alcance una 
         amplia gama de pruebas y perfiles, cubriendo las siguientes áreas de
-         especialidad</div>
+         especialidad.</div>
 
   </div>
 
-  <!-- Sort -->
-  <div class="centrar">
-    <!-- Dropdown Trigger -->
-  <a class='dropdown-button btn' id="dropdown" href='#' data-activates='dropdown0'>Ordenar</a>
-
-  <!-- Dropdown Structure -->
-  <ul id='dropdown0' class='dropdown-content'>
-    <li (click)="sortBy(0)"><a href="#!">Alfabético</a></li>
-    <li (click)="sortBy(1)"><a href="#!">Precio</a></li>
-  </ul>
-  </div>
 
   <!-- Seccion de botones -->
   <!-- small -->
@@ -48,7 +36,7 @@
       <div class="row">
       <div class="col m5 offset-m6 s6 offset-s6">
         <h1  class="cardTitle">{{selectedArea}}</h1>
-        <p>{{Card[selectedArea].contenido}}</p>
+        <p>{{"Resumen"}}</p>
         <a  class="verMas  btn modal-trigger" href="#modals" [class.hoVerMas]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)">VER MAS</a>
       </div>
       </div>   

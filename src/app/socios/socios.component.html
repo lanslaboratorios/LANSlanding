@@ -4,7 +4,7 @@
 </div>
 <div class="bg">    <!-- Contenedor del BG -->
   <div class="container" id="anclaSocios">
-    <h1 class="titulo separador">NUESTROS SOCIOS</h1>
+    <h1 class="titulo separador">SOCIOS LANS</h1>
     <div class="row separador"> <!-- Texto -->
       <div class="col s12 m6 ">
         <p class="texto">
@@ -25,7 +25,7 @@
         </p>
       </div>
     </div>  <!-- fin texto -->
-    <h1 class="titulo separador">Al convencerse de ser parte de la #comunidadLans, nosotros respondemos con los siguientes beneficios:</h1>
+    <h1 class="titulo separador">Al convertirse en socio LANS, nosotros respondemos con los siguientes servicios:</h1>
     <div class="row separador">  <!-- Imagenes -->
       <div class="col s12 m4 " *ngFor="let beneficio of beneficios" (mouseenter)="activo(beneficio,true)" (mouseleave)="activo(beneficio,false)">
         <div class="col s12 m12 centrar" id="imageCont"><img id="img" [class.arriba]="(beneficio === hoveredArea && isHover)" [src]="beneficio.imagen" alt=""></div>
