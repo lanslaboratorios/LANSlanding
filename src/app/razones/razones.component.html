@@ -6,129 +6,282 @@
       [inputs]="carouselBanner"
       [moveToSlide]="1"
       (onMove)="onmoveFn($event)">
- 
-          <ngx-item NgxCarouselItem class="bannerStyle">
-            <div class="row pqlans__item">  
-              <div class="col m6 offset-m4 s10 offset-s1">
-                  <h1 class="pqlans__titulo">Contamos con 50 años de experiencia.</h1>
-                  <p>Estos 50 años en el mercado nos han dado la oportunidad de colaborar con laboratorios, clínicas y hospitales de diferentes tamaños a lo largo de toda la República Mexicana y de vivir la evolución del campo de la referencia. 
-                    Lo anterior nos ha permitido desarrollar las herramientas para detectar y entender sus distintas necesidades y proveerle soluciones que contribuyan a brindar un mejor servicio a sus pacientes. 
-                    </p>
-              </div>
-            </div>
-          </ngx-item>
- 
-          <ngx-item NgxCarouselItem class="bannerStyle">
-            <div class="row pqlans__item">
-              <div class="col m6 offset-m5 s10 offset-s1">
-                  <h1 class="pqlans__titulo">Somos una empresa 100% mexicana fundada por investigadores de primer nivel.</h1>
-                  <p>LANS fue fundado por el Dr. Enrique Tovar Zamora y la Dra. Laura Nieto Sierra, ambos investigadores del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán, con un enfoque orientado a la investigación y a la salud del paciente. 
-                    Este enfoque continúa en el ADN de LANS, lo demostramos siendo un respaldo técnico especializado que conoce y entiende los fundamentos del proceso y las necesidades del paciente.
-                    </p>
-              </div>
-            </div>
-          </ngx-item>
 
-          <ngx-item NgxCarouselItem class="bannerStyle">
-            <div class="row pqlans__item">
-              <div class="col m7 offset-m5 s10 offset-s1">
-                  <h1 class="pqlans__titulo">Nuestro control de calidad cumple con estándares internacionales.</h1>
+      <!-- 1) 50 anos de experiencia -->
+      <ngx-item NgxCarouselItem class="bannerStyle">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 push-s1 tarjetaRazones">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="tarjetaRazones_img">
+                    <div class="tarjetaRazones_img-cristal">
+                      <div class="tarjetaRazones_img-logo">
+                      </div><!-- logo -->
+                    </div><!-- cristal -->
+                  </div><!-- img -->
+                </div><!-- col s12 m5 -->
+                <div class="col s12 m7">
+                  <h4 class="tarjetaRazones_titulos">Contamos con 50 años de experiencia</h4>
+                  <p>Estos 50 años en el mercado nos han dado la oportunidad de colaborar con laboratorios, clínicas y hospitales de diferentes tamaños a lo largo de toda la República Mexicana y de vivir la evolución del campo de la referencia.
+                    Lo anterior nos ha permitido desarrollar las herramientas para detectar y entender sus distintas necesidades y proveerle soluciones que contribuyan a brindar un mejor servicio a sus pacientes.
+                  </p>
+                </div><!-- col s12 m7 -->
+              </div><!-- row > row -->
+            </div><!-- col s10 push-s1 tarjetaRazones -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </ngx-item>
+
+      <!-- 2) Empresa 100% mexicana -->
+      <ngx-item NgxCarouselItem class="bannerStyle">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 push-s1 tarjetaRazones">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="tarjetaRazones_img">
+                    <div class="tarjetaRazones_img-cristal">
+                      <div class="tarjetaRazones_img-logo">
+                      </div><!-- logo -->
+                    </div><!-- cristal -->
+                  </div><!-- img -->
+                </div><!-- col s12 m5 -->
+                <div class="col s12 m7">
+                  <h4 class="tarjetaRazones_titulos">Somos una empresa 100% mexicana fundada por investigadores de primer nivel</h4>
+                  <p>LANS fue fundado por el Dr. Enrique Tovar Zamora y la Dra. Laura Nieto Sierra, ambos investigadores del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán, con un enfoque orientado a la investigación y a la salud del paciente.
+                    Este enfoque continúa en el ADN de LANS, lo demostramos siendo un respaldo técnico especializado que conoce y entiende los fundamentos del proceso y las necesidades del paciente.
+                  </p>
+                </div><!-- col s12 m7 -->
+              </div><!-- row > row -->
+            </div><!-- col s10 push-s1 tarjetaRazones -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </ngx-item>
+
+      <!-- 3) Control de Calidad -->
+      <ngx-item NgxCarouselItem class="bannerStyle">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 push-s1 tarjetaRazones">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="tarjetaRazones_img">
+                    <div class="tarjetaRazones_img-cristal">
+                      <div class="tarjetaRazones_img-logo">
+                      </div><!-- logo -->
+                    </div><!-- cristal -->
+                  </div><!-- img -->
+                </div><!-- col s12 m5 -->
+                <div class="col s12 m7">
+                  <h4 class="tarjetaRazones_titulos">Nuestro control de calidad cumple con estándares internacionales</h4>
                   <p>
                     LANS es un Laboratorio acreditado que se regula por
-un Sistema de Gestión de la Calidad que excede los
-requisitos de la norma internacional ISO 15189:2012
-“Laboratorios Clínicos: Requisitos para la Calidad y la
-Competencia”.</p><p>
-Usted puede tener la tranquilidad que reconocemos
-la importancia que tiene la calidad de los resultados
-que emitimos y sabemos que es fundamental para lograr
-un diagnóstico correcto, por lo que somos transparentes
-con la información relacionada a nuestros controles
-de calidad y responderemos a todas sus inquietudes.
-                    </p>
-              </div>
-            </div>
-          </ngx-item>
-
-          <ngx-item NgxCarouselItem class="bannerStyle">
-            <div class="row pqlans__item">
-              <div class="col m6 offset-m5 s10 offset-s1">
-                  <h1 class="pqlans__titulo">Nuestro equipo de profesionales se encuentra comprometido al 100% con la calidad.</h1>
-                  <p>En LANS estamos convencidos que el equipo de trabajo representa el activo más importante del laboratorio.
-                    Gracias a su compromiso y empatía con la salud de los pacientes, estamos dispuestos a hacer lo necesario para la obtención de un resultado correcto y confiable.
-                    Para LANS, el paciente y su salud están por encima de todo.
-                    </p>
-              </div>
-            </div>
-          </ngx-item>
-
-          <ngx-item NgxCarouselItem class="bannerStyle">
-            <div class="row pqlans__item">
-              <div class="col m6 offset-m5 s10 offset-s1">
-                  <h1 class="pqlans__titulo">Somos un laboratorio exclusivamente de referencia.</h1>
-                  <p>LANS es su Socio en la atención de sus pacientes y trabaja en equipo con usted para brindarles el mejor diagnóstico. 
-                    Al trabajar con nosotros usted tiene acceso a una extensión de su laboratorio que puede visitar y monitorear y que le permite contar con una oferta más completa de estudios, sin incurrir en la inversión que ello conlleva.                    
+                    un Sistema de Gestión de la Calidad que excede los
+                    requisitos de la norma internacional ISO 15189:2012
+                    “Laboratorios Clínicos: Requisitos para la Calidad y la
+                    Competencia”.
                   </p>
-              </div>
-            </div>
-          </ngx-item>
+                  <p>
+                    Usted puede tener la tranquilidad que reconocemos
+                    la importancia que tiene la calidad de los resultados
+                    que emitimos y sabemos que es fundamental para lograr
+                    un diagnóstico correcto, por lo que somos transparentes
+                    con la información relacionada a nuestros controles
+                    de calidad y responderemos a todas sus inquietudes.
+                  </p>
+                </div><!-- col s12 m7 -->
+              </div><!-- row > row -->
+            </div><!-- col s10 push-s1 tarjetaRazones -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </ngx-item>
 
-          <ngx-item NgxCarouselItem class="bannerStyle">
-            <div class="row pqlans__item">
-              <div class="col m6 offset-m5 s10 offset-s1">
-                  <h1 class="pqlans__titulo">Brindamos apoyo a más de 1000 laboratorios en toda la República Mexicana.</h1>
+      <!-- 4) Equipo comprometido -->
+      <ngx-item NgxCarouselItem class="bannerStyle">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 push-s1 tarjetaRazones">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="tarjetaRazones_img">
+                    <div class="tarjetaRazones_img-cristal">
+                      <div class="tarjetaRazones_img-logo">
+                      </div><!-- logo -->
+                    </div><!-- cristal -->
+                  </div><!-- img -->
+                </div><!-- col s12 m5 -->
+                <div class="col s12 m7">
+                  <h4 class="tarjetaRazones_titulos">Nuestro equipo de profesionales se encuentra comprometido al 100% con la calidad</h4>
+                  <p>En LANS estamos convencidos que el equipo de trabajo representa el activo más importante del laboratorio.
+                  Gracias a su compromiso y empatía con la salud de los pacientes, estamos dispuestos a hacer lo necesario para la obtención de un resultado correcto y confiable.
+                  Para LANS, el paciente y su salud están por encima de todo.
+                  </p>
+                </div><!-- col s12 m7 -->
+              </div><!-- row > row -->
+            </div><!-- col s10 push-s1 tarjetaRazones -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </ngx-item>
+
+      <!-- 5) Exclusivamente Referencia -->
+      <ngx-item NgxCarouselItem class="bannerStyle">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 push-s1 tarjetaRazones">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="tarjetaRazones_img">
+                    <div class="tarjetaRazones_img-cristal">
+                      <div class="tarjetaRazones_img-logo">
+                      </div><!-- logo -->
+                    </div><!-- cristal -->
+                  </div><!-- img -->
+                </div><!-- col s12 m5 -->
+                <div class="col s12 m7">
+                  <h4 class="tarjetaRazones_titulos">Somos un laboratorio exclusivamente de referencia</h4>
+                  <p>LANS es su Socio en la atención de sus pacientes y trabaja en equipo con usted para brindarles el mejor diagnóstico.
+                    Al trabajar con nosotros usted tiene acceso a una extensión de su laboratorio que puede visitar y monitorear y que le permite contar con una oferta más completa de estudios, sin incurrir en la inversión que ello conlleva.
+                  </p>
+                </div><!-- col s12 m7 -->
+              </div><!-- row > row -->
+            </div><!-- col s10 push-s1 tarjetaRazones -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </ngx-item>
+
+      <!-- 6) Mas de 1,000 socios -->
+      <ngx-item NgxCarouselItem class="bannerStyle">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 push-s1 tarjetaRazones">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="tarjetaRazones_img">
+                    <div class="tarjetaRazones_img-cristal">
+                      <div class="tarjetaRazones_img-logo">
+                      </div><!-- logo -->
+                    </div><!-- cristal -->
+                  </div><!-- img -->
+                </div><!-- col s12 m5 -->
+                <div class="col s12 m7">
+                  <h4 class="tarjetaRazones_titulos">Brindamos apoyo a más de 1000 laboratorios en toda la República Mexicana</h4>
                   <p>LANS ha ganado la confianza de más de 1,000 laboratorios, clínicas y hospitales en toda la República Mexicana.
-                    Lo anterior nos ha permitido desarrollar la estructura logística, estabilidad y tamaño suficiente para hacer frente a las distintas necesidades del mercado. 
-                    </p>
-              </div>
-            </div>
-          </ngx-item>
+                    Lo anterior nos ha permitido desarrollar la estructura logística, estabilidad y tamaño suficiente para hacer frente a las distintas necesidades del mercado.
+                  </p>
+                </div><!-- col s12 m7 -->
+              </div><!-- row > row -->
+            </div><!-- col s10 push-s1 tarjetaRazones -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </ngx-item>
 
-          <ngx-item NgxCarouselItem class="bannerStyle">
-            <div class="row pqlans__item">
-              <div class="col m6 offset-m5 s10 offset-s1">
-                  <h1 class="pqlans__titulo">Crecemos a un ritmo constante pero controlado.</h1>
+      <!-- 7) Crecimiento constante -->
+      <ngx-item NgxCarouselItem class="bannerStyle">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 push-s1 tarjetaRazones">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="tarjetaRazones_img">
+                    <div class="tarjetaRazones_img-cristal">
+                      <div class="tarjetaRazones_img-logo">
+                      </div><!-- logo -->
+                    </div><!-- cristal -->
+                  </div><!-- img -->
+                </div><!-- col s12 m5 -->
+                <div class="col s12 m7">
+                  <h4 class="tarjetaRazones_titulos">Crecemos a un ritmo constante pero controlado</h4>
                   <p>LANS ha crecido constantemente gracias a la confianza que nuestros socios depositan en nosotros. Lo anterior nos ha permitido contar con una amplia gama de pruebas y con la capacidad instalada para atender sus necesidades.
                     Sabemos la responsabilidad que el crecimiento conlleva, por lo que nos comprometemos a mantener los altos niveles de atención para brindar un servicio personalizado a nuestros Socios.
-                    </p>
-              </div>
-            </div>
-          </ngx-item>
+                  </p>
+                </div><!-- col s12 m7 -->
+              </div><!-- row > row -->
+            </div><!-- col s10 push-s1 tarjetaRazones -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </ngx-item>
 
-          <ngx-item NgxCarouselItem class="bannerStyle">
-            <div class="row pqlans__item">
-              <div class="col m6 offset-m5 s10 offset-s1">
-                  <h1 class="pqlans__titulo">Nuestro servicio se caracteriza por ser personalizado y por buscar permanentemente la excelencia.</h1>
-                  <p>En LANS el modelo de servicio está orientado a entender las necesidades particulares de cada uno de nuestros Socios.  
+      <!-- 8) Servicio Personalizado -->
+      <ngx-item NgxCarouselItem class="bannerStyle">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 push-s1 tarjetaRazones">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="tarjetaRazones_img">
+                    <div class="tarjetaRazones_img-cristal">
+                      <div class="tarjetaRazones_img-logo">
+                      </div><!-- logo -->
+                    </div><!-- cristal -->
+                  </div><!-- img -->
+                </div><!-- col s12 m5 -->
+                <div class="col s12 m7">
+                  <h4 class="tarjetaRazones_titulos">Nuestro servicio se caracteriza por ser personalizado y por buscar permanentemente la excelencia</h4>
+                  <p>En LANS el modelo de servicio está orientado a entender las necesidades particulares de cada uno de nuestros Socios.
                     Sabemos que la búsqueda permanente de la excelencia representa un gran reto, por lo que nos esmeramos día con día en superar nuestros niveles de atención utilizando todos nuestros recursos y capacidades.
-                    </p>
-              </div>
-            </div>
-          </ngx-item>
+                  </p>
+                </div><!-- col s12 m7 -->
+              </div><!-- row > row -->
+            </div><!-- col s10 push-s1 tarjetaRazones -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </ngx-item>
 
-          <ngx-item NgxCarouselItem class="bannerStyle">
-            <div class="row pqlans__item">
-              <div class="col m6 offset-m5 s10 offset-s1">
-                  <h1 class="pqlans__titulo">Contamos con tecnología de punta.</h1>
+      <!-- 9) Tecnología de Punta -->
+      <ngx-item NgxCarouselItem class="bannerStyle">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 push-s1 tarjetaRazones">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="tarjetaRazones_img">
+                    <div class="tarjetaRazones_img-cristal">
+                      <div class="tarjetaRazones_img-logo">
+                      </div><!-- logo -->
+                    </div><!-- cristal -->
+                  </div><!-- img -->
+                </div><!-- col s12 m5 -->
+                <div class="col s12 m7">
+                  <h4 class="tarjetaRazones_titulos">Contamos con tecnología de punta</h4>
                   <p>En LANS mantenemos el enfoque en la innovación y mejora continua, por lo que seleccionamos tecnología de vanguardia.
                     Al trabajar con LANS, nuestros socios mantienen su gama de posibilidades a la vanguardia, en términos de equipos de proceso, plataformas y soluciones tecnológicas, entre otras.
                   </p>
-              </div>
-            </div>
-          </ngx-item>
+                </div><!-- col s12 m7 -->
+              </div><!-- row > row -->
+            </div><!-- col s10 push-s1 tarjetaRazones -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </ngx-item>
 
-          <ngx-item NgxCarouselItem class="bannerStyle">
-            <div class="row pqlans__item">
-              <div class="col m6 offset-m5 s10 offset-s1">
-                  <h1 class="pqlans__titulo">Nuestros precios son altamente competitivos.</h1>
+      <!-- 10) Precios Competitivos -->
+      <ngx-item NgxCarouselItem class="bannerStyle">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 push-s1 tarjetaRazones">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="tarjetaRazones_img">
+                    <div class="tarjetaRazones_img-cristal">
+                      <div class="tarjetaRazones_img-logo">
+                      </div><!-- logo -->
+                    </div><!-- cristal -->
+                  </div><!-- img -->
+                </div><!-- col s12 m5 -->
+                <div class="col s12 m7">
+                  <h4 class="tarjetaRazones_titulos">Nuestros precios son altamente competitivos</h4>
                   <p>Le ofrecemos todo lo anterior a precios altamente competitivos que le permitirán ofrecer a sus pacientes costos muy atractivos sin sacrificar la rentabilidad de su laboratorio.
-                    Nuestro objetivo más importante es brindarle la máxima calidad con los mejores tiempos de entrega con un servicio de excelencia.                    
-                    </p>  
-              </div>
-            </div>
-          </ngx-item>
+                    Nuestro objetivo más importante es brindarle la máxima calidad con los mejores tiempos de entrega con un servicio de excelencia.
+                  </p>
+                </div><!-- col s12 m7 -->
+              </div><!-- row > row -->
+            </div><!-- col s10 push-s1 tarjetaRazones -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </ngx-item>
 
-          <button NgxCarouselPrev class="leftCont "><i class="material-icons">chevron_left</i></button>
-          <button NgxCarouselNext class="rightCont"><i class="material-icons">chevron_right</i></button>
 
-    </ngx-carousel>
+      <button NgxCarouselPrev class="leftCont "><i class="material-icons">chevron_left</i></button>
+      <button NgxCarouselNext class="rightCont"><i class="material-icons">chevron_right</i></button>
+
+</ngx-carousel>
