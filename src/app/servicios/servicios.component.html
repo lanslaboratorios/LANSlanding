@@ -1,5 +1,5 @@
 <div class="container separador" id="anclaServicios"> <!--  MasterContainer -->
-  <h4  class="center titulo" style="color:#0075c9;"> Áreas de especialidad</h4>
+  <h4  class="center cardTitle" > Áreas de especialidad</h4>
   <!-- Titulo y Texto -->
   <div class="row separador" >
       <div class="col  m12 s12 texto" >En LANS Laboratorios usted tiene a su alcance una 
@@ -32,11 +32,11 @@
   <!-- Seccion de contenido -->
   <div class="row">
     <!-- Div con el background dinámico por área -->
-    <div class="are col s12" [ngStyle]="{'background-image': 'url(' + Card[selectedArea].img + ')'}">
+    <div class="are col s12" [ngStyle]="{'background-image': 'url(' + Card[selectedArea].bg + ')'}">
       <div class="row">
       <div class="col m5 offset-m6 s6 offset-s6">
         <h1  class="cardTitle">{{selectedArea}}</h1>
-        <p>{{"Resumen"}}</p>
+        <p>{{Card[selectedArea].parrafoPrincipal + "..."}}</p>
         <a  class="verMas  btn modal-trigger" href="#modals" [class.hoVerMas]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)">VER MAS</a>
       </div>
       </div>   
@@ -44,8 +44,23 @@
     <!-- Modal Dinámico -->
   <div id="modals" class="modal">
     <div class="modal-content">
-      <h4>{{selectedArea}}</h4>
-      <p>{{Card[selectedArea].contenido}}</p>
+      <!-- Titulo -->
+      <h3 class="center cardTitle">{{selectedArea}}</h3>
+       <!-- Contenido -->
+      <div class="row "> 
+        <div class="col m6 s6">
+          <p id="principal">
+              {{Card[selectedArea].parrafoPrincipal}}
+          </p>
+        </div>
+         <div class="col m6 s6 bg" [ngStyle]="{'background-image': 'url(' + Card[selectedArea].img + ')'}"> <!-- Imagen -->
+         
+         </div> 
+      <div class="col m12 s12"> <!--  Parrafos Scrolleables -->
+        <p>{{Card[selectedArea].parrafo2}}</p>
+        <p>{{Card[selectedArea].parrafo3}}</p>
+      </div>
+      </div>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close  btn-flat">OK</a>
