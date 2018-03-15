@@ -17,4 +17,12 @@ export class SliderComponent implements OnInit {
     $('.parallax').parallax();
   }
 
+  next() {
+    $('.carousel.carousel-slider').carousel('next');
+  }
+
+  prev() {
+    $('.carousel.carousel-slider').carousel('prev');
+  }
+
 }

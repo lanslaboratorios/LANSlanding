@@ -27,7 +27,7 @@ area: any;
       'img': '../../assets/servicios/lans_biologia_molecular.png',
       'parrafoPrincipal': 'Química Clínica es una de las áreas principales del laboratorio.' +
       'Se procesan estudios de rutina y especiales los cuales son de gran ayuda para el médico,' +
-      ' ya que con esto puede proporcionarle al paciente un buen diagnóstico, seguimiento y control de tratamiento,'+
+      ' ya que con esto puede proporcionarle al paciente un buen diagnóstico, seguimiento y control de tratamiento,' +
       ' así como también le es de utilidad para la prevención y la investigación de enfermedades.' +
       ' En el laboratorio clínico se realizan diversos estudios, entre los cuales tenemos: perfil de lípidos,' +
       ' perfil cardiaco, perfil renal, enzimas cardiacas, drogas de abuso, inmunoproteínas, etc.',
