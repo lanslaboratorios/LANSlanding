@@ -19,6 +19,8 @@ import { SistemaComponent } from './sistema/sistema.component';
 import { SistemaSmallComponent } from './sistema-small/sistema-small.component';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
+import { MenuPrincipalComponent } from './menu-principal/menu-principal.component';
+import { LaboratorioComponent } from './laboratorio/laboratorio.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import 'hammerjs';
     SociosComponent,
     ContactoComponent,
     SistemaComponent,
-    SistemaSmallComponent
+    SistemaSmallComponent,
+    MenuPrincipalComponent,
+    LaboratorioComponent
   ],
   imports: [
     BrowserModule,

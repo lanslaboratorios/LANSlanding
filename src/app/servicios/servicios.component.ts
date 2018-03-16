@@ -20,8 +20,8 @@ area: any;
   constructor( private dataShare: DataShareService) { }
 
   ngOnInit() {
-    this.areas = [ 'Biología Molecular', 'Química Clínica', 'Parasitología', 'Patología', 'Toxicología',
-                'Neonatología', 'Hematología', 'Uroanálisis', 'Inmunología', 'Inmunoquímica'];
+    this.areas = [ 'Biología Molecular', 'Química Clínica', 'Microbiología', 'Patología', 'Toxicología',
+                'Neonatología', 'Hematología', 'Inmunología', 'Inmunoquímica'];
     this.Card = {
       'Química Clínica': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/lans_biologia_molecular.png',
@@ -54,7 +54,7 @@ area: any;
       'y que apoya en el seguimiento y diagnóstico de enfermedades infeccionas como carga viral de ' +
       'CMV, HIV, HCV, Mycobacterium tuberculosis, Chlamydia trachomatis, Neisseria gonorrheae y detección de VPH de alto riesgo.',
     },
-      'Parasitología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
+      'Microbiología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '',
       'parrafoPrincipal':  '',
       'parrafo2': '',
@@ -106,12 +106,6 @@ area: any;
       'tromboplastina, Fibrinógeno y pruebas especializadas como Factores de la coagulación, ' +
       'Anticoagulante lúpico, Proteína S y C de la coagulación.',
     },
-      'Uroanálisis': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '',
-      'parrafoPrincipal': 'uro',
-      'parrafo2': '',
-      'parrafo3': '',
-    },
       'Inmunología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '',
       'parrafoPrincipal': 'El área de Inmunología/ ELISAS, es una de las áreas complementarias ' +
@@ -149,6 +143,10 @@ area: any;
     this.areas.sort();
     this.selectedArea = this.areas[0];
   }
+/*
+  Este bloque de código se comentó porque mostraba un error en el browser
+  preguntarle a Cristian para que habia puesto esta parte del codigo
+
 
   @HostListener('window:load', ['$event']) onPageLoad($event) {
     this.dataShare.updatePos('servicios', $('#anclaServicios').offset().top);
@@ -157,7 +155,7 @@ area: any;
   @HostListener('window:resize', ['$event']) onPageResize($event) {
     this.dataShare.updatePos('servicios', $('#anclaServicios').offset().top);
   }
-
+*/
   // Funcion para colorear selecciónado
   selected(item: any): void {
     this.selectedArea = item;

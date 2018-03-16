@@ -1,8 +1,8 @@
-<div class="container separador" id="anclaServicios"> <!--  MasterContainer -->
-  <h4  class="center cardTitle" > Áreas de especialidad</h4>
+<div class="container separador " > <!--  MasterContainer -->
+  <h4  class="center cardTitle " > Áreas de especialidad</h4>
   <!-- Titulo y Texto -->
   <div class="row separador" >
-      <div class="col  m12 s12 texto" >En LANS Laboratorios usted tiene a su alcance una 
+      <div class="col  m12 s12 texto scrollspy" id="anclaEspecialidades" >En LANS Laboratorios usted tiene a su alcance una
         amplia gama de pruebas y perfiles, cubriendo las siguientes áreas de
          especialidad.</div>
 
@@ -25,7 +25,7 @@
     <ul >
       <li *ngFor="let area of areas"
        class="btn_area"
-       [class.hovered]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)" 
+       [class.hovered]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)"
        [class.selected]="area === selectedArea" (click)="selected(area)">{{area}}</li>
     </ul>
   </div>
@@ -39,7 +39,7 @@
         <p>{{Card[selectedArea].parrafoPrincipal + "..."}}</p>
         <a  class="verMas  btn modal-trigger" href="#modals" [class.hoVerMas]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)">VER MAS</a>
       </div>
-      </div>   
+      </div>
     </div>
     <!-- Modal Dinámico -->
   <div id="modals" class="modal">
@@ -47,15 +47,15 @@
       <!-- Titulo -->
       <h3 class="center cardTitle">{{selectedArea}}</h3>
        <!-- Contenido -->
-      <div class="row "> 
+      <div class="row ">
         <div class="col m6 s6">
           <p id="principal">
               {{Card[selectedArea].parrafoPrincipal}}
           </p>
         </div>
          <div class="col m6 s6 bg" [ngStyle]="{'background-image': 'url(' + Card[selectedArea].img + ')'}"> <!-- Imagen -->
-         
-         </div> 
+
+         </div>
       <div class="col m12 s12"> <!--  Parrafos Scrolleables -->
         <p>{{Card[selectedArea].parrafo2}}</p>
         <p>{{Card[selectedArea].parrafo3}}</p>

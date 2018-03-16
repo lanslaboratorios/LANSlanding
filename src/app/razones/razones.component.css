@@ -43,6 +43,8 @@ button{
   font-size: 1.5rem;
   font-weight: 700;
   padding-bottom: 5vh;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /* On screens that are 600px or less -> */

@@ -1,8 +1,8 @@
-<div class="bg" id="anclaContacto"> <!-- Contenedor BG -->
+<div class="bg" > <!-- Contenedor BG -->
 <div class="container separador" > <!-- Contenedor contacto -->
   <div class="row" > <!-- Título y texto -->
     <div class="col s11 offset-s1" >
-        <h1 class="titulo">CONTACTO</h1>
+        <h1 class="titulo scrollspy" id="anclaContacto">CONTACTO</h1>
       <h2 class="titulo" style="color:#0075c9; text-align:center;">
         ¿CÓMO PODEMOS AYUDARLE?
      </h2>
@@ -30,7 +30,7 @@
                   (55) 6286 0280
               </p>
               <p class="contacto">
-                (55) 5594 6452  
+                (55) 5594 6452
               </p>
           </div>
         </div>
@@ -59,7 +59,7 @@
              <i class="material-icons prefix">store</i>
              <input id="lab" type="text" class="validate">
              <label for="lab">Laboratorio</label>
-          </div> 
+          </div>
           <div class="input-field col s12 contacto">
              <i class="material-icons prefix">account_circle</i>
              <input id="name" type="text" class="validate">
@@ -79,10 +79,10 @@
               <i class="material-icons prefix">comments</i>
               <textarea id="comments" class="materialize-textarea"></textarea>
               <label for="comments">Comentarios</label>
-            </div> 
+            </div>
             <div class="col s12 centrar">
               <input type="submit"  class="verMas" [class.hoVerMas]="isHover" (mouseenter)="activo(true)" (mouseleave)="activo(false)" value="Enviar">
-            </div>       
+            </div>
       </form>
     </div>
   </div>
