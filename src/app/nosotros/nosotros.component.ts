@@ -17,8 +17,8 @@ export class NosotrosComponent implements OnInit {
    @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
     const speed = 400;
     const s = $(document).scrollTop();
-    console.log(s);
-    console.log(this.invisible);
+    //console.log(s); // Impresion del scroll
+    //console.log(this.invisible); //impresion del elemento invisible
 
     if (s > 130 && s < 189 && !(this.invisible)) {
       this.invisible = true;

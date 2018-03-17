@@ -7,6 +7,7 @@ declare var $: any;
   templateUrl: './socios.component.html',
   styleUrls: ['./socios.component.css']
 })
+
 export class SociosComponent implements OnInit {
 
   beneficios: any[];
@@ -33,6 +34,8 @@ export class SociosComponent implements OnInit {
     {'imagen': '../assets/socios/integracion.png', 'texto': 'Diseño de Soluciones personalizadas'},
     {'imagen': '../assets/socios/reporte.png', 'texto': 'Asesoría clínica y técnica'}];
   }
+
+
   // Función para colorear on hover
   activo(item: any, flag: Boolean): void {
     this.hoveredArea = item;

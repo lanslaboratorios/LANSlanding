@@ -1,9 +1,3 @@
-#capitularE{
-  color: #0075c9;
-  font-size: 40px;
-  line-height: 10px;
-}
-
 .medicoCirculo{
   background-image: url("../../assets/nosotros/medico_circulo.jpg");
   background-position: center;
@@ -17,6 +11,21 @@
   padding: 20vh 0px 10vh 0px;
 }
 
+.nosotrosComillas{
+  color: #00bcd4 !important;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.nosotrosQuote{
+  color: #0075c9;
+  font-weight: 100;
+}
+
+.nosotrosSeparador{
+  padding: 200px 0;
+}
+
 .circuloVisMis_fondo{
   background-color: white;
   width: 200px;
@@ -24,7 +33,7 @@
  border-radius: 150px;
 }
 
-.circuloVisMis_img{  
+.circuloVisMis_img{
   background-color: blue;
   height: 300px;
   width:  300px;
@@ -46,4 +55,10 @@
   background-size: contain;
   width: 100%;
   height: 200px;
+}
+
+#capitularE{
+  color: #0075c9;
+  font-size: 40px;
+  line-height: 10px;
 }
