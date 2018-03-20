@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { DataShareService } from '../data-share.service';
+
 declare var $: any;
 
 @Component({
@@ -16,15 +16,7 @@ export class SociosComponent implements OnInit {
   isHover: Boolean;
 
 
-  constructor( private dataShare: DataShareService) { }
-
-  @HostListener('window:load', ['$event']) onPageLoad($event) {
-    this.dataShare.updatePos('socios', $('#anclaSocios').offset().top);
-  }
-
-  @HostListener('window:resize', ['$event']) onPageResize($event) {
-    this.dataShare.updatePos('socios', $('#anclaSocios').offset().top);
-  }
+  constructor() { }
 
   ngOnInit() {
     this.beneficios = [{'imagen': '../assets/socios/moduloweb.png', 'texto': 'Portal para captura de órdenes y consulta de resultados'},

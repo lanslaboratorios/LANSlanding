@@ -1,6 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { logWarnings } from 'protractor/built/driverProviders';
-import { DataShareService } from '../data-share.service';
 declare var $: any;
 
 @Component({
@@ -17,7 +16,7 @@ isHover: Boolean;
 Card: any;
 area: any;
 
-  constructor( private dataShare: DataShareService) { }
+  constructor( ) { }
 
   ngOnInit() {
     this.areas = [ 'Biología Molecular', 'Química Clínica', 'Microbiología', 'Patología', 'Toxicología',
@@ -143,19 +142,7 @@ area: any;
     this.areas.sort();
     this.selectedArea = this.areas[0];
   }
-/*
-  Este bloque de código se comentó porque mostraba un error en el browser
-  preguntarle a Cristian para que habia puesto esta parte del codigo
 
-
-  @HostListener('window:load', ['$event']) onPageLoad($event) {
-    this.dataShare.updatePos('servicios', $('#anclaServicios').offset().top);
-  }
-
-  @HostListener('window:resize', ['$event']) onPageResize($event) {
-    this.dataShare.updatePos('servicios', $('#anclaServicios').offset().top);
-  }
-*/
   // Funcion para colorear selecciónado
   selected(item: any): void {
     this.selectedArea = item;

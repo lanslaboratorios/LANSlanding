@@ -1,5 +1,4 @@
 import { Component, Input, OnInit, HostListener } from '@angular/core';
-import { DataShareService } from '../data-share.service';
 declare var $: any;
 
 @Component({
@@ -16,7 +15,7 @@ export class MenuNavegacionComponent implements OnInit {
   small: boolean;
   posiciones;
 
-  constructor(private dataShare: DataShareService) {
+  constructor() {
 
   }
 
@@ -33,8 +32,6 @@ export class MenuNavegacionComponent implements OnInit {
 
   ngOnInit() {
     this.s = $(document).scrollTop();
-    this.dataShare.posiciones$.subscribe( x => this.posiciones = x);
-    console.log(this.posiciones);
     if ( document.documentElement.clientWidth < 992) {
       this.small = true;
     }else {
