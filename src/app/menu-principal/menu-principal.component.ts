@@ -12,6 +12,14 @@ export class MenuPrincipalComponent implements OnInit {
 
   ngOnInit(){
     $('.scrollspy').scrollSpy();
+
+    $('#menuLateral').hide();
   }
+
+  aparecerMenu = function():void {
+    console.log("aparece Menu");
+  }
+
+  
 
 }

@@ -1,3 +1,18 @@
+.btnHamContainer{
+  position: fixed;
+  right: 0 !important;
+  margin-right: 5vw;
+  padding-left: 2.5vw;
+}
+
+.logoMenuLateral{
+  background-image: url("../../assets/logotipos/logo_menu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+}
+
 .menuLans{
   z-index: 1;
   position: fixed;
@@ -19,6 +34,47 @@
   border-radius: 100px;
   box-shadow: 5px 2px 9px rgba(0,0,0,0.1);
 }
+
+.menuMob{
+  background-color: white;
+  height: 100vh;
+  box-shadow: 4px -5px 4px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+}
+
+.menuMob li{
+  display: block;
+  float: none;
+  padding: 0.5px 0;
+}
+
+#botonHamburguesa{
+  display: none;
+}
+
+#menuHorizontal{
+  display: inherit;
+}
+
+#menuLateral{
+  display: none;
+}
+
+@media only screen and (max-width: 1064px) {
+
+  #botonHamburguesa{
+    display: inherit;
+  }
+
+  #menuHorizontal{
+    display: none;
+  }
+  #menuLateral{
+    display: inherit;
+  }
+}
+
 
 
 ul li{
