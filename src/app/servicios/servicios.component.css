@@ -71,6 +71,28 @@ height: 400px;
     font-size: 14.5px;
 }
 
+.btn-mod-close{
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    top: -50px;
+    left: -50px;
+    border-style: solid;
+    border-width: .5px;
+    border-color: rgba(200,200,200,0.4);
+}
+
+.btn-mod-close:hover {
+    box-shadow: 5px 2px 9px rgba(0,0,0,0.1);
+}
+
+.btn-mod-close:hover .ico-mod-close{
+    color: #0075c9;;
+}
+
 .cardTitle{
     font-weight: 700;
     font-family: "Ubuntu", sans-serif;
@@ -103,6 +125,14 @@ height: 400px;
    -webkit-box-shadow: 5px 5px 5px 2px #777;
     box-shadow: 5px 5px 6px 2px #777
 }
+
+.ico-mod-close{
+    bottom: 20px;
+    right: 20px;
+    position: absolute;
+    color: rgba(200,200,200,0.8);
+}
+
 
 .selected {
     background: #0075c9 !important;
