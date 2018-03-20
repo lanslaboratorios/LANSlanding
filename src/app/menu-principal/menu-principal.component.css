@@ -1,7 +1,7 @@
 .menuLans{
   z-index: 1;
   position: fixed;
-  bottom: 0px;
+  top: 0px;
   left: 0px;
   background-color: white;
 }
