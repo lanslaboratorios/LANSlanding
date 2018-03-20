@@ -1,10 +1,18 @@
+.contenedorImg{
+  background-color: #00bcd4;
+  height: 350px;
+  padding: 25px;
+  border-radius: 200px;
+}
+
 .medicoCirculo{
-  background-image: url("../../assets/nosotros/medico_circulo.jpg");
+  background-image: url("../../assets/nosotros/familia_circulo.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
-  height: 400px;
+  height: 300px;
+  border-radius: 170px;
 }
 
 .nosotrosContenedor{

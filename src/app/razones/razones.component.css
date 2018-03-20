@@ -6,6 +6,32 @@ p{
   font-size: 15px;
 }
 
+#imgApoyo{
+  background-image: url('../../assets/razones/servicio.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#imgEquipo{
+  background-image: url('../../assets/razones/pacientes_fondoCielo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#imgOrigen{
+  background-image: url('../../assets/razones/origen.jpg');
+}
+
+#imgReferencia{
+  background-image: url('../../assets/razones/manos_unidas.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .separadorRazones{
   padding: 100px 0 100px 0;
 }
