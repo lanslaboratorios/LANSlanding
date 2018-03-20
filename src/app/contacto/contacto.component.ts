@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { DataShareService } from '../data-share.service';
 declare var google: any, $: any;
 
 @Component({
@@ -14,15 +13,7 @@ export class ContactoComponent {
   lng: any= -99.15120350000001;
   zm: any= 15;
 
-  constructor( private dataShare: DataShareService) { }
-
-  @HostListener('window:load', ['$event']) onPageLoad($event) {
-    this.dataShare.updatePos('contacto', $('#anclaContacto').offset().top);
-  }
-  @HostListener('window:resize', ['$event']) onPageResize($event) {
-    this.dataShare.updatePos('contacto', $('#anclaContacto').offset().top);
-  }
-
+  constructor( ) { }
   activo(flag: Boolean): void {
     this.isHover = flag;
   }

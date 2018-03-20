@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { DataShareService } from '../data-share.service';
+
 declare var $: any;
 
 @Component({
@@ -10,15 +10,15 @@ declare var $: any;
 export class NosotrosComponent implements OnInit {
 
   invisible = false;
-  constructor( private dataShare: DataShareService) {
+  constructor() {
 
    }
 
    @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
     const speed = 400;
     const s = $(document).scrollTop();
-    //console.log(s); // Impresion del scroll
-    //console.log(this.invisible); //impresion del elemento invisible
+    // console.log(s); // Impresion del scroll
+    // console.log(this.invisible); //impresion del elemento invisible
 
     if (s > 130 && s < 189 && !(this.invisible)) {
       this.invisible = true;
@@ -38,14 +38,6 @@ export class NosotrosComponent implements OnInit {
     if (s > 890) {
       $('#logos').fadeIn(speed);
     }
-  }
-
-  @HostListener('window:load', ['$event']) onPageLoad($event) {
-    this.dataShare.updatePos('nosotros', $('#anclaNosotros').offset().top);
-  }
-
-  @HostListener('window:resize', ['$event']) onPageResize($event) {
-    this.dataShare.updatePos('nosotros', $('#anclaNosotros').offset().top);
   }
 
   ngOnInit() {

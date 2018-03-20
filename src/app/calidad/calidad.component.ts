@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import {DataShareService } from '../data-share.service';
 
 declare var  $: any;
 
@@ -10,14 +9,7 @@ declare var  $: any;
 })
 export class CalidadComponent implements OnInit {
 
-  constructor(private dataShare: DataShareService) { }
-  @HostListener('window:load', ['$event']) onPageLoad($event) {
-    this.dataShare.updatePos('calidad', $('#anclaCalidad').offset().top);
-  }
-
-  @HostListener('window:resize', ['$event']) onPageResize($event) {
-    this.dataShare.updatePos('calidad', $('#anclaCalidad').offset().top);
-  }
+  constructor() { }
   ngOnInit() {
     $('.modal').modal();
   }

@@ -36,7 +36,7 @@
       <div class="row">
       <div class="col m5 offset-m6 s6 offset-s6">
         <h1  class="cardTitle">{{selectedArea}}</h1>
-        <p>{{Card[selectedArea].parrafoPrincipal + "..."}}</p>
+        <p>{{Card[selectedArea].parrafoPrincipal.substring(0,280) + "..."}}</p>
         <a  class="verMas  btn modal-trigger" href="#modals" [class.hoVerMas]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)">VER MAS</a>
       </div>
       </div>

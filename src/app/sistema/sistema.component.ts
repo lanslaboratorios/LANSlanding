@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { DataShareService } from '../data-share.service';
 declare var $: any;
 
 @Component({
@@ -9,15 +8,23 @@ declare var $: any;
 })
 export class SistemaComponent implements OnInit {
 
-  constructor( private dataShare: DataShareService) { }
+  small: Boolean;
+  constructor( ) { }
 ngOnInit() {
+  if ( document.documentElement.clientWidth < 650) {
+    this.small = true;
+  }else {
+    this.small = false;
+  }
 }
 
-@HostListener('window:load', ['$event']) onPageLoad($event) {
-  this.dataShare.updatePos('sistema', $('#anclaSistema').offset().top);
-}
+
 
 @HostListener('window:resize', ['$event']) onPageResize($event) {
-  this.dataShare.updatePos('sistema', $('#anclaSistema').offset().top);
+  if ( document.documentElement.clientWidth < 650) {
+    this.small = true;
+  }else {
+    this.small = false;
+  }
 }
 }

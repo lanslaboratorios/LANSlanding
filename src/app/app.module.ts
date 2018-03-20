@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { DataShareService } from './data-share.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,11 +15,9 @@ import { CalidadComponent } from './calidad/calidad.component';
 import { SociosComponent } from './socios/socios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { SistemaComponent } from './sistema/sistema.component';
-import { SistemaSmallComponent } from './sistema-small/sistema-small.component';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 import { MenuPrincipalComponent } from './menu-principal/menu-principal.component';
-import { LaboratorioComponent } from './laboratorio/laboratorio.component';
 
 @NgModule({
   declarations: [
@@ -35,9 +32,7 @@ import { LaboratorioComponent } from './laboratorio/laboratorio.component';
     SociosComponent,
     ContactoComponent,
     SistemaComponent,
-    SistemaSmallComponent,
-    MenuPrincipalComponent,
-    LaboratorioComponent
+    MenuPrincipalComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +44,7 @@ import { LaboratorioComponent } from './laboratorio/laboratorio.component';
     ScrollToModule.forRoot()
 
   ],
-  providers: [DataShareService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

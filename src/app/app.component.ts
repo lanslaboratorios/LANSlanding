@@ -12,15 +12,15 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'app';
 
-  small=false;
+  small = false;
 
   constructor( ) {}
 
   ngOnInit() {
-    if( document.documentElement.clientWidth < 650){
-      this.small=true;
-    }else{
-      this.small=false;
+    if ( document.documentElement.clientWidth < 650) {
+      this.small = true;
+    }else {
+      this.small = false;
     }
   }
 }
