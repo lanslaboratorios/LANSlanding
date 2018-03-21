@@ -5,7 +5,6 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuNavegacionComponent } from './menu-navegacion/menu-navegacion.component';
 import { SliderComponent } from './slider/slider.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { LansFooterComponent } from './lans-footer/lans-footer.component';
@@ -22,7 +21,6 @@ import { MenuPrincipalComponent } from './menu-principal/menu-principal.componen
 @NgModule({
   declarations: [
     AppComponent,
-    MenuNavegacionComponent,
     SliderComponent,
     NosotrosComponent,
     LansFooterComponent,
