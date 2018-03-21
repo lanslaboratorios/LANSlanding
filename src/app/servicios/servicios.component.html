@@ -36,11 +36,7 @@
       <div class="row">
       <div class="col m5 offset-m6 s6 offset-s6">
         <h1  class="cardTitle">{{selectedArea}}</h1>
-<<<<<<< Updated upstream
-        <p>{{Card[selectedArea].parrafoPrincipal.substring(0,280) + "..."}}</p>
-=======
         <p>{{Card[selectedArea].parrafoPrincipal.substring(0,200) + "..."}}</p>
->>>>>>> Stashed changes
         <a  class="verMas  btn modal-trigger" href="#modals" [class.hoVerMas]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)">VER MAS</a>
       </div>
       </div>
