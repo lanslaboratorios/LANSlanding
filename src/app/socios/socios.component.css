@@ -130,3 +130,26 @@
 .separador{
     padding-top: 10vh;
 }
+
+.listaTexto p{
+    color:white;
+    font-size: 17px;
+}
+
+.listaNumeros{
+    text-align: center;
+    color: #0bdcf7;
+    border-style: solid;
+    border-radius: 50%;
+    width: 55px;
+    margin-left: 38%;
+}
+
+.centradoVertical{
+    padding-top: 10vh;
+}
+@media only screen and (max-width: 600px) {
+    .centradoVertical{
+        padding-top: 0vh;
+    }
+}

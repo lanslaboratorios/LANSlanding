@@ -17,7 +17,7 @@ export class MenuPrincipalComponent implements OnInit {
   }
 
   aparecerMenu = function():void {
-    console.log("aparece Menu");
+    $('#menuLateral').toggle();
   }
 
   
