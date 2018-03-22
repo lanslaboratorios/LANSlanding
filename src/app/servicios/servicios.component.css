@@ -16,6 +16,7 @@ p{
 
 #principal{
     text-align: left;
+    padding-top: 5vh;
 }
 
 #modals::-webkit-scrollbar-track
@@ -57,7 +58,7 @@ height: 400px;
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 370px;
+    height: 250px;
 }
 
 .btn_area{

@@ -62,6 +62,9 @@
       <div class="col m12 s12"> <!--  Parrafos Scrolleables -->
         <p>{{Card[selectedArea].parrafo2}}</p>
         <p>{{Card[selectedArea].parrafo3}}</p>
+        <ul>
+          <li *ngFor="let prueba of Card[selectedArea].pruebas"> - {{prueba}}</li>
+        </ul>
       </div>
       </div>
     </div>
