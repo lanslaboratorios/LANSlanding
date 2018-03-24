@@ -10,7 +10,7 @@
             </div>
           </div>
           <div class="col s1 btnHamContainer" id="btnHamMenu" (click)="aparecerMenu()">
-            <a href="#" id="botonHamburguesa"><i class="material-icons">menu</i></a>
+            <a href="#!" id="botonHamburguesa"><i class="material-icons">menu</i></a>
           </div>
           <div class="col m11" id="menuHorizontal">
             <ul>
@@ -21,7 +21,11 @@
               <li><a href="#anclaSocios">Socios</a></li>
               <li><a href="#anclaSistema">Nuestro Proceso</a></li>
               <li><a href="#anclaContacto">Contacto</a></li>
+<<<<<<< Updated upstream
               <li><a href="../../assets/Catalogo/Catalogo_LANS_2018.csv">Catálogo</a></li>
+=======
+              <li><a href="#!">Catálogo</a></li>
+>>>>>>> Stashed changes
             </ul>
           </div>
         </div><!-- row > row -->
@@ -31,19 +35,21 @@
 
 <!-- Menú mobil -->
     <div class="row" id="menuLateral">
-      <div class="menuMob col s7">
-        <div class="logoMenuLateral">
-        </div><!-- logoMenuLateral -->
-        <ul>
-          <li><a href="#anclaInicio">Inicio</a></li>
-          <li><a href="#anclaNosotros">Nosotros</a></li>
-          <li><a href="#anclaEspecialidades">Especialidades</a></li>
-          <li><a href="#anclaCalidad">Calidad</a></li>
-          <li><a href="#anclaSocios">Socios</a></li>
-          <li><a href="#anclaSistema">Nuestro Proceso</a></li>
-          <li><a href="#anclaContacto">Contacto</a></li>
-          <li><a href="#">Catálogo</a></li>
-        </ul>
+      <div class="menuMobComplemento col s3" id="menuCompl" (click)="desapareceMenu()">
       </div>
+      <div class="menuMob col s7" id="#menuLateral_opciones">
+        <div class="logoMenuLateral">
+          </div><!-- logoMenuLateral -->
+          <ul>
+            <li><a href="#anclaInicio">Inicio</a></li>
+            <li><a href="#anclaNosotros">Nosotros</a></li>
+            <li><a href="#anclaEspecialidades">Especialidades</a></li>
+            <li><a href="#anclaCalidad">Calidad</a></li>
+            <li><a href="#anclaSocios">Socios</a></li>
+            <li><a href="#anclaSistema">Nuestro Proceso</a></li>
+            <li><a href="#anclaContacto">Contacto</a></li>
+            <li><a href="#!">Catálogo</a></li>
+          </ul>
+      </div><!-- col s7 -->
     </div><!-- row -->
 </nav>

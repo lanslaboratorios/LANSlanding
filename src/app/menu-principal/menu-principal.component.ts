@@ -17,9 +17,11 @@ export class MenuPrincipalComponent implements OnInit {
   }
 
   aparecerMenu = function():void {
-    $('#menuLateral').toggle();
+    $('#menuLateral').fadeIn();
   }
 
-  
+  desapareceMenu = function():void{
+    $('#menuLateral').fadeOut();
+  }
 
 }

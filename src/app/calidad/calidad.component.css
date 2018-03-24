@@ -27,6 +27,11 @@
 	color: #fff;
 }
 
+
+.textoVertical{
+    padding-top: 15%;
+}
+
 .titulo{
     font-weight: 700;
     font-family: "Ubuntu", sans-serif;
@@ -38,5 +43,5 @@
 }
 
 .separador{
-        padding-top: 10vh;
+    padding: 70px 0;
 }

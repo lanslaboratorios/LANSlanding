@@ -8,31 +8,34 @@
     <div class="row separador"> <!-- Texto -->
       <div class="col s12 m6 ">
         <p class="texto centradoVertical">
-
          <span id="capitular">N</span>uestra cultura se encuentra 
-         completamente orientada al servicio y la atención, es 
-         por ello que hemos implementado el modelo <b>“Socio LANS”</b> 
-         que tiene como objetivo fortalecer el vínculo comercial a 
-         través de un mejor entendimiento de las necesidades de 
-         nuestros Socios, lo anterior nos ha permitido adaptarnos a 
-         la situación específica de cada uno y proponer alternativas 
-         que fomenten el desarrollo de su negocio.
-
+         completamente orientada al servicio y la atención, es por 
+         ello que hemos implementado el modelo <b>“Socio LANS”</b>, que tiene 
+         como objetivo fortalecer el vínculo comercial con nuestros 
+         Clientes (Socios) a través de un mejor entendimiento de sus 
+         necesidades. Lo anterior, nos permite adaptarnos a la situación 
+         específica de cada Socio y proponer alternativas que fomenten el 
+         desarrollo de su negocio.
         </p>
       </div>
       <div class="col s12 m6">
         <p class="texto">
-            Decidimos llamarle Socios a nuestros clientes, principalmente por dos razones:
+            Decidimos llamarle Socios a nuestros clientes, principalmente por tres razones:
         </p>
         <div class="listaTexto">
         <h3 class="listaNumeros">1</h3>
-        <p>Nuestra razón de ser son los pacientes y es junto con nuestros Socios que logramos llegar a ellos.</p>
+        <p>Trabajamos en equipo con nuestros socios para entregarle al paciente resultados
+          confiables y un excelente servicio.
+        </p>
         <h3 class="listaNumeros">2</h3>
-        <p>Nos interesan las relaciones personales y de largo plazo por lo que considerarnos Socios comerciales fomentará el crecimiento conjunto con un enfoque ganar-ganar.</p>
+        <p>Entendemos que solo si nuestros socios crecen, nosotros crecemos.
+        </p>
+        <h3 class="listaNumeros">3</h3>
+        <p>Creemos en las relaciones comerciales de largo plazo</p>
         </div>
       </div>
     </div>  <!-- fin texto -->
-    <h1 class="titulo separador">Al convertirse en socio LANS, nosotros respondemos con los siguientes servicios:</h1>
+    <h1 class="titulo separador">Al convertirse en nuestro Socio, usted y su laboratorio tienen acceso a diferentes beneficios, entre ellos:</h1>
     <div class="row separador">  <!-- Imagenes -->
       <div class="col s12 m4 " *ngFor="let beneficio of beneficios" (mouseenter)="activo(beneficio,true)" (mouseleave)="activo(beneficio,false)">
         <div class="col s12 m12 centrar" id="imageCont"><img id="img" [class.arriba]="(beneficio === hoveredArea && isHover)" [src]="beneficio.imagen" alt=""></div>

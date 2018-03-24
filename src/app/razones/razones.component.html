@@ -11,7 +11,33 @@
       [moveToSlide]="1"
       (onMove)="onmoveFn($event)">
 
-      <!-- 1) 50 anos de experiencia -->
+      <!-- 1) Empresa 100% mexicana -->
+      <ngx-item NgxCarouselItem class="bannerStyle">
+        <div class="container">
+          <div class="row">
+            <div class="col s10 push-s1 tarjetaRazones">
+              <div class="row">
+                <div class="col s12 m5">
+                  <div class="tarjetaRazones_img">
+                    <div class="tarjetaRazones_img-cristal">
+                      <div class="tarjetaRazones_img-logo">
+                      </div><!-- logo -->
+                    </div><!-- cristal -->
+                  </div><!-- img -->
+                </div><!-- col s12 m5 -->
+                <div class="col s12 m7">
+                  <h4 class="tarjetaRazones_titulos">Somos una empresa mexicana fundada por investigadores</h4>
+                  <p>LANS fue fundado por investigadores del Instituto Nacional de Nutrición (INCMNSZ), con un enfoque hacia la investigación y la salud del paciente.
+                      Este enfoque persiste en LANS y lo demostramos todos los días colocando al paciente y su salud por encima de todo.                      
+                  </p>
+                </div><!-- col s12 m7 -->
+              </div><!-- row > row -->
+            </div><!-- col s10 push-s1 tarjetaRazones -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </ngx-item>
+
+      <!-- 2) 50 anos de experiencia -->
       <ngx-item NgxCarouselItem class="bannerStyle">
         <div class="container">
           <div class="row">
@@ -27,34 +53,14 @@
                 </div><!-- col s12 m5 -->
                 <div class="col s12 m7">
                   <h4 class="tarjetaRazones_titulos">Contamos con 50 años de experiencia</h4>
-                  <p>Estos 50 años en el mercado nos han dado la oportunidad de colaborar con laboratorios, clínicas y hospitales de diferentes tamaños a lo largo de toda la República Mexicana y de vivir la evolución del campo de la referencia.
-                    Lo anterior nos ha permitido desarrollar las herramientas para detectar y entender sus distintas necesidades y proveerle soluciones que contribuyan a brindar un mejor servicio a sus pacientes.
+                  <p>
+                    Hemos tenido la oportunidad de colaborar
+                     con un gran número de laboratorios, clínicas y hospitales 
+                     y de participar en la evolución de nuestra industria.
                   </p>
-                </div><!-- col s12 m7 -->
-              </div><!-- row > row -->
-            </div><!-- col s10 push-s1 tarjetaRazones -->
-          </div><!-- row -->
-        </div><!-- container -->
-      </ngx-item>
-
-      <!-- 2) Empresa 100% mexicana -->
-      <ngx-item NgxCarouselItem class="bannerStyle">
-        <div class="container">
-          <div class="row">
-            <div class="col s10 push-s1 tarjetaRazones">
-              <div class="row">
-                <div class="col s12 m5">
-                  <div class="tarjetaRazones_img">
-                    <div class="tarjetaRazones_img-cristal">
-                      <div class="tarjetaRazones_img-logo">
-                      </div><!-- logo -->
-                    </div><!-- cristal -->
-                  </div><!-- img -->
-                </div><!-- col s12 m5 -->
-                <div class="col s12 m7">
-                  <h4 class="tarjetaRazones_titulos">Somos una empresa 100% mexicana fundada por investigadores de primer nivel</h4>
-                  <p>LANS fue fundado por el Dr. Enrique Tovar Zamora y la Dra. Laura Nieto Sierra, ambos investigadores del Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán, con un enfoque orientado a la investigación y a la salud del paciente.
-                    Este enfoque continúa en el ADN de LANS, lo demostramos siendo un respaldo técnico especializado que conoce y entiende los fundamentos del proceso y las necesidades del paciente.
+                  <p>
+                    Esto nos permite ofrecer una solución probada que se adapta a 
+                    las necesidades particulares de nuestros Socios.                    
                   </p>
                 </div><!-- col s12 m7 -->
               </div><!-- row > row -->
@@ -80,20 +86,14 @@
                 <div class="col s12 m7">
                   <h4 class="tarjetaRazones_titulos">Nuestro control de calidad cumple con estándares internacionales</h4>
                   <p>
-                    LANS es un Laboratorio acreditado que se regula por
-                    un Sistema de Gestión de la Calidad que excede los
-                    requisitos de la norma internacional ISO 15189:2012
-                    “Laboratorios Clínicos: Requisitos para la Calidad y la
-                    Competencia”.
+                      LANS se encuentra acreditado bajo la norma 
+                      internacional ISO 15189:2012 “Laboratorios Clínicos:
+                       Requisitos para la Calidad y la Competencia”.
                   </p>
                   <p>
-                    Usted puede tener la tranquilidad de que reconocemos
-                    la importancia que tiene la calidad de los resultados
-                    que emitimos y sabemos que esta es fundamental para lograr
-                    un diagnóstico correcto. Es por ello que somos transparentes
-                    con la información relacionada a nuestros controles
-                    de calidad y respondemos a todas las inquietudes de nuestros Socios
-                    y de los médicos con los que trabajan.
+                      Usted puede tener la tranquilidad de que todo 
+                      resultado emitido por LANS, ha sido sometido a un 
+                      estricto control de calidad.
                   </p>
                 </div><!-- col s12 m7 -->
               </div><!-- row > row -->
@@ -118,11 +118,12 @@
                 </div><!-- col s12 m5 -->
                 <div class="col s12 m7">
                   <h4 class="tarjetaRazones_titulos">Nuestro equipo de profesionales se encuentra comprometido al 100% con el paciente</h4>
-                  <p>En LANS estamos convencidos de que el equipo de
-                    trabajo representa el activo más importante del laboratorio.
-                  Gracias a su compromiso y empatía con la salud de los pacientes,
-                  estamos dispuestos a hacer lo necesario para la obtención de un resultado confiable y oportuno.
-                  Para LANS, el paciente y su salud están por encima de todo.
+                  <p>
+                      El compromiso de nuestro equipo de trabajo para con el 
+                      paciente y su salud, es la clave del Modelo de Servicio LANS. 
+                      Cada integrante de nuestro equipo hará siempre lo 
+                      necesario para obtener un resultado confiable y oportuno. 
+                      
                   </p>
                 </div><!-- col s12 m7 -->
               </div><!-- row > row -->
@@ -148,10 +149,12 @@
                 <div class="col s12 m7">
                   <h4 class="tarjetaRazones_titulos">Somos un laboratorio exclusivamente de referencia</h4>
                   <p>
-                    En LANS usted cuenta con un Socio que trabajará a su lado para brindar
-                    a sus pacientes el mejor diagnóstico y atención.
-                    Al trabajar con nosotros, nos convertimos en una extensión de su
-                    laboratorio, permitiéndole ofrecer a sus pacientes y médicos una amplia gama de estudios.
+                      En LANS usted cuenta con un Socio que trabajará a 
+                      su lado para brindar a sus pacientes el mejor 
+                      diagnóstico y atención. Al trabajar con nosotros, 
+                      nos convertimos en una extensión de su laboratorio, 
+                      permitiéndole ofrecer a sus pacientes y médicos una amplia 
+                      gama de estudios.
                   </p>
                 </div><!-- col s12 m7 -->
               </div><!-- row > row -->

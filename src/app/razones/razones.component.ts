@@ -16,8 +16,8 @@ export class RazonesComponent implements OnInit {
     this.carouselBanner = {
       grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
       slide: 1,
-      speed: 1000,
-      interval: 600000,
+      speed: 500,
+      interval: 500000,
       point: {
         visible: true,
         pointStyles: `
@@ -37,13 +37,13 @@ export class RazonesComponent implements OnInit {
           .ngxcarouselPoint li {
             display: inline-block;
             border-radius: 999px;
-            background: rgba(255, 255, 255, 0.55);
+            background: rgba(63, 81, 181, 0.3);
             padding: 5px;
             margin: 0 3px;
             transition: .4s ease all;
           }
           .ngxcarouselPoint li.active {
-              background: white;
+              background: #3F51B5;
               width: 10px;
           }
         `

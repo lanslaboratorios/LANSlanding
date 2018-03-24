@@ -58,7 +58,7 @@ p{
 }
 
 .tarjetaRazones_img-logo{
-  background-image: url('../../assets/logotipos/50anos.png');
+  /*background-image: url('../../assets/logotipos/50anos.png');*/
   height: 400px;
   background-repeat: no-repeat;
   background-position: center;
@@ -225,3 +225,4 @@ p{
   }
 
 }
+

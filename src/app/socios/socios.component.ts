@@ -20,11 +20,11 @@ export class SociosComponent implements OnInit {
 
   ngOnInit() {
     this.beneficios = [{'imagen': '../assets/socios/moduloweb.png', 'texto': 'Portal para captura de órdenes y consulta de resultados'},
-    {'imagen': '../assets/socios/apoyo.png', 'texto': 'Apoyo en campañas y proyectos especiales'},
-    {'imagen': '../assets/socios/credito.png', 'texto': 'Desarrollo de socios'},
-    {'imagen': '../assets/socios/descuento.png', 'texto': 'Mesa de atención a socios'},
-    {'imagen': '../assets/socios/integracion.png', 'texto': 'Diseño de Soluciones personalizadas'},
-    {'imagen': '../assets/socios/reporte.png', 'texto': 'Asesoría clínica y técnica'}];
+    {'imagen': '../assets/socios/apoyo.png', 'texto': 'Respaldo en campañas y proyectos especiales'},
+    {'imagen': '../assets/socios/ate.png', 'texto': 'Asesoría técnica y clínica'},
+    {'imagen': '../assets/socios/descuento.png', 'texto': 'Especialista en Desarrollo de Socios'},
+    {'imagen': '../assets/socios/integracion.png', 'texto': 'Reporte de resultados personalizados'},
+    {'imagen': '../assets/socios/reporte.png', 'texto': 'Diseño de perfiles a la medida'}];
   }
 
 
