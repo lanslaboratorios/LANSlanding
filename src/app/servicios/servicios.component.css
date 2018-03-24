@@ -16,7 +16,6 @@ p{
 
 #principal{
     text-align: left;
-    padding-top: 5vh;
 }
 
 #modals::-webkit-scrollbar-track
@@ -58,7 +57,7 @@ height: 400px;
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 250px;
+    height: 370px;
 }
 
 .btn_area{
@@ -137,9 +136,6 @@ margin:0 0 .5rem;
     color: #777;
 }
 
-.textoVertical{
-    padding-top: 10px;
-}
 
 .verMas{
     border: 0;
