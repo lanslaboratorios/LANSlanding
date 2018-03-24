@@ -68,6 +68,14 @@
     cursor: pointer;
 }
 
+.subtitulo{
+    color:white;
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 0 5vw 0 5vw ;
+    text-align: center;
+}
+
 .texto{
     font-weight: 400;
     line-height: 1.5;
@@ -75,9 +83,10 @@
     color: #fff;
     margin-top: 0;
     margin-bottom: 1rem;
-    font-family: "Roboto Condensed", sans-serif;
     font-size: 17px;
+    padding: 0 10vw;
 }
+
 
 .textoImg{
     font-size: 17px;
@@ -111,24 +120,28 @@
     text-align: center;
     }
 
-    #trans{
-        background-image: url("../../assets/bg_azul.jpg");
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-bottom: -1px;
-    }
-    
-    #transtop{
-        background-image: url("../../assets/bg_azul-arriba.jpg");
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-top: -1px;
-    }
+#trans{
+    background-image: url("../../assets/bg_azul.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: -1px;
+}
+
+#transtop{
+    background-image: url("../../assets/bg_azul-arriba.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -1px;
+}
 
 .separador{
-    padding-top: 10vh;
+    padding-top: 170px;
+}
+
+.separadorMedio{
+    padding-top: 70px;
 }
 
 .listaTexto p{
@@ -142,12 +155,12 @@
     border-style: solid;
     border-radius: 50%;
     width: 55px;
-    margin-left: 38%;
 }
 
 .centradoVertical{
     padding-top: 10vh;
 }
+
 @media only screen and (max-width: 600px) {
     .centradoVertical{
         padding-top: 0vh;

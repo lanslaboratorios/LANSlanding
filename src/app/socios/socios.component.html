@@ -5,8 +5,10 @@
 <div class="bg">    <!-- Contenedor del BG -->
   <div class="container">
     <h1 class="titulo separador scrollspy" id="anclaSocios">SOCIOS LANS</h1>
-    <div class="row separador"> <!-- Texto -->
-      <div class="col s12 m6 ">
+    
+    <!-- Row 1 -->
+    <div class="row"> <!-- Texto -->
+      <div class="col s12">
         <p class="texto centradoVertical">
          <span id="capitular">N</span>uestra cultura se encuentra 
          completamente orientada al servicio y la atención, es por 
@@ -18,23 +20,40 @@
          desarrollo de su negocio.
         </p>
       </div>
-      <div class="col s12 m6">
-        <p class="texto">
+    </div><!-- row 1-->
+
+    <!-- Row 2 -->
+    <div class="row">  
+      <div class="col s12">
+        <h3 class="subtitulo separadorMedio">
             Decidimos llamarle Socios a nuestros clientes, principalmente por tres razones:
-        </p>
+        </h3>
         <div class="listaTexto">
-        <h3 class="listaNumeros">1</h3>
-        <p>Trabajamos en equipo con nuestros socios para entregarle al paciente resultados
-          confiables y un excelente servicio.
-        </p>
-        <h3 class="listaNumeros">2</h3>
-        <p>Entendemos que solo si nuestros socios crecen, nosotros crecemos.
-        </p>
-        <h3 class="listaNumeros">3</h3>
-        <p>Creemos en las relaciones comerciales de largo plazo</p>
+          <!-- 1 -->
+          <div class="col s12 m4">
+            <h3 class="listaNumeros">1</h3>
+            <p>Trabajamos en equipo con nuestros socios para entregarle al paciente resultados
+              confiables y un excelente servicio.
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="col s12 m4">
+            <h3 class="listaNumeros">2</h3>
+            <p>Entendemos que solo si nuestros socios crecen, nosotros crecemos.
+            </p>  
+          </div>
+          <!-- 3 -->
+          <div class="col s12 m4">
+            <h3 class="listaNumeros">3</h3>
+            <p>Creemos en las relaciones comerciales de largo plazo</p>  
+          </div>
+          
+          
+          
         </div>
       </div>
-    </div>  <!-- fin texto -->
+    </div>  <!-- row 2-->
+
     <h1 class="titulo separador">Al convertirse en nuestro Socio, usted y su laboratorio tienen acceso a diferentes beneficios, entre ellos:</h1>
     <div class="row separador">  <!-- Imagenes -->
       <div class="col s12 m4 " *ngFor="let beneficio of beneficios" (mouseenter)="activo(beneficio,true)" (mouseleave)="activo(beneficio,false)">
