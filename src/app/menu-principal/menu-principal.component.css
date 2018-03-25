@@ -5,12 +5,47 @@
   padding-left: 2.5vw;
 }
 
+
+.containerLogoBefScroll{
+  background-image: url('../../assets/logo_lans_fondoBlanco.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 160px;
+  width: 160px;
+}
+
 .logoMenuLateral{
   background-image: url("../../assets/logotipos/logo_menu.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 100px;
+}
+
+.menuBefSchool{
+  background-color: rgba(255,255,255,0.0);
+  box-shadow: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menuBefSchool li a{
+  color:white;
+}
+
+.menuBefSchool li a:hover{
+  background-color: #0075c9;
+}
+
+.iconoCap{
+  background-image: url('../../assets/ic_captura_ordenes.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 20px;
 }
 
 .menuLans{

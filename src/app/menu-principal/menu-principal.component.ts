@@ -13,7 +13,25 @@ export class MenuPrincipalComponent implements OnInit {
   ngOnInit(){
     $('.scrollspy').scrollSpy();
 
-    $('#menuLateral').hide();
+    $('#menuAftScroll').hide();
+
+    this.scanScroll();
+
+  }
+
+  
+  scanScroll = function():void{
+    $(document).scroll(function(){
+      var y = $(window).scrollTop();
+
+      if(y > 200){
+        $('#menuBefScroll').fadeOut();
+        $('#menuAftScroll').slideDown('fast');
+      }else{
+        $('#menuBefScroll').fadeIn();
+        $('#menuAftScroll').slideUp('fast');
+      }
+    }); 
   }
 
   aparecerMenu = function():void {
