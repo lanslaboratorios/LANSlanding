@@ -187,14 +187,7 @@ p{
   border-radius: 15px;
 }
 
-.portadaSistema{
-  background-image: url('../../assets/portadaSistema.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width:150px;
-  height: 150px;
-}
+
 
 .pqlans__item {
   background: #fff url("../../assets/razones/porque_lans_uno.jpg") no-repeat -5% 50%;

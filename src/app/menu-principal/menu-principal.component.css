@@ -12,7 +12,7 @@
   right: 10px;
   z-index: 1;
   top: 75px;
-  background-color: linear-gradient(to right, red , yellow);
+  background-color: #00bcd4;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   border-radius: 50%;
 }
@@ -103,7 +103,7 @@
   height: 100px;
 }
 
-.menuBefSchool{
+.menuBefScroll{
   background-color: rgba(255,255,255,0.0);
   box-shadow: none;
   position: fixed;
@@ -112,12 +112,24 @@
   z-index: 1;
 }
 
-.menuBefSchool li a{
+.menuBefScroll li a{
   color:white;
 }
 
-.menuBefSchool li a:hover{
+.menuBefScroll li a:hover{
   background-color: #0075c9;
+}
+
+.menuBefScroll_btnEspecial{
+  background-color: rgba(0,117,201,0.4);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  margin: 0 10px;
+}
+
+.menuBefScroll_btnEspecial:hover{
+  background-color: #0075c9;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.0);
+  margin: 0 10px;
 }
 
 .iconoCap{

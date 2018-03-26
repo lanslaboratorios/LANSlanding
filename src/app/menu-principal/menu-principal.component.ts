@@ -58,14 +58,22 @@ export class MenuPrincipalComponent implements OnInit {
         $('#logoChico').fadeIn('fast');
 
         
-      }else if(y < 200 && $(window).width() > 1163){
+      }else if(y < 200 && $(window).width() > 1063){
         // Aparece Menu Grande
         $('#menuBefScroll').fadeIn();
         $('#menuAftScroll').slideUp('fast');
-        $('#logoChico').fadeOut('fast');   
-        
-        
+        $('#logoChico').fadeOut('fast');     
       }
+
+      if(y > 200 && $(window).width() > 1063){
+        $('#btnCaptura_img').show();
+        $('#btnResult_img').show();
+      }else{
+        $('#btnCaptura_img').hide();
+        $('#btnResult_img').hide();
+      }
+
+
     }); 
   }
 
@@ -87,10 +95,17 @@ export class MenuPrincipalComponent implements OnInit {
         $('#logoChico').fadeOut('fast');
       }
 
-      
+      if(x > 1063 && $(window).scrollTop() > 200){
+        $('#btnCaptura_img').show();
+        $('#btnResult_img').show();
+      }else{
+        $('#btnCaptura_img').hide();
+        $('#btnResult_img').hide();
+      }
 
     })
   }
+
 
   aparecerMenu = function():void {
     $('#menuLateral').fadeIn();
