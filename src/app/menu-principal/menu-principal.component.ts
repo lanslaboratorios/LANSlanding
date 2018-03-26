@@ -13,25 +13,83 @@ export class MenuPrincipalComponent implements OnInit {
   ngOnInit(){
     $('.scrollspy').scrollSpy();
 
+    
     $('#menuAftScroll').hide();
+    $('#logoChico').hide();
+    $('#menuLateral').hide();
+    $('#btnCaptura_txt').hide();
+    $('#btnResult_txt').hide();
+
+    $('#btnCaptura_img').hide();
+    $('#btnResult_img').hide();
+
+    
+    
+    
+
+    if($(window).width() < 1163){
+      $('#menuBefScroll').hide();
+      $('#menuAftScroll').show();
+      $('#logoChico').show();
+    }
+
+    
 
     this.scanScroll();
+    this.scanResize();
+    this.activarTxt('#btnCaptura_img','#btnCaptura_txt');
+    this.activarTxt('#btnResult_img','#btnResult_txt');
 
-  }
 
-  
+
+  } // ngOnInit() END
+
+
+  // === Metodos ===
+
   scanScroll = function():void{
     $(document).scroll(function(){
       var y = $(window).scrollTop();
 
       if(y > 200){
+        // Aparece Menu chico
         $('#menuBefScroll').fadeOut();
         $('#menuAftScroll').slideDown('fast');
-      }else{
+        $('#logoChico').fadeIn('fast');
+
+        
+      }else if(y < 200 && $(window).width() > 1163){
+        // Aparece Menu Grande
         $('#menuBefScroll').fadeIn();
         $('#menuAftScroll').slideUp('fast');
+        $('#logoChico').fadeOut('fast');   
+        
+        
       }
     }); 
+  }
+
+  scanResize = function():void{
+    $(window).resize(function(){
+      var x = $(window).width();
+
+      if(x < 1163){
+        // Aparece Menu chico
+        $('#menuBefScroll').fadeOut();
+        $('#menuAftScroll').slideDown('fast');
+        $('#logoChico').fadeIn('fast');
+
+        
+      }else if(x > 1163 && $(window).scrollTop() < 200){
+        // Aparece Menu grande
+        $('#menuBefScroll').fadeIn();
+        $('#menuAftScroll').slideUp('fast');
+        $('#logoChico').fadeOut('fast');
+      }
+
+      
+
+    })
   }
 
   aparecerMenu = function():void {
@@ -40,6 +98,16 @@ export class MenuPrincipalComponent implements OnInit {
 
   desapareceMenu = function():void{
     $('#menuLateral').fadeOut();
+  }
+
+  activarTxt= function(elemento:string,aparece:string):void{
+    $(elemento).mouseenter(function(){
+      $(aparece).fadeIn('fast');
+    });
+    $(elemento).mouseleave(function(){
+      $(aparece).fadeOut('fast');
+    });
+
   }
 
 }

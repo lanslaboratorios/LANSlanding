@@ -5,6 +5,80 @@
   padding-left: 2.5vw;
 }
 
+.btnCaptura{
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  right: 10px;
+  z-index: 1;
+  top: 75px;
+  background-color: #00bcd4;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.btnCaptura:hover{
+  background-color: #0075c9;
+}
+
+.btnCaptura_txt{
+  position: fixed;
+  right: 90px;
+  z-index: 1;
+  top: 80px;
+  color: #27e2fb;
+}
+
+
+#btnCaptura_img{
+  background-image: url('../../assets/ic_captura_ordenes.svg');
+  background-repeat: no-repeat;
+  background-size: 42px;
+  background-position: 17px;
+}
+
+.btnPortalesMenuMob li{
+  background-color: #0075c9;
+  border-style:solid;
+  border-color: white; 
+}
+
+.btnPortalesMenuMob li a{
+  text-align: center;
+  color:white;
+}
+
+.btnResult{
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  right: 10px;
+  z-index: 1;
+  top: 155px;
+  background-color: #00bcd4;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.btnResult:hover{
+  background-color: #0075c9;
+}
+
+.btnResult_txt{
+  position: fixed;
+  right: 90px;
+  z-index: 1;
+  top: 160px;
+  color: #27e2fb;
+}
+
+#btnResult_img{
+  background-image: url('../../assets/ic_consulta_resultado.svg');
+  background-repeat: no-repeat;
+  background-size: 42px;
+  background-position: 17px;
+}
+
 
 .containerLogoBefScroll{
   background-image: url('../../assets/logo_lans_fondoBlanco.jpg');
@@ -13,6 +87,12 @@
   background-size: contain;
   height: 160px;
   width: 160px;
+}
+
+.contOpcionesMob{
+  overflow: scroll;
+  height: 60vh;
+
 }
 
 .logoMenuLateral{

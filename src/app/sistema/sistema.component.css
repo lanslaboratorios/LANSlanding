@@ -1,3 +1,44 @@
+#control{
+    background-image: url('../../assets/sistema/svg_control.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 240px;
+}
+
+#recoleccion{
+    background-image: url('../../assets/sistema/svg_recoleccion_muestra.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+}
+
+#transporte{
+    background-image: url('../../assets/sistema/svg_recepccion_muestra.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 220px;  
+}
+
+#procesamiento{
+    background-image: url('../../assets/sistema/svg_procesamiento.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 220px;  
+}
+
+#validacion{
+    background-image: url('../../assets/sistema/svg_validacion.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 220px;  
+}
+
+
 .azul{
     color:#00add8 !important;
 }

@@ -137,6 +137,14 @@
     margin-top: -1px;
 }
 
+.portadaSistema{
+    background-image: url('../../assets/portadaSistema.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 330px;
+  }
+
 .separador{
     padding-top: 170px;
 }
