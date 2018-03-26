@@ -23,7 +23,7 @@ area: any;
                 'Neonatología', 'Hematología', 'Inmunología', 'Inmunoquímica'];
     this.Card = {
       'Biología Molecular': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '../../assets/servicios/lans_biologia_molecular.png',
+      'img': '../../assets/servicios/lans_biologia_molecularB.png',
       'parrafoPrincipal': 'El Diagnóstico Molecular ha revolucionado el diagnóstico clínico ' +
       'y es una de las áreas del laboratorio clínico con mayor crecimiento y desarrollo.',
       'parrafo2': 'Las nuevas tecnologías, rápidas y precisas, han hecho de esta área una ' +
@@ -39,7 +39,7 @@ area: any;
         ]
     },
       'Química Clínica': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '',
+      'img': '../../assets/servicios/quimicaclinica.png',
       'parrafoPrincipal':  'El área de Química Clínica integra las bases fundamentales de ' +
       'la química y la bioquímica relacionada con los mecanismos de la fisiología y la patología ' +
       'para evaluar los cambios que ocurren en el organismo.',
@@ -55,7 +55,7 @@ area: any;
         ]
     },
       'Microbiología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '',
+      'img': '../../assets/servicios/microbiologia.png',
       'parrafoPrincipal':  'Nuestro departamento de microbiología utiliza tecnología ' +
       'de colorimetría avanzada para identificación microbiana y cuenta con una amplia experiencia.',
       'parrafo2': '',
@@ -68,7 +68,7 @@ area: any;
         ]
     },
       'Patología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '',
+      'img': '../../assets/servicios/patologia.png',
       'parrafoPrincipal': 'El área de patología se encarga del correcto diagnóstico ' +
       'histológico y citológico por medio de morfología, inmunohistoquímica, inmunomarcadores de ' +
       'proliferación y mutaciones, entre otros  para definir las causas, desarrollo y pronóstico de las enfermedades. ',
@@ -82,7 +82,7 @@ area: any;
         ]
     },
       'Toxicología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '',
+      'img': '../../assets/servicios/toxicologia.png',
       'parrafoPrincipal': 'El área de Toxicología se encarga de la detección y monitoreo del ' +
       'consumo de drogas (terapéuticas o de abuso) y exposición a tóxicos industriales o ambientales. ' +
       'La orina es el espécimen más usado, el más efectivo para la determinación y para el que se dispone ' +
@@ -95,7 +95,7 @@ area: any;
       ]
     },
       'Neonatología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '',
+      'img': '../../assets/servicios/neonatologia.png',
       'parrafoPrincipal': 'El área de Neonatología se encarga del diagnóstico de las enfermedades ' +
       'del ser humano dentro de los primeros 28 días de vida.',
       'parrafo2': 'En LANS Laboratorios apoyamos este diagnóstico a través del Tamiz Metabólico Neonatal, ' +
@@ -109,7 +109,7 @@ area: any;
       ]
     },
       'Hematología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '',
+      'img': '../../assets/servicios/hematologia.png',
       'parrafoPrincipal': 'Dentro del área de Hematología se estudian los elementos formes de la ' +
       'sangre y sus precursores, así como de los trastornos estructurales y bioquímicos, que pueden ' +
       'conducir a una enfermedad.',
@@ -126,7 +126,7 @@ area: any;
       ]
     },
       'Inmunología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '',
+      'img': '../../assets/servicios/inmunologiaB.png',
       'parrafoPrincipal': 'Es la ciencia que estudia todos los aspectos del sistema inmunitario normal y ' +
       'patológico, e incluye las enfermedades en las que los mecanismos inmunitarios no actúan adecuadamente, ' +
       'bien sea por razones genéticas o adquiridas.',
@@ -152,7 +152,7 @@ area: any;
       ]
     },
       'Inmunoquímica': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '',
+      'img': '../../assets/servicios/inmunologia.png',
       'parrafoPrincipal': 'La Inmunoquímica la podemos definir como el estudio de la constitución ' +
       'química de los antígenos y de los anticuerpos, o como la parte de la química que estudia las ' +
       'reacciones de inmunidad antígeno-anticuerpo.',
