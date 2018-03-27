@@ -17,6 +17,10 @@ import { SistemaComponent } from './sistema/sistema.component';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 import { MenuPrincipalComponent } from './menu-principal/menu-principal.component';
+import { MainComponent } from './main/main.component';
+import { CatalogoComponent } from './catalogo/catalogo.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DbconnectService } from './dbconnect.service';
 
 @NgModule({
   declarations: [
@@ -30,11 +34,14 @@ import { MenuPrincipalComponent } from './menu-principal/menu-principal.componen
     SociosComponent,
     ContactoComponent,
     SistemaComponent,
-    MenuPrincipalComponent
+    MenuPrincipalComponent,
+    MainComponent,
+    CatalogoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBXrbsJBEde5VN5hMepzwvp_SLE288VhPo'
     }),
@@ -42,7 +49,7 @@ import { MenuPrincipalComponent } from './menu-principal/menu-principal.componen
     ScrollToModule.forRoot()
 
   ],
-  providers: [],
+  providers: [DbconnectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
