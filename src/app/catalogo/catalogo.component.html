@@ -3,8 +3,11 @@
 </p>
 <table>
   <tr>
-    <th *ngFor="let col of cols">
-      {{col}}
+    <th *ngFor="let head  of heads">
+      {{head.split('"').join('')}}
     </th>
+  </tr>
+  <tr *ngFor="let row  of rows">
+    <td *ngFor="let cell  of row">{{cell.split('"').join('')}}</td>
   </tr>
 </table>

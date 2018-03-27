@@ -10,10 +10,15 @@ import { DbconnectService } from '../dbconnect.service';
 export class CatalogoComponent implements OnInit {
 
   constructor( private connection: DbconnectService) { }
-
+  doc = [];
+  rows = [];
+  heads = [];
   parseTxt( texto) {
-    const rows = texto.split('\n');
-    //for(){}
+    this.doc = texto.split('\n');
+    this.heads = this.doc[0].split('\t');
+    for (let i = 1; i < this.doc.length - 1; i++ ) {
+       this.rows.push(this.doc[i].split('\t'));
+      }
   }
 
   ngOnInit() {
