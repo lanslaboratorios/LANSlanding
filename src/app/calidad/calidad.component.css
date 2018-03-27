@@ -1,3 +1,60 @@
+#ema{
+    background-image: url('../../assets/calidad/ema-mockup.jpg');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 60vh;
+}
+
+#cenam{
+    background-image: url('../../assets/calidad/cenam-mockup.jpg');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 60vh;
+}
+
+#eqas{
+    background-image: url('../../assets/calidad/eqas-mockup.jpg');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 60vh;
+}
+
+#qualitat{
+    background-image: url('../../assets/calidad/qualitat-mockup.jpg');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 60vh;
+}
+
+#licon{
+    background-image: url('../../assets/calidad/licon-mockup.jpg');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 60vh;
+}
+
+#pacal{
+    background-image: url('../../assets/calidad/pacal-mockup.jpg');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 60vh;
+}
+
+#unity{
+    background-image: url('../../assets/calidad/unity.jpg');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 60vh;
+}
+
+
 .centrar{
     text-align: center;
     align-items: center;
@@ -44,4 +101,33 @@
 
 .separador{
     padding: 20px 0 70px 0;
+}
+
+.subtitulo{
+    font-size: 33px;
+    font-weight: 100;
+    color: #00BCD4; 
+}
+
+.listaCertificados {
+    border-style: solid;
+    border-radius: 22px;
+    width: 300px !important;
+    border-color: #2196F3;
+    margin-left: 5vw !important;
+}
+
+.listaCertificados li{
+    text-align: center;
+}
+
+.listaCertificados li a{
+    font-size: 20px;
+    color: #002f87;
+
+}
+
+.listaCertificados li a:hover{
+    font-size: 20px;
+    color: #00BCD4;
 }

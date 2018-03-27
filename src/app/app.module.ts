@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
@@ -45,4 +45,7 @@ import { MenuPrincipalComponent } from './menu-principal/menu-principal.componen
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+
+}

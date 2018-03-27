@@ -68,7 +68,7 @@ area: any;
         ]
     },
       'Patología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '../../assets/servicios/patologia.png',
+      'img': '../../assets/servicios/patologiaB.png',
       'parrafoPrincipal': 'El área de patología se encarga del correcto diagnóstico ' +
       'histológico y citológico por medio de morfología, inmunohistoquímica, inmunomarcadores de ' +
       'proliferación y mutaciones, entre otros  para definir las causas, desarrollo y pronóstico de las enfermedades. ',
@@ -109,7 +109,7 @@ area: any;
       ]
     },
       'Hematología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '../../assets/servicios/hematologia.png',
+      'img': '../../assets/servicios/inmunologiaB.png',
       'parrafoPrincipal': 'Dentro del área de Hematología se estudian los elementos formes de la ' +
       'sangre y sus precursores, así como de los trastornos estructurales y bioquímicos, que pueden ' +
       'conducir a una enfermedad.',
@@ -126,7 +126,7 @@ area: any;
       ]
     },
       'Inmunología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '../../assets/servicios/inmunologiaB.png',
+      'img': '../../assets/servicios/inmunologia.png',
       'parrafoPrincipal': 'Es la ciencia que estudia todos los aspectos del sistema inmunitario normal y ' +
       'patológico, e incluye las enfermedades en las que los mecanismos inmunitarios no actúan adecuadamente, ' +
       'bien sea por razones genéticas o adquiridas.',
@@ -152,7 +152,7 @@ area: any;
       ]
     },
       'Inmunoquímica': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '../../assets/servicios/inmunologia.png',
+      'img': '../../assets/servicios/hematologia.png',
       'parrafoPrincipal': 'La Inmunoquímica la podemos definir como el estudio de la constitución ' +
       'química de los antígenos y de los anticuerpos, o como la parte de la química que estudia las ' +
       'reacciones de inmunidad antígeno-anticuerpo.',

@@ -43,6 +43,10 @@
     color:#00add8 !important;
 }
 
+a{
+    font-weight: bolder;
+}
+
 .centrar{
     text-align: center;
     align-items: center;

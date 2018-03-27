@@ -69,6 +69,25 @@
     cursor: pointer;
 }
 
+.socioscontenedor_fondo{
+    background-color: #0bdcf7;
+    height: 370px;
+    width: 370px !important;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 30px 30px;
+}
+
+.socioscontenedor_img{
+    background-image: url('../../assets/socios/masB.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 308px;
+    width: 308px !important;
+    border-radius: 50%;
+}
+
 .subtitulo{
     color:white;
     font-size: 30px;
@@ -84,8 +103,8 @@
     color: #fff;
     margin-top: 0;
     margin-bottom: 1rem;
-    font-size: 17px;
-    padding: 0 10vw;
+    font-size: 19px;
+    padding: 10px 10px;
 }
 
 
@@ -138,7 +157,7 @@
 }
 
 .portadaSistema{
-    background-image: url('../../assets/portadaSistema.png');
+    background-image: url('../../assets/sistema/portadaSistemaLogo.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -153,9 +172,14 @@
     padding-top: 70px;
 }
 
+.containerNumero{
+    padding: 0 96px;
+}
+
 .listaTexto p{
     color:white;
-    font-size: 17px;
+    font-size: 19px;
+    font-weight: 100;
 }
 
 .listaNumeros{
@@ -163,7 +187,11 @@
     color: #0bdcf7;
     border-style: solid;
     border-radius: 50%;
-    width: 55px;
+    /* width: 55px; */
+}
+
+.listaNumeros_par{
+    text-align: center;
 }
 
 .centradoVertical{
