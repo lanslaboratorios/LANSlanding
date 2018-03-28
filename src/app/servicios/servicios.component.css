@@ -90,6 +90,15 @@ height: 400px;
     overflow-x: hidden !important;
     overflow-y: hidden !important;
 }
+.contImg{
+    max-width: 325px;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+    shape-outside: circle();
+    padding: 10px;
+
+}
 
 .hovered {
     background: #0075c9 !important;

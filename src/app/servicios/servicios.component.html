@@ -51,23 +51,44 @@
       <h3 class="center cardTitle">{{selectedArea}}</h3>
        <!-- Contenido -->
       <div class="row ">
-        <div class="col m6 s6">
-          <p id="principal">
+                  <!-- Container -->
+          <div class="col m12 s12">
+            <img class="contImg" [src]="Card[selectedArea].img" alt="">
+            <p>
               {{Card[selectedArea].parrafoPrincipal}}
-          </p>
-        </div>
-        <div class="col m6 s6 bg" [ngStyle]="{'background-image': 'url(' + Card[selectedArea].img + ')'}"> <!-- Imagen -->
-        </div>
-        <div class="col m12 s12"> <!--  Parrafos Scrolleables -->
-          <p>{{Card[selectedArea].parrafo2}}</p>
-          <p>{{Card[selectedArea].parrafo3}}</p>
+              <br>
+              {{Card[selectedArea].parrafo2}}
+              <br>
+              {{Card[selectedArea].parrafo3}}
+            </p>
+            <div class="row"> <!-- Listas --> 
+              <div class="col s4 m4">
+                  <span> <strong>{{Card[selectedArea].titulo}}</strong></span>
+                <ul>
+                  <li *ngFor="let prueba of Card[selectedArea].pruebas">-{{prueba}}</li>
+                </ul>
+              </div>
+              <div class="col s4 m4">
+                  <span> <strong>{{Card[selectedArea].titulo1}}</strong></span>
+                <ul>
+                  <li *ngFor="let prueba of Card[selectedArea].pruebas1">-{{prueba}}</li>
+                </ul>
+              </div>
+              <div class="col s4 m4">
+                  <span><strong>{{Card[selectedArea].titulo2}}</strong></span>
+                <ul>
+                  <li *ngFor="let prueba of Card[selectedArea].pruebas2">-{{prueba}}</li>
+                </ul>
+              </div>
+            </div> <!--/row-->
+          </div>
+            <!-- /Container -->
         </div>
       </div>
     </div>
     <!-- <div class="modal-footer">
       <a href="#!" class="modal-action modal-close  btn-flat"><i class="material-icons">clear</i></a>
     </div> -->
-  </div>
   </div>
   <div class="separador"></div>
 </div>

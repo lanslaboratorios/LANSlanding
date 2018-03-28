@@ -20,7 +20,7 @@ area: any;
 
   ngOnInit() {
     this.areas = [ 'Biología Molecular', 'Química Clínica', 'Microbiología', 'Patología', 'Toxicología',
-                'Neonatología', 'Hematología', 'Inmunología', 'Inmunoquímica'];
+                'Neonatología', 'Hematología', 'Inmunología', 'Inmunoquímica','Citometría de flujo'];
     this.Card = {
       'Biología Molecular': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/lans_biologia_molecularB.png',
@@ -36,7 +36,31 @@ area: any;
         'Detección de VPH de alto riesgo',
         'Detección Mycobacterium Tuberculosis',
         'Detección de Chlamydia Trachomatis'
-        ]
+        ],
+        'pruebas1' : [],
+        'pruebas2' : [],
+        'titulo' : '',
+        'titulo1' : '',
+        'titulo2' : ''
+    },
+    'Citometría de flujo': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
+      'img': '../../assets/servicios/lans_biologia_molecularB.png',
+      'parrafoPrincipal': 'La Citometría de flujo es una técnica que permite realizarun ' +
+      'análisis celular multiparamétrico de forma rápida, sensible y específica, lo que la ' +
+      'hace tener una relación estrecha conlas áreas de inmunología y biología molecular. ',
+      'parrafo2': 'Algunas de las pruebas que procesamos en esta área son:',
+      'parrafo3': '',
+      'pruebas' : ['Subpoblaciones linfocitarias',
+        'Antígeno de compatibilidad HLA B-27',
+        'Electroforésis de proteínas',
+        'Electroforésis de hemoglbina',
+        'Inmunofenotipo'
+        ],
+        'pruebas1' : [],
+        'pruebas2' : [],
+        'titulo' : '',
+        'titulo1' : '',
+        'titulo2' : ''
     },
       'Química Clínica': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/quimicaclinica.png',
@@ -52,7 +76,12 @@ area: any;
         'Colinesterasa',
         'Apolipoproteínas A1 y B',
         'Cistatina C'
-        ]
+        ],
+        'pruebas1' : [],
+        'pruebas2' : [],
+        'titulo' : '',
+        'titulo1' : '',
+        'titulo2' : ''
     },
       'Microbiología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/microbiologiaB.png',
@@ -62,24 +91,32 @@ area: any;
       'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Mycoplasma Hominis',
         'Ureaplasma Urealyticum',
-        'Hemocultivos',
-        'Quantiferón',
-        'Prueba de VIH 4ta generación'
-        ]
+        'Hemocultivos'
+        ],
+        'pruebas1' : [],
+        'pruebas2' : [],
+        'titulo' : '',
+        'titulo1' : '',
+        'titulo2' : ''
     },
       'Patología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/patologiaB.png',
       'parrafoPrincipal': 'El área de patología se encarga del correcto diagnóstico ' +
       'histológico y citológico por medio de morfología, inmunohistoquímica, inmunomarcadores de ' +
       'proliferación y mutaciones, entre otros  para definir las causas, desarrollo y pronóstico de las enfermedades. ',
-      'parrafo2': '',
-      'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
+      'parrafo3': '',
+      'parrafo2': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Citología Cérvico-Vaginal (Papanicolaou)',
         'Papanicolaou Cérvico-Vaginal en Base Líquida',
         'Papanicolaou de Líquidos Biológicos Diversos',
-        'Detección de HER2, KRAS',
+        'Detección de HER2',
         'Citología por Aspiración con Aguja Fina'
-        ]
+        ],
+        'pruebas1' : [],
+        'pruebas2' : [],
+        'titulo' : '',
+        'titulo1' : '',
+        'titulo2' : ''
     },
       'Toxicología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/toxicologia.png',
@@ -87,12 +124,16 @@ area: any;
       'consumo de drogas (terapéuticas o de abuso) y exposición a tóxicos industriales o ambientales. ' +
       'La orina es el espécimen más usado, el más efectivo para la determinación y para el que se dispone ' +
       'de numerosas técnicas.',
-      'parrafo2': '',
-      'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
+      'parrafo3': '',
+      'parrafo2': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Anfetaminas', 'Benzodiacepinas', 'Canabinoides (THC)', 'Cocaína', 'Morfina (Opiáceos)',
-        'Barbituratos', 'Ciclosporina', 'Tacrolimus', 'Sirolimus', 'Everolimus',
-        'Plomo', 'Aluminio', 'Zinc', 'Cadmio', 'Manganes'
-      ]
+        'Barbituratos'     
+      ],
+      'pruebas1' : ['Ciclosporina', 'Tacrolimus', 'Sirolimus', 'Everolimus'],
+      'pruebas2' : ['Plomo', 'Aluminio', 'Zinc', 'Cadmio', 'Manganes'],
+      'titulo' : 'Drogas de abuso: ',
+      'titulo1' : 'Drogas terapéuticas:',
+      'titulo2' : 'Metales: '
     },
       'Neonatología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/neonatologia.png',
@@ -106,7 +147,12 @@ area: any;
       'galactosemia', 'aminoacidopatías (fenilcetonuria (PKU), tirosinemia hereditaria, enfermedad de jarabe de maple, etc.)',
       'acidemias orgánicas', 'transtornos en la oxidación de ácidos grasos',
       'hemoglobinopatías (hemoglobinas anormales)'
-      ]
+      ],
+      'pruebas1' : [],
+      'pruebas2' : [],
+      'titulo' : '',
+      'titulo1' : '',
+      'titulo2' : ''
     },
       'Hematología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/inmunologiaB.png',
@@ -123,7 +169,12 @@ area: any;
         'Proteína S de la coagulación',
         'Proteína S de la coagulación',
         'Factor V de Leiden'
-      ]
+      ],
+      'pruebas1' : [],
+      'pruebas2' : [],
+      'titulo' : '',
+      'titulo1' : '',
+      'titulo2' : ''
     },
       'Inmunología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/inmunologia.png',
@@ -141,15 +192,19 @@ area: any;
         'Ac. Anti-Citoplasma de Neutrófilos Perinucleares (p-ANCA)',
         'Ac. Anti-Fosfolípidos IgG',
         'Ac. Anti-Fosfolípidos IgM',
-        'Ac. Anti-Smith',
-        'Hormona Anti-Mulleriana',
-        'Ac. Anti-Treponema pallidum (FTA-ABS)',
-        'Ac. Anti-Nucleares (ANA)',
-        'Ac. Anti-Músculo Liso',
-        'Anticuerpos Anti-DNA Nativo Cuantitativo',
-        'Ac. Anti-Centrómero',
-        'Ac. Anti-Mitocondriales'
-      ]
+        'Ac. Anti-Smith'
+      ],
+      'pruebas1' : ['Hormona Anti-Mulleriana',
+      'Ac. Anti-Treponema pallidum (FTA-ABS)',
+      'Ac. Anti-Nucleares (ANA)',
+      'Ac. Anti-Músculo Liso',
+      'Anticuerpos Anti-DNA Nativo Cuantitativo',
+      'Ac. Anti-Centrómero',
+      'Ac. Anti-Mitocondriales'],
+      'pruebas2' : [],
+      'titulo' : '',
+      'titulo1' : 'Por Inmunofluorescencia Indirecta: ',
+      'titulo2' : ''
     },
       'Inmunoquímica': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/hematologia.png',
@@ -160,14 +215,20 @@ area: any;
       'por ser automatizada y utilizar metodologías que ofrecen una mayor sensibilidad y especificidad.',
       'parrafo3': 'Contamos con plataformas analíticas de última generación que utilizan la metodología ' +
       'de quimioluminiscencia para la determinación de estudios como: ',
-      'pruebas' : ['Antígeno Cyfra 21',
-      'Ca 15-3',
-      'Ca 125',
-      'TORCH',
+      'pruebas' : [
       'Panel de Hepatitis',
       'Vitamina D',
       'Tiroideos'
-      ]
+      ],
+      'pruebas1' : ['Antígeno Cyfra 21',
+      'Ca 15-3',
+      'Ca 125'],
+      'pruebas2' : ['TORCH', 
+      'Panel de Hepatitis', 
+      'VIH 1 y 2 ( Antígeno p24)'],
+      'titulo' : '',
+      'titulo1' : 'Marcadores tumorales: ',
+      'titulo2' : 'Pruebas infecciosas: '
     }
     };
     this.areas.sort();
