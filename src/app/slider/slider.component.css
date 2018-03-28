@@ -86,8 +86,8 @@
 }
 
 .colorFondo h2{
-  font-size: 35px;
-  line-height: 42px;
+  font-size: 8vh;
+  line-height: 9vh;
 }
 
 .colorFondo_texto{
@@ -118,4 +118,9 @@
   font-size: 32px;
   font-weight: lighter;
   border-radius: 35px;
+}
+
+.tituloSlideB{
+  font-size: 6vh !important;
+  line-height: 7vh !important;
 }
