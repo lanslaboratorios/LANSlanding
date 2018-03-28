@@ -182,13 +182,28 @@
     font-weight: 100;
 }
 
-.listaNumeros{
-    text-align: center;
-    color: #0bdcf7;
-    border-style: solid;
-    border-radius: 50%;
-    width: 55px;
-    height:55px;
+#uno{
+    background-image: url('../../assets/socios/1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 100px;
+    
+}
+#dos{
+    background-image: url('../../assets/socios/2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 100px;
+
+}
+#tres{
+    background-image: url('../../assets/socios/3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 100px;
 }
 
 .listaNumeros_par{

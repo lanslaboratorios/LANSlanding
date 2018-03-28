@@ -23,7 +23,7 @@ area: any;
                 'Neonatología', 'Hematología', 'Inmunología', 'Inmunoquímica','Citometría de flujo'];
     this.Card = {
       'Biología Molecular': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '../../assets/servicios/lans_biologia_molecularB.png',
+      'img': '../../assets/servicios/biologiaMolecular.png',
       'parrafoPrincipal': 'El Diagnóstico Molecular ha revolucionado el diagnóstico clínico ' +
       'y es una de las áreas del laboratorio clínico con mayor crecimiento y desarrollo.',
       'parrafo2': 'Las nuevas tecnologías, rápidas y precisas, han hecho de esta área una ' +
@@ -44,7 +44,7 @@ area: any;
         'titulo2' : ''
     },
     'Citometría de flujo': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '../../assets/servicios/lans_biologia_molecularB.png',
+      'img': '../../assets/servicios/citometria.png',
       'parrafoPrincipal': 'La Citometría de flujo es una técnica que permite realizarun ' +
       'análisis celular multiparamétrico de forma rápida, sensible y específica, lo que la ' +
       'hace tener una relación estrecha conlas áreas de inmunología y biología molecular. ',

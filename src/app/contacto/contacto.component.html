@@ -7,7 +7,7 @@
         ¿CÓMO PODEMOS AYUDARLE?
      </h2>
      <p class="titulo" id="textitulo">
-       Contáctenos llenando el siguiente formato o a través de los siguientes medios:
+       Contáctenos a través de los siguientes medios:
      </p>
     </div>
   <div class="row ">   <!-- direccion teléfono y mail -->
@@ -35,43 +35,12 @@
       </div>
   </div>
   <div class="row separador"> <!-- Mapa y Form -->
-    <div class="col m6 s12 "> <!-- Mapa -->
+    <div class="col m12 s12 "> <!-- Mapa -->
       <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zm">
           <agm-marker [latitude]="lat" [longitude]="lng" ></agm-marker>
       </agm-map>
     </div>
-    <div class="col m6 s12"> <!-- Formulario -->
-      <form class="col s12" id="formCont" action="mailto:rmedina@lans.mx" >
-          <div class="input-field col s12 contacto">
-             <i class="material-icons prefix">store</i>
-             <input id="lab" type="text" class="validate">
-             <label for="lab">Laboratorio</label>
-          </div>
-          <div class="input-field col s12 contacto">
-             <i class="material-icons prefix">account_circle</i>
-             <input id="name" type="text" class="validate">
-             <label for="name">Nombre</label>
-          </div>
-          <div class="input-field col s12 contacto">
-             <i class="material-icons prefix">phone</i>
-             <input id="tel" type="tel" class="validate">
-             <label for="tel">Teléfono</label>
-          </div>
-          <div class="input-field col s12 contacto">
-              <i class="material-icons prefix">mail</i>
-              <input id="email" type="email" class="validate">
-              <label for="email">Email </label>
-           </div>
-           <div class="input-field col s12 contacto">
-              <i class="material-icons prefix">comments</i>
-              <textarea id="comments" class="materialize-textarea"></textarea>
-              <label for="comments">Comentarios</label>
-            </div>
-            <div class="col s12 centrar">
-              <input type="submit"  class="verMas" [class.hoVerMas]="isHover" (mouseenter)="activo(true)" (mouseleave)="activo(false)" value="Enviar">
-            </div>
-      </form>
-    </div>
+    
   </div>
 </div>
 </div>
