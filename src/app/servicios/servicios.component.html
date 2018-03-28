@@ -57,15 +57,30 @@
             <p>
               {{Card[selectedArea].parrafoPrincipal}}
               <br>
-              <br>
               {{Card[selectedArea].parrafo2}}
-              <br>
               <br>
               {{Card[selectedArea].parrafo3}}
             </p>
-            <ul>
-              <li *ngFor="let prueba of Card[selectedArea].pruebas">- {{prueba}}</li>
-            </ul>
+            <div class="row"> <!-- Listas --> 
+              <div class="col s4 m4">
+                  <span> <strong>{{Card[selectedArea].titulo}}</strong></span>
+                <ul>
+                  <li *ngFor="let prueba of Card[selectedArea].pruebas">-{{prueba}}</li>
+                </ul>
+              </div>
+              <div class="col s4 m4">
+                  <span> <strong>{{Card[selectedArea].titulo1}}</strong></span>
+                <ul>
+                  <li *ngFor="let prueba of Card[selectedArea].pruebas1">-{{prueba}}</li>
+                </ul>
+              </div>
+              <div class="col s4 m4">
+                  <span><strong>{{Card[selectedArea].titulo2}}</strong></span>
+                <ul>
+                  <li *ngFor="let prueba of Card[selectedArea].pruebas2">-{{prueba}}</li>
+                </ul>
+              </div>
+            </div> <!--/row-->
           </div>
             <!-- /Container -->
         </div>
