@@ -72,7 +72,7 @@
 .socioscontenedor_fondo{
     background-color: #0bdcf7;
     height: 370px;
-    width: 370px !important;
+    min-width: 100%;
     border-radius: 100%;
     overflow: hidden;
     padding: 30px 30px;
@@ -84,7 +84,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 308px;
-    width: 308px !important;
+    min-width: 100%;
     border-radius: 50%;
 }
 
@@ -146,6 +146,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: -1px;
+}
+
+#trans img{
+    max-width: 100%;
 }
 
 #transtop{

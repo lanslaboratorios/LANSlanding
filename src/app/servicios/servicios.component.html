@@ -53,7 +53,7 @@
       <div class="row ">
                   <!-- Container -->
           <div class="col m12 s12">
-            <img class="contImg" [src]="Card[selectedArea].img" alt="">
+            <img [class.contImg]="!small" class="modImg" [src]="Card[selectedArea].img" alt="">
             <p>
               {{Card[selectedArea].parrafoPrincipal}}
               <br>
@@ -62,19 +62,19 @@
               {{Card[selectedArea].parrafo3}}
             </p>
             <div class="row"> <!-- Listas --> 
-              <div class="col s4 m4">
+              <div class="lista">
                   <span> <strong>{{Card[selectedArea].titulo}}</strong></span>
                 <ul>
                   <li *ngFor="let prueba of Card[selectedArea].pruebas">-{{prueba}}</li>
                 </ul>
               </div>
-              <div class="col s4 m4">
+              <div class="lista">
                   <span> <strong>{{Card[selectedArea].titulo1}}</strong></span>
                 <ul>
                   <li *ngFor="let prueba of Card[selectedArea].pruebas1">-{{prueba}}</li>
                 </ul>
               </div>
-              <div class="col s4 m4">
+              <div class="lista">
                   <span><strong>{{Card[selectedArea].titulo2}}</strong></span>
                 <ul>
                   <li *ngFor="let prueba of Card[selectedArea].pruebas2">-{{prueba}}</li>

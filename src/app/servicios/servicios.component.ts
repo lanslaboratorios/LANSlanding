@@ -15,12 +15,18 @@ hoveredArea: any;
 isHover: Boolean;
 Card: any;
 area: any;
+small;
 
   constructor( ) { }
 
   ngOnInit() {
+    if ( document.documentElement.clientWidth < 650) {
+      this.small = true;
+    }else {
+      this.small = false;
+    }
     this.areas = [ 'Biología Molecular', 'Química Clínica', 'Microbiología', 'Patología', 'Toxicología',
-                'Neonatología', 'Hematología', 'Inmunología', 'Inmunoquímica','Citometría de flujo'];
+                'Neonatología', 'Hematología', 'Inmunología', 'Inmunoquímica', 'Citometría de flujo'];
     this.Card = {
       'Biología Molecular': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/biologiaMolecular.png',
@@ -45,7 +51,7 @@ area: any;
     },
     'Citometría de flujo': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/citometria.png',
-      'parrafoPrincipal': 'La Citometría de flujo es una técnica que permite realizarun ' +
+      'parrafoPrincipal': 'La Citometría de flujo es una técnica que permite realizar un ' +
       'análisis celular multiparamétrico de forma rápida, sensible y específica, lo que la ' +
       'hace tener una relación estrecha conlas áreas de inmunología y biología molecular. ',
       'parrafo2': 'Algunas de las pruebas que procesamos en esta área son:',
@@ -127,7 +133,7 @@ area: any;
       'parrafo3': '',
       'parrafo2': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Anfetaminas', 'Benzodiacepinas', 'Canabinoides (THC)', 'Cocaína', 'Morfina (Opiáceos)',
-        'Barbituratos'     
+        'Barbituratos'
       ],
       'pruebas1' : ['Ciclosporina', 'Tacrolimus', 'Sirolimus', 'Everolimus'],
       'pruebas2' : ['Plomo', 'Aluminio', 'Zinc', 'Cadmio', 'Manganes'],
@@ -166,7 +172,6 @@ area: any;
       'de pruebas de Coagulación básica y especializada como: ',
       'pruebas' : ['Factores de la coagulación',
         'Anticoagulante lúpico',
-        'Proteína S de la coagulación',
         'Proteína S de la coagulación',
         'Factor V de Leiden'
       ],
@@ -223,8 +228,8 @@ area: any;
       'pruebas1' : ['Antígeno Cyfra 21',
       'Ca 15-3',
       'Ca 125'],
-      'pruebas2' : ['TORCH', 
-      'Panel de Hepatitis', 
+      'pruebas2' : ['TORCH',
+      'Panel de Hepatitis',
       'VIH 1 y 2 ( Antígeno p24)'],
       'titulo' : '',
       'titulo1' : 'Marcadores tumorales: ',
@@ -247,6 +252,13 @@ area: any;
     this.isHover = flag;
     if (!this.isHover) {
       this.hoveredArea = '';
+    }
+  }
+  @HostListener('window:resize', ['$event']) onPageResize($event) {
+    if ( document.documentElement.clientWidth < 650) {
+      this.small = true;
+    }else {
+      this.small = false;
     }
   }
 
