@@ -55,7 +55,7 @@ area: any;
         ]
     },
       'Microbiología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
-      'img': '../../assets/servicios/microbiologia.png',
+      'img': '../../assets/servicios/microbiologiaB.png',
       'parrafoPrincipal':  'Nuestro departamento de microbiología utiliza tecnología ' +
       'de colorimetría avanzada para identificación microbiana y cuenta con una amplia experiencia.',
       'parrafo2': '',

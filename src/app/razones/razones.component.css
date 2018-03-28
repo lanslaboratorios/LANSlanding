@@ -144,6 +144,8 @@ p{
 
   .tarjetaRazones_img-cristal{
     background-color: rgba(0,47,135,0.3);
+    border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
     height: 30vh;
   }
 

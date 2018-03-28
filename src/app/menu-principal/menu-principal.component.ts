@@ -19,9 +19,13 @@ export class MenuPrincipalComponent implements OnInit {
     $('#menuLateral').hide();
     $('#btnCaptura_txt').hide();
     $('#btnResult_txt').hide();
+    $('#btnCaptura_txt_grande').hide();
+    $('#btnResult_txt_grande').hide();
 
     $('#btnCaptura_img').hide();
     $('#btnResult_img').hide();
+
+    $('#menuBefCompleto').hide();
 
     
     
@@ -39,6 +43,8 @@ export class MenuPrincipalComponent implements OnInit {
     this.scanResize();
     this.activarTxt('#btnCaptura_img','#btnCaptura_txt');
     this.activarTxt('#btnResult_img','#btnResult_txt');
+    this.activarTxt('#btnCaptura_img_grande','#btnCaptura_txt_grande');
+    this.activarTxt('#btnResult_img_grande','#btnResult_txt_grande');
 
 
 
@@ -123,6 +129,14 @@ export class MenuPrincipalComponent implements OnInit {
       $(aparece).fadeOut('fast');
     });
 
+  }
+
+  activarMenuGrande = function():void{
+    $('#menuBefCompleto').show();
+  }
+
+  desactivarMenuGrande = function():void{
+    $('#menuBefCompleto').hide();
   }
 
 }

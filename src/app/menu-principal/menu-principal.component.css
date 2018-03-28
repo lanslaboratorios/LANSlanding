@@ -17,7 +17,43 @@
   border-radius: 50%;
 }
 
+.btnCaptura_grande{
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  right: 130px;
+  z-index: 1;
+  bottom: 10px;
+  background-color: #00bcd4;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.btnCaptura_txt_grande{
+  position: fixed;
+  right: 100px;
+  z-index: 1;
+  bottom: 60px;
+  color:#0075c9;
+}
+
+.btnCaptura_captura{
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  right: 10px;
+  z-index: 1;
+  top: 75px;
+  background-color: #00bcd4;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
 .btnCaptura:hover{
+  background-color: #0075c9;
+}
+
+.btnCaptura_grande:hover{
   background-color: #0075c9;
 }
 
@@ -31,6 +67,13 @@
 
 
 #btnCaptura_img{
+  background-image: url('../../assets/ic_captura_ordenes.svg');
+  background-repeat: no-repeat;
+  background-size: 42px;
+  background-position: 17px;
+}
+
+#btnCaptura_img_grande{
   background-image: url('../../assets/ic_captura_ordenes.svg');
   background-repeat: no-repeat;
   background-size: 42px;
@@ -60,7 +103,23 @@
   border-radius: 50%;
 }
 
+.btnResult_grande{
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+  bottom: 10px;
+  background-color: #00bcd4;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
 .btnResult:hover{
+  background-color: #0075c9;
+}
+
+.btnResult_grande:hover{
   background-color: #0075c9;
 }
 
@@ -72,11 +131,36 @@
   color: #27e2fb;
 }
 
+.btnResult_txt_grande{
+  position: fixed;
+  right: 10px;
+  z-index: 1;
+  bottom: 60px;
+  color:#0075c9;
+}
+
 #btnResult_img{
   background-image: url('../../assets/ic_consulta_resultado.svg');
   background-repeat: no-repeat;
   background-size: 42px;
   background-position: 17px;
+}
+
+#btnResult_img_grande{
+  background-image: url('../../assets/ic_consulta_resultado.svg');
+  background-repeat: no-repeat;
+  background-size: 42px;
+  background-position: 17px;
+}
+
+.circuloTextura{
+  background-image: url('../../assets/menuPrincipal/circuloTextura.png');
+  background-repeat: no-repeat;
+  background-position: -13px center;
+  background-size: 250px 250px;
+  height: 96vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 
@@ -95,12 +179,98 @@
 
 }
 
+.logoLansGrande{
+  background-color: white;
+  background-image: url('../../assets/sliderAssets/logotipo_lans_colores_200x200.png');
+  background-repeat: no-repeat;
+  background-size: 120px 120px;
+    background-position: 40px 130px;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  right: -116px;
+  top: -121px;
+  border-radius: 50%;
+  box-shadow: -7px 7px 17px rgba(0,0,0,0.2);
+}
+
+.menuBefCompleto{
+  height: 100vh;
+  width: 70vw;
+  -webkit-box-shadow: 10px 1px 4px rgba(0,0,0,0.2);
+  box-shadow: 10px 1px 4px rgba(0,0,0,0.3);
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  background-color: white;
+}
+
+.listaMenuCompleto{
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 60px;
+  padding: 5vh;
+}
+
+.menuBefCompleto_complemento{
+  background-color: rgba(0,0,0,0.3);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+}
+
+.menuBefCompleto_complemento:hover{
+  cursor: pointer;
+}
+
+.listaMenuCompleto li a:hover{
+  background-color: rgba(40,170,197,0.2);
+}
+
+.listaMenuCompleto a{
+  color: gray;
+  padding: 15px 20px 15px 10px;
+}
+
+.logoMenuGrande_interior{
+  background-image:url('../../assets/sliderAssets/logotipo_lans_colores_200x200.png');
+  background-position:center;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
 .logoMenuLateral{
   background-image: url("../../assets/logotipos/logo_menu.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 100px;
+}
+
+.menuBef_ham{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  padding: 10px 10px;
+  border-bottom-right-radius: 50%;
+}
+
+ .menuBef_ham a i{
+  color:white;
+  font-size: 50px;
+}
+.menuBef_ham a i:hover{
+  cursor:pointer;
+} 
+.menuBef_ham:hover{
+  cursor: pointer;
+  background-color:#0075c9;
 }
 
 .menuBefScroll{
@@ -111,6 +281,7 @@
   left: 0;
   z-index: 1;
 }
+
 
 .menuBefScroll li a{
   color:white;

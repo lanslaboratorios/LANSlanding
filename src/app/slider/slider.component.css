@@ -1,12 +1,12 @@
 
-#motivoSlider1{
+/* #motivoSlider1{
   background-image: url("../../assets/sliderAssets/motivoslide1.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
   height: 80vh;
   position: relative;
-}
+} */
 
 #motivoSlide2{
   background-image: url("../../assets/sliderAssets/motivoslide2.png");
@@ -57,11 +57,42 @@
 .icon{
   padding-top: 3px;
 }
-  
 
+.logoCincuenta{
+  background-color: white;
+  background-image: url('../../assets/sliderAssets/50anos_LANS_perforado_200x200.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: -170px 289px;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+}
 
 .contenedorCirculo{
-   padding-top: 10%;
+   background-color: blue;
+   height:10px;
+   width:10px;
+}
+
+.colorFondo{
+  background: linear-gradient(45deg, #23c1e9 , #0d72b1);
+  height: 130vh;
+  width: 50vw;
+  margin: -20vh -50%;
+  border-radius: 0 70% 70% 0;
+  padding: 45vh 5vw 0 10vw;
+}
+
+.colorFondo h2{
+  font-size: 35px;
+  line-height: 42px;
+}
+
+.colorFondo_texto{
+  font-size: 50px;
+  line-height: 55px;
 }
 
 .parallax-container {
@@ -74,6 +105,10 @@
 
 .sliderContenedor{
   height:100vh !important;
+}
+
+.tituloLight{
+  font-weight: 100;
 }
 
 .textoSlider{

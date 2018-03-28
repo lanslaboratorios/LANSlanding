@@ -187,7 +187,8 @@
     color: #0bdcf7;
     border-style: solid;
     border-radius: 50%;
-    /* width: 55px; */
+    width: 55px;
+    height:55px;
 }
 
 .listaNumeros_par{

@@ -5,52 +5,56 @@
     del otro menu.
 
 -->
-<nav class="menuBefScroll" id="menuBefScroll">
-  
-  <div class="row">
-    <div class="col m5">
+<div id="menuBefCompleto">
+  <div class="menuBefCompleto" >
       <div class="row">
-        <div class="col s12">
-          <div class="col s8">
-
+        <div class="col m4">
+          <div class="logoMenuGrande_interior">
           </div>
-          <div class="col s4">
-              <ul>
-                  <li class="menuBefScroll_btnEspecial"><a href="#!">Catálogo</a></li>
-              </ul>
-          </div>
-          
         </div>
-        <div class="col s12">
-          <ul>
+        <div class="col m6">
+          <ul class="listaMenuCompleto">   
             <li><a href="#anclaInicio">Inicio</a></li>
             <li><a href="#anclaNosotros">Nosotros</a></li>
             <li><a href="#anclaEspecialidades">Especialidades</a></li>
             <li><a href="#anclaCalidad">Calidad</a></li>
+            <li><a href="#anclaSocios">Socios</a></li>
+            <li><a href="#anclaSistema">Proceso</a></li>
+            <li><a href="#anclaContacto">Contacto</a></li>
+            <li><a href="#!">Catálogo</a></li>  
           </ul>
+        </div>
+        <div class="col m2">
+          <div class="circuloTextura"></div>
         </div>
       </div>
-    </div><!-- Opciones Izquierda -->
-    <div class="col m2">
-        <div class="containerLogoBefScroll"></div>
-    </div><!-- Logo -->
-    <div class="col m5">
-      <div class="row">
-        <div class="col s12">
-          <ul>
-            <li class="menuBefScroll_btnEspecial" ><a href="http://acceso.lans.mx:2024" target="_blank">Captura de Órdenes</a></li>
-            <li class="menuBefScroll_btnEspecial" ><a href="http://acceso.lans.mx:2026" target="_blank">Consulta de Resultados</a></li>
-          </ul>
+  </div>
+  <div class="menuBefCompleto_complemento" id="complementoBef" (click)="desactivarMenuGrande()">
+  </div>
+</div>
+
+<nav class="menuBefScroll" id="menuBefScroll">
+    <!-- BTN Hamburguesa -->
+    <div class="menuBef_ham" (click)="activarMenuGrande()">
+        <a href="#!">
+         <i class="material-icons">menu</i>
+       </a>
+     </div>
+     <!-- Botones Portales Menu Grande -->
+     <div class="botonesPortales" id="btnPort_grande">
+        <a href="http://acceso.lans.mx:2024/" target="_blank">
+        <div class="btnCaptura_grande" id="btnCaptura_img_grande">
+          <p class="btnCaptura_txt_grande" id="btnCaptura_txt_grande">Captura de Órdenes</p>
         </div>
-        <div class="col s12">
-          <ul>
-              <li><a href="#anclaSocios">Socios</a></li>
-              <li><a href="#anclaSistema">Nuestro Proceso</a></li>
-              <li><a href="#anclaContacto">Contacto</a></li>
-          </ul>
+        </a>
+        <a href="http://acceso.lans.mx:2026/" target="_blank">
+        <div class="btnResult_grande" id="btnResult_img_grande">
+            <p class="btnResult_txt_grande" id="btnResult_txt_grande">Consulta de Resultados</p>
         </div>
-      </div>
-    </div> <!--Opciones Derecha-->
+        </a>
+      </div><!-- Fin botones portales -->
+  <div class="row">
+    <div class="logoLansGrande"></div>
   </div><!-- row  2 -->
 </nav>
 
@@ -80,7 +84,7 @@
               <li><a href="#anclaEspecialidades">Especialidades</a></li>
               <li><a href="#anclaCalidad">Calidad</a></li>
               <li><a href="#anclaSocios">Socios</a></li>
-              <li><a href="#anclaSistema">Nuestro Proceso</a></li>
+              <li><a href="#anclaSistema">Proceso</a></li>
               <li><a href="#anclaContacto">Contacto</a></li>
               <li><a href="#!">Catálogo</a></li>
             </ul>
@@ -104,7 +108,7 @@
                   <li><a href="#anclaEspecialidades">Especialidades</a></li>
                   <li><a href="#anclaCalidad">Calidad</a></li>
                   <li><a href="#anclaSocios">Socios</a></li>
-                  <li><a href="#anclaSistema">Nuestro Proceso</a></li>
+                  <li><a href="#anclaSistema">Proceso</a></li>
                   <li><a href="#anclaContacto">Contacto</a></li>
                   <li><a href="#!">Catálogo</a></li>
                 </ul>
