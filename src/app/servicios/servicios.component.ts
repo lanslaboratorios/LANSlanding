@@ -56,15 +56,17 @@ area: any;
     },
       'Microbiología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/microbiologia.png',
-      'parrafoPrincipal':  'Nuestro departamento de microbiología utiliza tecnología ' +
-      'de colorimetría avanzada para identificación microbiana y cuenta con una amplia experiencia.',
-      'parrafo2': '',
+      'parrafoPrincipal':  'La Microbiología Clínica se encarga del diagnóstico y seguimiento ' +
+      'microbiológico de las enfermedades infecciosas mediante la identificación y aislamiento de ' +
+      'los agentes infecciosos, utilizando técnicas de cultivo, medios selectivos y diferenciales que ' +
+      'permitan el aislamiento de los principales patógenos y la selección del tratamiento que anule los ' +
+      'efectos patológicos en cada uno de los sitios anatómicos con sospecha de infección bacteriana. ',
+      'parrafo2': 'Nuestro departamento de microbiología utiliza tecnología de colorimetría avanzada para ' +
+      'identificación microbiana y cuenta con una amplia experiencia. ',
       'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Mycoplasma Hominis',
         'Ureaplasma Urealyticum',
-        'Hemocultivos',
-        'Quantiferón',
-        'Prueba de VIH 4ta generación'
+        'Hemocultivos'
         ]
     },
       'Patología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
@@ -72,12 +74,12 @@ area: any;
       'parrafoPrincipal': 'El área de patología se encarga del correcto diagnóstico ' +
       'histológico y citológico por medio de morfología, inmunohistoquímica, inmunomarcadores de ' +
       'proliferación y mutaciones, entre otros  para definir las causas, desarrollo y pronóstico de las enfermedades. ',
-      'parrafo2': '',
-      'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
+      'parrafo3': '',
+      'parrafo2': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Citología Cérvico-Vaginal (Papanicolaou)',
         'Papanicolaou Cérvico-Vaginal en Base Líquida',
         'Papanicolaou de Líquidos Biológicos Diversos',
-        'Detección de HER2, KRAS',
+        'Detección de HER2',
         'Citología por Aspiración con Aguja Fina'
         ]
     },
@@ -87,8 +89,8 @@ area: any;
       'consumo de drogas (terapéuticas o de abuso) y exposición a tóxicos industriales o ambientales. ' +
       'La orina es el espécimen más usado, el más efectivo para la determinación y para el que se dispone ' +
       'de numerosas técnicas.',
-      'parrafo2': '',
-      'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
+      'parrafo3': '',
+      'parrafo2': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Anfetaminas', 'Benzodiacepinas', 'Canabinoides (THC)', 'Cocaína', 'Morfina (Opiáceos)',
         'Barbituratos', 'Ciclosporina', 'Tacrolimus', 'Sirolimus', 'Everolimus',
         'Plomo', 'Aluminio', 'Zinc', 'Cadmio', 'Manganes'
