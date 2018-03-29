@@ -111,7 +111,10 @@ export class MenuPrincipalComponent implements OnInit {
     $('#menuBefCompleto').show();
   };
 
-  desactivarMenuGrande = function( delay: number): void{
+  desactivarMenuGrande = function( delay?: number): void{
+    if (delay === undefined || delay === null) {
+      delay = 100;
+    }
     $('#menuBefCompleto').delay(delay).hide();
   };
 
