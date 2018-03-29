@@ -222,14 +222,15 @@ small;
       'de quimioluminiscencia para la determinación de estudios como: ',
       'pruebas' : [
       'Vitamina D',
-      'Tiroideos'
+      'Globulina fijadora de hormonas sexuales',
+      'Función tiroídea'
       ],
       'pruebas1' : ['Antígeno Cyfra 21',
       'Ca 15-3',
       'Ca 125'],
       'pruebas2' : ['TORCH',
       'Panel de Hepatitis',
-      'VIH 1 y 2 ( Antígeno p24)'],
+      'VIH 1 y 2 + Antígeno p24'],
       'titulo' : '',
       'titulo1' : 'Marcadores tumorales',
       'titulo2' : 'Pruebas infecciosas'
