@@ -57,7 +57,7 @@ small;
       'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
       'parrafo2': '',
       'pruebas' : ['Subpoblaciones linfocitarias',
-        'Antígeno de Histocompatibilidad HLA B-27',
+        'Antígeno HLA B-27',
         'Inmunofenotipo'
         ],
         'pruebas1' : [],
