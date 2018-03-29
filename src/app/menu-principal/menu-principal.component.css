@@ -33,8 +33,12 @@
   position: fixed;
   right: 100px;
   z-index: 1;
-  bottom: 60px;
-  color:#0075c9;
+  bottom: 10vh;
+  color: white;
+  background-color: #0075c9;
+  border-radius: 10px;
+  font-weight: 100;
+  padding: 0 15px;
 }
 
 .btnCaptura_captura{
@@ -135,8 +139,12 @@
   position: fixed;
   right: 10px;
   z-index: 1;
-  bottom: 60px;
-  color:#0075c9;
+  bottom: 10vh;
+  color: white;
+  background-color: #0075c9;
+  border-radius: 10px;
+  font-weight: 100;
+  padding: 0 15px;
 }
 
 #btnResult_img{

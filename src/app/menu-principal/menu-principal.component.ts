@@ -123,10 +123,10 @@ export class MenuPrincipalComponent implements OnInit {
 
   activarTxt= function(elemento:string,aparece:string):void{
     $(elemento).mouseenter(function(){
-      $(aparece).fadeIn('fast');
+      $(aparece).show();
     });
     $(elemento).mouseleave(function(){
-      $(aparece).fadeOut('fast');
+      $(aparece).hide();
     });
 
   }
