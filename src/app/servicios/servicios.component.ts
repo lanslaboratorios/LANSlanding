@@ -239,6 +239,13 @@ small;
     this.selectedArea = this.areas[0];
   }
 
+  // modal scroll reset
+
+  reset() {
+    $('#modals').modal('open');
+    $('#modals').scrollTop(0);
+  }
+
   // Funcion para colorear selecciónado
   selected(item: any): void {
     this.selectedArea = item;

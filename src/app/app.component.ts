@@ -26,29 +26,25 @@ export class AppComponent implements OnInit {
     this.toggleSlider();
   }
 
-  toggleSlider = function():void{
+  toggleSlider = function(): void{
     $(document).ready(function(){
-      var x  = $(window).width(); 
-      if( x < 1063){
+      const x  = $(window).width();
+      if ( x < 1063) {
         $('#appSlider').hide();
-        
-      }else{
+      }else {
         $('#appSlider').show();
-       
       }
     });
 
     $(window).resize(function(){
-      var x  = $(window).width(); 
-      if( x < 1063){
+      const x  = $(window).width();
+      if ( x < 1063) {
         $('#appSlider').hide();
-        
-      }else{
+      }else {
         $('#appSlider').show();
-        
       }
     });
-  }
+  };
 
 
 }
