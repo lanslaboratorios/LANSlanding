@@ -112,7 +112,7 @@ export class MenuPrincipalComponent implements OnInit {
   };
 
   desactivarMenuGrande = function( delay: number): void{
-    //$('#menuBefCompleto').delay(delay).hide();
+    $('#menuBefCompleto').delay(delay).hide();
   };
 
 }
