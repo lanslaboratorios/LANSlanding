@@ -22,7 +22,7 @@ export class MenuPrincipalComponent implements OnInit {
     $('#btnCaptura_img').hide();
     $('#btnResult_img').hide();
     $('#menuBefCompleto').hide();
-    if($(window).width() < 1163) {
+    if ($(window).width() < 1163) {
       $('#menuBefScroll').hide();
       $('#menuAftScroll').show();
       $('#logoChico').show();

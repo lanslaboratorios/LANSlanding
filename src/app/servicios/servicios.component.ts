@@ -31,8 +31,8 @@ small;
       'Biología Molecular': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/biologiaMolecular.png',
       'parrafoPrincipal': 'El Diagnóstico Molecular ha revolucionado el diagnóstico clínico ' +
-      'y es una de las áreas del laboratorio clínico con mayor crecimiento y desarrollo.',
-      'parrafo2': 'Las nuevas tecnologías, rápidas y precisas, han hecho de esta área una ' +
+      'y es una de las áreas del laboratorio con mayor crecimiento y desarrollo.',
+      'parrafo2': 'Las nuevas tecnologías, rápidas y precisas, han hecho de esta disciplina una ' +
       'herramienta clave para muchas áreas de la salud, en particular ha sido de gran utilidad en ' +
       'la detección de enfermedades infecciosas y genéticas.',
       'parrafo3': 'Algunas de las pruebas que procesamos en esta área mediante PCR en tiempo real son:',
@@ -58,8 +58,6 @@ small;
       'parrafo2': '',
       'pruebas' : ['Subpoblaciones linfocitarias',
         'Antígeno de Histocompatibilidad HLA B-27',
-        'Electroforesis de proteínas',
-        'Electroforesis de hemoglobina',
         'Inmunofenotipo'
         ],
         'pruebas1' : [],
@@ -96,7 +94,7 @@ small;
       'parrafo2': '',
       'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Mycoplasma hominis',
-        'Ureaplasma Urealyticum',
+        'Ureaplasma urealyticum',
         'Hemocultivos'
         ],
         'pruebas1' : [],
@@ -136,7 +134,7 @@ small;
         'Barbituratos'
       ],
       'pruebas1' : ['Ciclosporina', 'Tacrolimus', 'Sirolimus', 'Everolimus'],
-      'pruebas2' : ['Plomo', 'Aluminio', 'Zinc', 'Cadmio', 'Manganes'],
+      'pruebas2' : ['Plomo', 'Aluminio', 'Zinc', 'Cadmio', 'Manganeso'],
       'titulo' : 'Drogas de abuso',
       'titulo1' : 'Drogas terapéuticas',
       'titulo2' : 'Metales'
@@ -145,14 +143,14 @@ small;
       'img': '../../assets/servicios/neonatologia.png',
       'parrafoPrincipal': 'El área de Neonatología se encarga del diagnóstico de las enfermedades ' +
       'del ser humano dentro de los primeros 28 días de vida.',
-      'parrafo2': 'En LANS Laboratorios apoyamos este diagnóstico a través del Tamiz Metabólico Neonatal, ' +
-      'que consiste en una serie de pruebas que se realizan a partir de una muestra sanguínea tomada del ' +
+      'parrafo2': 'En LANS apoyamos este diagnóstico a través del Tamiz Metabólico Neonatal, ' +
+      'que consiste en una serie de pruebas que se realizan a partir de una muestra sanguínea, tomada del ' +
       'talón del pie del recién nacido, con el objeto de detectar oportunamente enfermedades metabólicas.',
       'parrafo3': 'Algunos ejemplos de las enfermedades que pueden ser detectadas son:',
       'pruebas' : ['Hipotiroidismo congénito', 'Fibrosis quística', 'Hiperplasia adrenal congénita',
-      'Galactosemia', 'Aminoacidopatías (fenilcetonuria (PKU), tirosinemia hereditaria, enfermedad de jarabe de maple, etc.)',
+      'Galactosemia', 'Aminoacidopatías',
       'Acidemias orgánicas', 'Trastornos en la oxidación de ácidos grasos',
-      'Hemoglobinopatías (hemoglobinas anormales)'
+      'Hemoglobinopatías'
       ],
       'pruebas1' : [],
       'pruebas2' : [],
@@ -173,6 +171,7 @@ small;
       'pruebas' : ['Factores de la coagulación',
         'Anticoagulante lúpico',
         'Proteína S de la coagulación',
+        'Proteína C de la coagulación',
         'Factor V de Leiden'
       ],
       'pruebas1' : [],
@@ -183,14 +182,14 @@ small;
     },
       'Inmunología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/inmunologia.png',
-      'parrafoPrincipal': 'Es la ciencia que estudia todos los aspectos del sistema inmunitario normal y ' +
-      'patológico. Incluye las enfermedades en las que los mecanismos inmunitarios no actúan adecuadamente, ' +
+      'parrafoPrincipal': 'Es la ciencia que estudia todos los aspectos del sistema inmunitario, normal y ' +
+      'patológico, e incluye las enfermedades en las que los mecanismos inmunitarios no actúan adecuadamente, ' +
       'bien sea por razones genéticas o adquiridas.',
       'parrafo2': 'En el caso de las enfermedades autoinmunes, las técnicas inmunológicas son de gran ayuda ya ' +
       'que permiten la detección de auto-anticuerpos; para esto existen diferentes técnicas, sin embargo, ' +
       'una de las más utilizados es ELISA, que se fundamenta en el reconocimiento de los anticuerpos específicos ' +
       'presentes en las muestras de los pacientes, mediante un anticuerpo dirigido contra la región ' +
-      'Fc humana (IgG, IgA o IgM).',
+      'Fc (IgG, IgA o IgM).',
       'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Ac. Anti-Citoplasma de Neutrófilos Citoplasmáticos (c-ANCA)',
         'Ac. Anti-ADN de Doble Cadena (Nativo)',
@@ -203,7 +202,7 @@ small;
       'Ac. Anti-Treponema pallidum (FTA-ABS)',
       'Ac. Anti-Nucleares (ANA)',
       'Ac. Anti-Músculo Liso',
-      'Anticuerpos Anti-DNA Nativo Cuantitativo',
+      'Ac. Anti-DNA Nativo Cuantitativo',
       'Ac. Anti-Centrómero',
       'Ac. Anti-Mitocondriales'],
       'pruebas2' : [],
@@ -214,16 +213,16 @@ small;
       'Inmunoquímica': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/hematologia.png',
       'parrafoPrincipal': 'La Inmunoquímica la podemos definir como el estudio de la constitución ' +
-      'química de los antígenos y de los anticuerpos. Así mismo, como la parte de la química que estudia las ' +
+      'química de los antígenos y de los anticuerpos o como la parte de la química que estudia las ' +
       'reacciones de inmunidad antígeno-anticuerpo.',
-      'parrafo2': 'En realidad, se trata de una subdivisión de la inmunología, que se ha distinguido ' +
+      'parrafo2': 'En realidad, se trata de una subdivisión de la inmunología que se ha distinguido ' +
       'por ser automatizada y utilizar metodologías que ofrecen una mayor sensibilidad y especificidad.',
       'parrafo3': 'Contamos con plataformas analíticas de última generación que utilizan la metodología ' +
       'de quimioluminiscencia para la determinación de estudios como: ',
       'pruebas' : [
       'Vitamina D',
       'Globulina fijadora de hormonas sexuales',
-      'Función tiroídea'
+      'Perfil tiroideo'
       ],
       'pruebas1' : ['Antígeno Cyfra 21',
       'Ca 15-3',
