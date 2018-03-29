@@ -40,7 +40,7 @@ small;
         'Carga Viral de VIH',
         'Carga Viral de Hepatitis C',
         'Detección de VPH de alto riesgo',
-        'Detección Mycobacterium Tuberculosis',
+        'Detección de Mycobacterium Tuberculosis',
         'Detección de Chlamydia Trachomatis'
         ],
         'pruebas1' : [],
@@ -53,13 +53,13 @@ small;
       'img': '../../assets/servicios/citometria.png',
       'parrafoPrincipal': 'La Citometría de flujo es una técnica que permite realizar un ' +
       'análisis celular multiparamétrico de forma rápida, sensible y específica, lo que la ' +
-      'hace tener una relación estrecha conlas áreas de inmunología y biología molecular. ',
+      'hace tener una relación estrecha con las áreas de inmunología y biología molecular. ',
       'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
       'parrafo2': '',
       'pruebas' : ['Subpoblaciones linfocitarias',
-        'Antígeno de compatibilidad HLA B-27',
-        'Electroforésis de proteínas',
-        'Electroforésis de hemoglbina',
+        'Antígeno de Histocompatibilidad HLA B-27',
+        'Electroforesis de proteínas',
+        'Electroforesis de hemoglobina',
         'Inmunofenotipo'
         ],
         'pruebas1' : [],
@@ -95,7 +95,7 @@ small;
       'de colorimetría avanzada para identificación microbiana y cuenta con una amplia experiencia.',
       'parrafo2': '',
       'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
-      'pruebas' : ['Mycoplasma Hominis',
+      'pruebas' : ['Mycoplasma hominis',
         'Ureaplasma Urealyticum',
         'Hemocultivos'
         ],
@@ -163,7 +163,7 @@ small;
       'Hematología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/inmunologiaB.png',
       'parrafoPrincipal': 'Dentro del área de Hematología se estudian los elementos formes de la ' +
-      'sangre y sus precursores, así como de los trastornos estructurales y bioquímicos, que pueden ' +
+      'sangre y sus precursores, así como de los trastornos estructurales y bioquímicos que pueden ' +
       'conducir a una enfermedad.',
       'parrafo2': 'En LANS contamos con analizadores de última generación que permiten visualizar de ' +
       'manera eficaz estos elementos con gráficos de distribución eritrocitaria permitiendo clasificar ' +
@@ -184,7 +184,7 @@ small;
       'Inmunología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/inmunologia.png',
       'parrafoPrincipal': 'Es la ciencia que estudia todos los aspectos del sistema inmunitario normal y ' +
-      'patológico, e incluye las enfermedades en las que los mecanismos inmunitarios no actúan adecuadamente, ' +
+      'patológico. Incluye las enfermedades en las que los mecanismos inmunitarios no actúan adecuadamente, ' +
       'bien sea por razones genéticas o adquiridas.',
       'parrafo2': 'En el caso de las enfermedades autoinmunes, las técnicas inmunológicas son de gran ayuda ya ' +
       'que permiten la detección de auto-anticuerpos; para esto existen diferentes técnicas, sin embargo, ' +
@@ -214,7 +214,7 @@ small;
       'Inmunoquímica': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/hematologia.png',
       'parrafoPrincipal': 'La Inmunoquímica la podemos definir como el estudio de la constitución ' +
-      'química de los antígenos y de los anticuerpos, o como la parte de la química que estudia las ' +
+      'química de los antígenos y de los anticuerpos. Así mismo, como la parte de la química que estudia las ' +
       'reacciones de inmunidad antígeno-anticuerpo.',
       'parrafo2': 'En realidad, se trata de una subdivisión de la inmunología, que se ha distinguido ' +
       'por ser automatizada y utilizar metodologías que ofrecen una mayor sensibilidad y especificidad.',
