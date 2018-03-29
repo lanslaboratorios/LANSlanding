@@ -189,7 +189,7 @@ small;
       'que permiten la detección de auto-anticuerpos; para esto existen diferentes técnicas, sin embargo, ' +
       'una de las más utilizados es ELISA, que se fundamenta en el reconocimiento de los anticuerpos específicos ' +
       'presentes en las muestras de los pacientes, mediante un anticuerpo dirigido contra la región ' +
-      'Fc (IgG, IgA o IgM).',
+      'Fc (IgA, IgG o IgM).',
       'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Ac. Anti-Citoplasma de Neutrófilos Citoplasmáticos (c-ANCA)',
         'Ac. Anti-ADN de Doble Cadena (Nativo)',
