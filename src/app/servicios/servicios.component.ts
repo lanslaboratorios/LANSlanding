@@ -149,10 +149,10 @@ small;
       'que consiste en una serie de pruebas que se realizan a partir de una muestra sanguínea tomada del ' +
       'talón del pie del recién nacido, con el objeto de detectar oportunamente enfermedades metabólicas.',
       'parrafo3': 'Algunos ejemplos de las enfermedades que pueden ser detectadas son:',
-      'pruebas' : ['hipotiroidismo congénito', 'fibrosis quística', 'hiperplasia adrenal congénita',
-      'galactosemia', 'aminoacidopatías (fenilcetonuria (PKU), tirosinemia hereditaria, enfermedad de jarabe de maple, etc.)',
-      'acidemias orgánicas', 'transtornos en la oxidación de ácidos grasos',
-      'hemoglobinopatías (hemoglobinas anormales)'
+      'pruebas' : ['Hipotiroidismo congénito', 'Fibrosis quística', 'Hiperplasia adrenal congénita',
+      'Galactosemia', 'Aminoacidopatías (fenilcetonuria (PKU), tirosinemia hereditaria, enfermedad de jarabe de maple, etc.)',
+      'Acidemias orgánicas', 'Trastornos en la oxidación de ácidos grasos',
+      'Hemoglobinopatías (hemoglobinas anormales)'
       ],
       'pruebas1' : [],
       'pruebas2' : [],
@@ -221,7 +221,6 @@ small;
       'parrafo3': 'Contamos con plataformas analíticas de última generación que utilizan la metodología ' +
       'de quimioluminiscencia para la determinación de estudios como: ',
       'pruebas' : [
-      'Panel de Hepatitis',
       'Vitamina D',
       'Tiroideos'
       ],
