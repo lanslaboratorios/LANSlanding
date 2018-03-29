@@ -54,8 +54,8 @@ small;
       'parrafoPrincipal': 'La Citometría de flujo es una técnica que permite realizar un ' +
       'análisis celular multiparamétrico de forma rápida, sensible y específica, lo que la ' +
       'hace tener una relación estrecha conlas áreas de inmunología y biología molecular. ',
-      'parrafo2': 'Algunas de las pruebas que procesamos en esta área son:',
-      'parrafo3': '',
+      'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
+      'parrafo2': '',
       'pruebas' : ['Subpoblaciones linfocitarias',
         'Antígeno de compatibilidad HLA B-27',
         'Electroforésis de proteínas',
@@ -110,8 +110,8 @@ small;
       'parrafoPrincipal': 'El área de patología se encarga del correcto diagnóstico ' +
       'histológico y citológico por medio de morfología, inmunohistoquímica, inmunomarcadores de ' +
       'proliferación y mutaciones, entre otros  para definir las causas, desarrollo y pronóstico de las enfermedades. ',
-      'parrafo3': '',
-      'parrafo2': 'Algunas de las pruebas que procesamos en esta área son:',
+      'parrafo2': '',
+      'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Citología Cérvico-Vaginal (Papanicolaou)',
         'Papanicolaou Cérvico-Vaginal en Base Líquida',
         'Papanicolaou de Líquidos Biológicos Diversos',
@@ -130,16 +130,16 @@ small;
       'consumo de drogas (terapéuticas o de abuso) y exposición a tóxicos industriales o ambientales. ' +
       'La orina es el espécimen más usado, el más efectivo para la determinación y para el que se dispone ' +
       'de numerosas técnicas.',
-      'parrafo3': '',
-      'parrafo2': 'Algunas de las pruebas que procesamos en esta área son:',
+      'parrafo2': '',
+      'parrafo3': 'Algunas de las pruebas que procesamos en esta área son:',
       'pruebas' : ['Anfetaminas', 'Benzodiacepinas', 'Canabinoides (THC)', 'Cocaína', 'Morfina (Opiáceos)',
         'Barbituratos'
       ],
       'pruebas1' : ['Ciclosporina', 'Tacrolimus', 'Sirolimus', 'Everolimus'],
       'pruebas2' : ['Plomo', 'Aluminio', 'Zinc', 'Cadmio', 'Manganes'],
-      'titulo' : 'Drogas de abuso: ',
-      'titulo1' : 'Drogas terapéuticas:',
-      'titulo2' : 'Metales: '
+      'titulo' : 'Drogas de abuso',
+      'titulo1' : 'Drogas terapéuticas',
+      'titulo2' : 'Metales'
     },
       'Neonatología': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
       'img': '../../assets/servicios/neonatologia.png',
@@ -208,7 +208,7 @@ small;
       'Ac. Anti-Mitocondriales'],
       'pruebas2' : [],
       'titulo' : '',
-      'titulo1' : 'Por Inmunofluorescencia Indirecta: ',
+      'titulo1' : 'Por Inmunofluorescencia Indirecta',
       'titulo2' : ''
     },
       'Inmunoquímica': {'bg': '../../assets/servicios/lans_biologia_molecular.png',
@@ -232,8 +232,8 @@ small;
       'Panel de Hepatitis',
       'VIH 1 y 2 ( Antígeno p24)'],
       'titulo' : '',
-      'titulo1' : 'Marcadores tumorales: ',
-      'titulo2' : 'Pruebas infecciosas: '
+      'titulo1' : 'Marcadores tumorales',
+      'titulo2' : 'Pruebas infecciosas'
     }
     };
     this.areas.sort();

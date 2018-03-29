@@ -36,7 +36,7 @@
       <div class="row">
       <div class="col m5 offset-m6 s6 offset-s6">
         <h1  class="cardTitle">{{selectedArea}}</h1>
-        <p>{{Card[selectedArea].parrafoPrincipal.substring(0,200) + "..."}}</p>
+        <p>{{Card[selectedArea].parrafoPrincipal.substring(0,150) + "..."}}</p>
         <a  class="verMas  btn modal-trigger" href="#modals" [class.hoVerMas]="(area === hoveredArea && isHover)" (mouseenter)="activo(area,true)" (mouseleave)="activo(area,false)">VER MAS</a>
       </div>
       </div>
@@ -47,48 +47,53 @@
           <a href="#!" class="modal-action modal-close  btn-mod-close"><i class="material-icons ico-mod-close">&#xE14C;</i></a>
         </div>
     <div class="modal-content">
-      <!-- Imagen superior -->
-      <div class="col s12 m12">
-          <div class="imagenModalSuperior" [ngStyle]="{'background-image': 'url(' + Card[selectedArea].img + ')'}"></div>
-          </div>
       <!-- Titulo -->
-      <h3 class="center cardTitle">{{selectedArea}}</h3>
+      <div class="row">
+          <div class="col s12 m12 centrar">
+            <img [src]="Card[selectedArea].img" id="modImg" alt="">
+          </div>
+          <div class="col s12 m12" id="tituloModal">
+            <h3 class="center cardTitle">{{selectedArea}}</h3>
+          </div>
+    </div>
        <!-- Contenido -->
+       <div class="container">
       <div class="row ">
                   <!-- Container -->
-          <div class="col m12 s12">
-            <!-- <img [class.contImg]="!small" class="modImg" [src]="Card[selectedArea].img" alt=""> -->
-            <p>
+          <div class="col m12 s12 parrafos">
+            <p >
               {{Card[selectedArea].parrafoPrincipal}}
               <br>
               {{Card[selectedArea].parrafo2}}
-              <br>
+            </p>
+            <p>
               {{Card[selectedArea].parrafo3}}
             </p>
-            <div class="row estiloModalServicios"> <!-- Listas --> 
-              <div class="col m12 s12 centrar" id="listas">
+            <div class="row estiloModalServicios" > <!-- Listas --> 
+              <div class="col m12 s12 " id="listas">
+              
                   <span> {{Card[selectedArea].titulo}}</span>
                 <ul>
                   <li *ngFor="let prueba of Card[selectedArea].pruebas">{{prueba}}</li>
                 </ul>
               
-              
+            
                   <span> {{Card[selectedArea].titulo1}}</span>
                 <ul>
                   <li *ngFor="let prueba of Card[selectedArea].pruebas1">{{prueba}}</li>
                 </ul>
-              
-            
-              
+             
+       
                   <span>{{Card[selectedArea].titulo2}}</span>
                 <ul>
                   <li *ngFor="let prueba of Card[selectedArea].pruebas2">{{prueba}}</li>
                 </ul>
-              </div>
+              
             </div> <!--/row-->
           </div>
-            <!-- /Container -->
-        </div>
+            
+        </div> <!-- row -->
+      </div><!-- /Container -->
       </div>
     </div>
     <!-- <div class="modal-footer">
