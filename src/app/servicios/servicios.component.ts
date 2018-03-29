@@ -230,7 +230,7 @@ small;
       'Ca 125'],
       'pruebas2' : ['TORCH',
       'Panel de Hepatitis',
-      'VIH 1 y 2 + Antígeno p24'],
+      'Ac. Anti-VIH 1 y 2 + Antígeno p24'],
       'titulo' : '',
       'titulo1' : 'Marcadores tumorales',
       'titulo2' : 'Pruebas infecciosas'
