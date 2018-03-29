@@ -17,6 +17,15 @@
     text-align: left;
     word-wrap: break-word;
 }
+
+#listas ul li{
+    list-style-type: circle;
+}
+
+#listas span{
+    font-weight: bold;
+}
+
 p{
     font-family: "Roboto Condensed", sans-serif;
     color: #4d4d4d;
@@ -117,6 +126,17 @@ height: 400px;
     shape-outside: circle();
     padding: 10px;
 
+}
+
+.imagenModalSuperior{
+    height: 25vh;
+    width: 80vw;
+    margin-top: -24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 150px 150px;
+    margin: -24px 0px 24px -45px;
+    overflow: hidden;
 }
 
 .modImg{

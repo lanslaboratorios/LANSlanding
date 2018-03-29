@@ -47,13 +47,17 @@
           <a href="#!" class="modal-action modal-close  btn-mod-close"><i class="material-icons ico-mod-close">&#xE14C;</i></a>
         </div>
     <div class="modal-content">
+      <!-- Imagen superior -->
+      <div class="col s12 m12">
+          <div class="imagenModalSuperior" [ngStyle]="{'background-image': 'url(' + Card[selectedArea].img + ')'}"></div>
+          </div>
       <!-- Titulo -->
       <h3 class="center cardTitle">{{selectedArea}}</h3>
        <!-- Contenido -->
       <div class="row ">
                   <!-- Container -->
           <div class="col m12 s12">
-            <img [class.contImg]="!small" class="modImg" [src]="Card[selectedArea].img" alt="">
+            <!-- <img [class.contImg]="!small" class="modImg" [src]="Card[selectedArea].img" alt=""> -->
             <p>
               {{Card[selectedArea].parrafoPrincipal}}
               <br>
@@ -62,24 +66,23 @@
               {{Card[selectedArea].parrafo3}}
             </p>
             <div class="row estiloModalServicios"> <!-- Listas --> 
-              <div class="col m12 s12">
-              <div class="lista">
-                  <span> <strong>{{Card[selectedArea].titulo}}</strong></span>
+              <div class="col m12 s12 centrar" id="listas">
+                  <span> {{Card[selectedArea].titulo}}</span>
                 <ul>
-                  <li *ngFor="let prueba of Card[selectedArea].pruebas">-{{prueba}}</li>
+                  <li *ngFor="let prueba of Card[selectedArea].pruebas">{{prueba}}</li>
                 </ul>
-              </div>
-              <div class="lista">
-                  <span> <strong>{{Card[selectedArea].titulo1}}</strong></span>
+              
+              
+                  <span> {{Card[selectedArea].titulo1}}</span>
                 <ul>
-                  <li *ngFor="let prueba of Card[selectedArea].pruebas1">-{{prueba}}</li>
+                  <li *ngFor="let prueba of Card[selectedArea].pruebas1">{{prueba}}</li>
                 </ul>
-              </div>
-            </div>
-              <div class="lista">
-                  <span><strong>{{Card[selectedArea].titulo2}}</strong></span>
+              
+            
+              
+                  <span>{{Card[selectedArea].titulo2}}</span>
                 <ul>
-                  <li *ngFor="let prueba of Card[selectedArea].pruebas2">-{{prueba}}</li>
+                  <li *ngFor="let prueba of Card[selectedArea].pruebas2">{{prueba}}</li>
                 </ul>
               </div>
             </div> <!--/row-->
