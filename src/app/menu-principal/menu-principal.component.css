@@ -65,8 +65,11 @@
   position: fixed;
   right: 90px;
   z-index: 1;
-  top: 80px;
-  color: #27e2fb;
+  top: 10vh;
+  color: white;
+  background-color: #00bcd4;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 
@@ -131,8 +134,11 @@
   position: fixed;
   right: 90px;
   z-index: 1;
-  top: 160px;
-  color: #27e2fb;
+  top: 21vh;
+  color: white;
+  background-color: #00bcd4;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .btnResult_txt_grande{
