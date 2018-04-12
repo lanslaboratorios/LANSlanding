@@ -27,6 +27,30 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
+## Estructura del Código
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+La estructura a grandes rasgos es la siguiente:
+  
+  -Archivos de congfiguración (package.json,proactor.conf,etc)
+  -Dependencias (node_modules)
+  -Aplicativo (src)
+  
+## SRC Directory
+
+El directorio src contiene los archivos que conforman la página algúnos de los mas importantes son:
+
+  index.html (Es el encargado de desplegar el contenido de la  ngApp)
+  styles.css (CSS global)
+  App (Directorio con el contenido de la APP)
+  assets (Carpeta con todo el contenido estático, fotos, videos, archivos, etc)
+  
+## APP Directory
+
+En este directorio se guardan los componentes.
+
+Cada componente esta conformado por un set de 4 archivos:
+  -Archivo.css para estilos locales al componente
+  -Archivo.ts para lógica local al componente
+  -Archivo.spec.ts para pruebas al componente
+  -Archivo.html para maquetado del componente
+
