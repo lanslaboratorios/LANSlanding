@@ -8,6 +8,13 @@ declare var $: any;
 })
 export class MenuPrincipalComponent implements OnInit {
 
+  formatos = ['Hola', 'Adios'];
+
+  urls = {
+    'Hola': 'www.google.com',
+    'Adios': 'www.lans.mx'
+  };
+
   constructor() { }
 
   ngOnInit() {
@@ -17,10 +24,13 @@ export class MenuPrincipalComponent implements OnInit {
     $('#menuLateral').hide();
     $('#btnCaptura_txt').hide();
     $('#btnResult_txt').hide();
+    $('#btnFormato_txt').hide();
     $('#btnCaptura_txt_grande').hide();
     $('#btnResult_txt_grande').hide();
+    $('#btnFormato_txt_grande').hide();
     $('#btnCaptura_img').hide();
     $('#btnResult_img').hide();
+    $('#btnFormato_img').hide();
     $('#menuBefCompleto').hide();
     if ($(window).width() < 1163) {
       $('#menuBefScroll').hide();
@@ -31,8 +41,10 @@ export class MenuPrincipalComponent implements OnInit {
     this.scanResize();
     this.activarTxt('#btnCaptura_img', '#btnCaptura_txt');
     this.activarTxt('#btnResult_img', '#btnResult_txt');
+    this.activarTxt('#btnFormato_img', '#btnFormato_txt');
     this.activarTxt('#btnCaptura_img_grande', '#btnCaptura_txt_grande');
     this.activarTxt('#btnResult_img_grande', '#btnResult_txt_grande');
+    this.activarTxt('#btnFormato_img_grande', '#btnFormato_txt_grande');
   } // ngOnInit() END
 
 
@@ -56,9 +68,11 @@ export class MenuPrincipalComponent implements OnInit {
       if (y > 200 && $(window).width() > 1063) {
         $('#btnCaptura_img').show();
         $('#btnResult_img').show();
+        $('#btnFormato_img').show();
       }else {
         $('#btnCaptura_img').hide();
         $('#btnResult_img').hide();
+        $('#btnFormato_img').hide();
       }
     });
   };
@@ -81,9 +95,11 @@ export class MenuPrincipalComponent implements OnInit {
       if (x > 1063 && $(window).scrollTop() > 200) {
         $('#btnCaptura_img').show();
         $('#btnResult_img').show();
+        $('#btnFormato_img').show();
       }else {
         $('#btnCaptura_img').hide();
         $('#btnResult_img').hide();
+        $('#btnFormato_img').hide();
       }
     });
   };

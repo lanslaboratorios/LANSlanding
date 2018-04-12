@@ -21,7 +21,7 @@
   height: 70px;
   width: 70px;
   position: fixed;
-  right: 130px;
+  right: 180px;
   z-index: 1;
   bottom: 10px;
   background-color: #00bcd4;
@@ -65,7 +65,7 @@
   position: fixed;
   right: 90px;
   z-index: 1;
-  top: 10vh;
+  top: 7vh;
   color: white;
   background-color: #00bcd4;
   padding: 10px;
@@ -114,7 +114,7 @@
   height: 70px;
   width: 70px;
   position: fixed;
-  right: 20px;
+  right: 100px;
   z-index: 1;
   bottom: 10px;
   background-color: #00bcd4;
@@ -134,7 +134,7 @@
   position: fixed;
   right: 90px;
   z-index: 1;
-  top: 21vh;
+  top: 15vh;
   color: white;
   background-color: #00bcd4;
   padding: 10px;
@@ -166,6 +166,78 @@
   background-size: 42px;
   background-position: 17px;
 }
+
+
+.btnFormato{
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  right: 10px;
+  z-index: 1;
+  top: 235px;
+  background-color: #00bcd4;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.btnFormato_grande{
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+  bottom: 10px;
+  background-color: #00bcd4;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.btnFormato:hover{
+  background-color: #0075c9;
+}
+
+.btnFormato_grande:hover{
+  background-color: #0075c9;
+}
+
+.btnFormato_txt{
+  position: fixed;
+  right: 90px;
+  z-index: 1;
+  top: 25vh;
+  color: white;
+  background-color: #00bcd4;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btnFormato_txt_grande{
+  position: fixed;
+  right: 10px;
+  z-index: 1;
+  bottom: 10vh;
+  color: white;
+  background-color: #0075c9;
+  border-radius: 10px;
+  font-weight: 100;
+  padding: 0 15px;
+}
+
+#btnFormato_img{
+  background-image: url('../../assets/ic_consulta_resultado.svg');
+  background-repeat: no-repeat;
+  background-size: 42px;
+  background-position: 17px;
+}
+
+#btnFormato_img_grande{
+  background-image: url('../../assets/ic_consulta_resultado.svg');
+  background-repeat: no-repeat;
+  background-size: 42px;
+  background-position: 17px;
+}
+
+
 
 .circuloTextura{
   background-image: url('../../assets/menuPrincipal/circuloTextura.png');
@@ -405,5 +477,9 @@ ul li{
 }
 
 a{
+  color: #0075c9;
+}
+
+h2{
   color: #0075c9;
 }

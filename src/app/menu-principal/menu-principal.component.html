@@ -52,6 +52,11 @@
             <p class="btnResult_txt_grande" id="btnResult_txt_grande">Consulta de Resultados</p>
         </div>
         </a>
+        <a href="#modalFormatos" class="modal-trigger">
+          <div class="btnFormato_grande" id="btnFormato_img_grande">
+              <p class="btnFormato_txt_grande" id="btnFormato_txt_grande">Formatos</p>
+          </div>
+          </a>
       </div><!-- Fin botones portales -->
   <div class="row">
     <div class="logoLansGrande"></div>
@@ -117,6 +122,7 @@
             <ul class="btnPortalesMenuMob">
               <li><a href="http://acceso.lans.mx:2024/" target="_blank">Captura de Órdenes</a></li>
               <li><a href="http://acceso.lans.mx:2026/" target="_blank">Consulta de Resultados</a></li>
+              <li><a href="#modalFormatos" class="modal-trigger">Formatos</a></li>
             </ul>
           </div>
       </div><!-- col s7 -->
@@ -136,4 +142,28 @@
       <p class="btnResult_txt" id="btnResult_txt">Consulta de Resultados</p>
   </div>
   </a>
+  <a href="#modalFormatos" class="modal-trigger">
+    <div class="btnFormato" id="btnFormato_img">
+        <p class="btnFormato_txt" id="btnFormato_txt">Formatos</p>
+    </div>
+    </a>
+</div>
+
+
+<!-- modal formatos -->
+
+<div id="modalFormatos" class="modal">
+  <div class="modal-top">
+      <a href="#!" class="modal-action modal-close  btn-mod-close"><i class="material-icons ico-mod-close">&#xE14C;</i></a>
+  </div>
+  <div class="modal-content">
+    <div class="center  col s12 m12">
+      <h2> Formatos LANS</h2>
+      <div class="col s12 m12 listaCertificados">
+        <ul *ngFor="let formato of formatos">
+          <li> <a [href]="urls[formato]" download>{{formato}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
