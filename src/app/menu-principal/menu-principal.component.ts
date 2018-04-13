@@ -8,12 +8,14 @@ declare var $: any;
 })
 export class MenuPrincipalComponent implements OnInit {
 
-  formatos = ['Hola', 'Adios'];
+  formatos = ['Citologia-cervico-vaginal-exfoliativa-(Papanicolaou)', 'Citologia-de-liquidos-biologicos-diversos-(Papanicolaou)',
+   'Cuestionario_duo_test_ultrasensible_ampliado', 'Cuestionario_para_el_estudio_enfermedad_minima_residual',
+    'Cuestionario_para_el_inmunofenotipo_de_leucemias', 'Deteccion-de-drogas-de-abuso-en-orina', 'Duo-de-marcador-genetico',
+  'Examenes-histopatologicos', 'Ficha-de-identificacion-para-estudios-de-cariotipo', 'FOR-PRE-005_Cultivo_de_Mycobacterium',
+  'FOR-PRE-015_Cuestionario_para_VPH', 'Tamiz-metabolico-neonatal', 'Triple-y-cuadruple-marcador-genetico'];
 
-  urls = {
-    'Hola': 'www.google.com',
-    'Adios': 'www.lans.mx'
-  };
+  prefix= '../assets/formatos/';
+
 
   constructor() { }
 
