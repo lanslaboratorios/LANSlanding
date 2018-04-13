@@ -65,7 +65,7 @@
   position: fixed;
   right: 90px;
   z-index: 1;
-  top: 9vh;
+  top: 70px;
   color: white;
   background-color: #00bcd4;
   padding: 10px;
@@ -134,7 +134,7 @@
   position: fixed;
   right: 90px;
   z-index: 1;
-  top: 17vh;
+  top: 150px;
   color: white;
   background-color: #00bcd4;
   padding: 10px;
@@ -204,7 +204,7 @@
   position: fixed;
   right: 90px;
   z-index: 1;
-  top: 26vh;
+  top: 230px;
   color: white;
   background-color: #00bcd4;
   padding: 10px;
