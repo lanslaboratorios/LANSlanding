@@ -41,6 +41,7 @@
 .bg {
     background-color: #0075c9;
     padding-bottom: 1px;
+    overflow-y: hidden;
 }
 
 .centrar{
@@ -71,10 +72,10 @@
 
 .socioscontenedor_fondo{
     background-color: #0bdcf7;
-    min-height: 375px;
-    max-height: 375px;
-    min-width: 375px;
-    max-width: 375px;
+    min-height: 350px;
+    max-height: 350px;
+    min-width: 350px;
+    max-width: 350px;
     border-radius: 100%;
     overflow: hidden;
     padding: 30px 30px;
@@ -85,7 +86,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 308px;
+    height: 290px;
     min-width: 100%;
     border-radius: 50%;
 }
