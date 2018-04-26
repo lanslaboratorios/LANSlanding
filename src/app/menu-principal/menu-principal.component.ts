@@ -8,13 +8,13 @@ declare var $: any;
 })
 export class MenuPrincipalComponent implements OnInit {
 
-  formatos = ['Cuestionario Dúo-Test Ultrasensible Ampliado', 'Cuestionario para citología cérvico vaginal exfoliativa Papanicolaou',
-   'Cuestionario para citología de líquidos biológicos diversos Papanicolaou', 'Cuestionario para dúo marcador genético',
-    'Cuestionario para el cultivo de Mycobacterium', 'Cuestionario para el Estudio Enfermedad Mínima Residual',
-     'Cuestionario para el Estudio Inmunofenotipo para Leucemias', 'Cuestionario para exámenes histopatológicos',
-      'Cuestionario para tamiz metabolico neonatal', 'Cuestionario para triple y cuádruple marcador genético',
-  'Cuestionario para VPH', 'Detección de drogas de abuso en orina',
-   'Ficha de identificación para estudios de cariotipo', 'Formato de Paternidad'];
+  formatos = ['Cuestionario Dúo-Test Ultrasensible Ampliado', 'Cuestionario para Citología (Papanicolaou) Cérvico Vaginal Exfoliativa',
+   'Cuestionario para Citología (Papanicolaou) de Líquidos Biológicos Diversos', 'Cuestionario para Dúo Marcador Genético',
+    'Cuestionario para el Cultivo de Mycobacterium', 'Cuestionario para el Estudio Enfermedad Mínima Residual',
+     'Cuestionario para el Estudio Inmunofenotipo para Leucemias', 'Cuestionario para Exámenes Histopatológicos',
+      'Cuestionario para Tamiz Metabolico Neonatal', 'Cuestionario para Triple y Cuádruple Marcador Genético',
+  'Cuestionario para VPH', 'Detección de Drogas de Abuso en Orina',
+   'Ficha de Identificación para Estudios de Cariotipo', 'Formato de Paternidad'];
 
   prefix= '../assets/formatos/';
 
