@@ -8,11 +8,13 @@ declare var $: any;
 })
 export class MenuPrincipalComponent implements OnInit {
 
-  formatos = ['Citologia-cervico-vaginal-exfoliativa-(Papanicolaou)', 'Citologia-de-liquidos-biologicos-diversos-(Papanicolaou)',
-   'Cuestionario_duo_test_ultrasensible_ampliado', 'Cuestionario_para_el_estudio_enfermedad_minima_residual',
-    'Cuestionario_para_el_inmunofenotipo_de_leucemias', 'Deteccion-de-drogas-de-abuso-en-orina', 'Duo-de-marcador-genetico',
-  'Examenes-histopatologicos', 'Ficha-de-identificacion-para-estudios-de-cariotipo', 'FOR-PRE-005_Cultivo_de_Mycobacterium',
-  'FOR-PRE-015_Cuestionario_para_VPH', 'Tamiz-metabolico-neonatal', 'Triple-y-cuadruple-marcador-genetico', 'Formato_de_Paternidad'];
+  formatos = ['Cuestionario Dúo-Test Ultrasensible Ampliado', 'Cuestionario para citología cérvico vaginal exfoliativa Papanicolaou',
+   'Cuestionario para citología de líquidos biológicos diversos Papanicolaou', 'Cuestionario para dúo marcador genético',
+    'Cuestionario para el cultivo de Mycobacterium', 'Cuestionario para el Estudio Enfermedad Mínima Residual',
+     'Cuestionario para el Estudio Inmunofenotipo para Leucemias', 'Cuestionario para exámenes histopatológicos',
+      'Cuestionario para tamiz metabolico neonatal', 'Cuestionario para triple y cuádruple marcador genético',
+  'Cuestionario para VPH', 'Detección de drogas de abuso en orina',
+   'Ficha de identificación para estudios de cariotipo', 'Formato de Paternidad'];
 
   prefix= '../assets/formatos/';
 
