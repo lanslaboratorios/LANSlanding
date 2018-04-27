@@ -8,6 +8,17 @@ declare var $: any;
 })
 export class MenuPrincipalComponent implements OnInit {
 
+  formatos = ['Cuestionario Dúo-Test Ultrasensible Ampliado', 'Cuestionario para Citología (Papanicolaou) Cérvico Vaginal Exfoliativa',
+   'Cuestionario para Citología (Papanicolaou) de Líquidos Biológicos Diversos', 'Cuestionario para Dúo Marcador Genético',
+    'Cuestionario para el Cultivo de Mycobacterium', 'Cuestionario para el Estudio Enfermedad Mínima Residual',
+     'Cuestionario para el Estudio Inmunofenotipo para Leucemias', 'Cuestionario para Exámenes Histopatológicos',
+      'Cuestionario para Tamiz Metabolico Neonatal', 'Cuestionario para Triple y Cuádruple Marcador Genético',
+  'Cuestionario para VPH', 'Detección de Drogas de Abuso en Orina',
+   'Ficha de Identificación para Estudios de Cariotipo', 'Formato de Paternidad'];
+
+  prefix= '../assets/formatos/';
+
+
   constructor() { }
 
   ngOnInit() {
@@ -17,10 +28,13 @@ export class MenuPrincipalComponent implements OnInit {
     $('#menuLateral').hide();
     $('#btnCaptura_txt').hide();
     $('#btnResult_txt').hide();
+    $('#btnFormato_txt').hide();
     $('#btnCaptura_txt_grande').hide();
     $('#btnResult_txt_grande').hide();
+    $('#btnFormato_txt_grande').hide();
     $('#btnCaptura_img').hide();
     $('#btnResult_img').hide();
+    $('#btnFormato_img').hide();
     $('#menuBefCompleto').hide();
     if ($(window).width() < 1163) {
       $('#menuBefScroll').hide();
@@ -31,8 +45,10 @@ export class MenuPrincipalComponent implements OnInit {
     this.scanResize();
     this.activarTxt('#btnCaptura_img', '#btnCaptura_txt');
     this.activarTxt('#btnResult_img', '#btnResult_txt');
+    this.activarTxt('#btnFormato_img', '#btnFormato_txt');
     this.activarTxt('#btnCaptura_img_grande', '#btnCaptura_txt_grande');
     this.activarTxt('#btnResult_img_grande', '#btnResult_txt_grande');
+    this.activarTxt('#btnFormato_img_grande', '#btnFormato_txt_grande');
   } // ngOnInit() END
 
 
@@ -56,9 +72,11 @@ export class MenuPrincipalComponent implements OnInit {
       if (y > 200 && $(window).width() > 1063) {
         $('#btnCaptura_img').show();
         $('#btnResult_img').show();
+        $('#btnFormato_img').show();
       }else {
         $('#btnCaptura_img').hide();
         $('#btnResult_img').hide();
+        $('#btnFormato_img').hide();
       }
     });
   };
@@ -81,9 +99,11 @@ export class MenuPrincipalComponent implements OnInit {
       if (x > 1063 && $(window).scrollTop() > 200) {
         $('#btnCaptura_img').show();
         $('#btnResult_img').show();
+        $('#btnFormato_img').show();
       }else {
         $('#btnCaptura_img').hide();
         $('#btnResult_img').hide();
+        $('#btnFormato_img').hide();
       }
     });
   };

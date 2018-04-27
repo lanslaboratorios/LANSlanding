@@ -21,7 +21,7 @@
   height: 70px;
   width: 70px;
   position: fixed;
-  right: 130px;
+  right: 180px;
   z-index: 1;
   bottom: 10px;
   background-color: #00bcd4;
@@ -65,7 +65,7 @@
   position: fixed;
   right: 90px;
   z-index: 1;
-  top: 10vh;
+  top: 70px;
   color: white;
   background-color: #00bcd4;
   padding: 10px;
@@ -114,7 +114,7 @@
   height: 70px;
   width: 70px;
   position: fixed;
-  right: 20px;
+  right: 100px;
   z-index: 1;
   bottom: 10px;
   background-color: #00bcd4;
@@ -134,7 +134,7 @@
   position: fixed;
   right: 90px;
   z-index: 1;
-  top: 21vh;
+  top: 150px;
   color: white;
   background-color: #00bcd4;
   padding: 10px;
@@ -167,6 +167,78 @@
   background-position: 17px;
 }
 
+
+.btnFormato{
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  right: 10px;
+  z-index: 1;
+  top: 235px;
+  background-color: #00bcd4;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.btnFormato_grande{
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+  bottom: 10px;
+  background-color: #00bcd4;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border-radius: 50%;
+}
+
+.btnFormato:hover{
+  background-color: #0075c9;
+}
+
+.btnFormato_grande:hover{
+  background-color: #0075c9;
+}
+
+.btnFormato_txt{
+  position: fixed;
+  right: 90px;
+  z-index: 1;
+  top: 230px;
+  color: white;
+  background-color: #00bcd4;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btnFormato_txt_grande{
+  position: fixed;
+  right: 10px;
+  z-index: 1;
+  bottom: 10vh;
+  color: white;
+  background-color: #0075c9;
+  border-radius: 10px;
+  font-weight: 100;
+  padding: 0 15px;
+}
+
+#btnFormato_img{
+  background-image: url('../../assets/ic_formatos.svg');
+  background-repeat: no-repeat;
+  background-size: 42px;
+  background-position: 17px;
+}
+
+#btnFormato_img_grande{
+  background-image: url('../../assets/ic_formatos.svg');
+  background-repeat: no-repeat;
+  background-size: 42px;
+  background-position: 17px;
+}
+
+
+
 .circuloTextura{
   background-image: url('../../assets/menuPrincipal/circuloTextura.png');
   background-repeat: no-repeat;
@@ -189,7 +261,7 @@
 
 .contOpcionesMob{
   overflow: scroll;
-  height: 60vh;
+  height: 40vh;
 
 }
 
@@ -397,6 +469,32 @@
   }
 }
 
+#tituloModal{
+  color: #002f87;
+}
+
+#modalFormatos::-webkit-scrollbar-track
+ {
+     display: none;
+ }
+ 
+ 
+ #modalFormatos::-webkit-scrollbar
+ {
+     width: 10px;
+     background-color:rgba(240, 240, 240, 0);
+ }
+ 
+ #modalFormatos::-webkit-scrollbar-thumb
+ {
+     border-radius: 10px;
+     background-image: -webkit-gradient(linear,
+                                        left bottom,
+                                        left top,
+                                        color-stop(0.44, rgb(122,153,217)),
+                                        color-stop(0.72, rgb(73,125,189)),
+                                        color-stop(0.86, rgb(28,58,148)));
+ }
 
 
 ul li{
@@ -405,5 +503,9 @@ ul li{
 }
 
 a{
+  color: #0075c9;
+}
+
+h2{
   color: #0075c9;
 }
