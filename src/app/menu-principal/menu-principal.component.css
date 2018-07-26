@@ -1,7 +1,9 @@
 .cofepris{
   position: fixed;
   color: gray;
-  right: 0px;
+  right: 10px;
+  font-size: 10px;
+  top:16px;
 }
 
 .btnHamContainer{
