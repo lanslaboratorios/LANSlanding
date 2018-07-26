@@ -1,3 +1,9 @@
+.cofepris{
+  position: fixed;
+  color: gray;
+  right: 0px;
+}
+
 .btnHamContainer{
   position: fixed;
   right: 0 !important;
