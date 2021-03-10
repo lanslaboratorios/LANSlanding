@@ -15,7 +15,8 @@
 }
 
 #eqas{
-    background-image: url('../../assets/calidad/eqas-mockup.jpg');
+    /*background-image: url('../../assets/calidad/eqas-mockup.jpg');*/
+    background-attachment: url('../../assets/calidad/eqas.pdf');
     background-repeat:no-repeat;
     background-size: contain;
     background-position: center;
